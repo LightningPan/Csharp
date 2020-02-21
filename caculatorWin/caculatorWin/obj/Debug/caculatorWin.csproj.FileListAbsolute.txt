@@ -1,0 +1,9 @@
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\bin\Debug\caculatorWin.exe.config
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\bin\Debug\caculatorWin.exe
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\bin\Debug\caculatorWin.pdb
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\obj\Debug\caculatorWin.csprojAssemblyReference.cache
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\obj\Debug\caculatorWin.Form1.resources
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\obj\Debug\caculatorWin.Properties.Resources.resources
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\obj\Debug\caculatorWin.csproj.GenerateResource.cache
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\obj\Debug\caculatorWin.exe
+C:\Users\tp103\source\repos\caculatorWin\caculatorWin\obj\Debug\caculatorWin.pdb

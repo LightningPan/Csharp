@@ -1,0 +1,11 @@
+C:\Users\tp103\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.exe
+C:\Users\tp103\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.deps.json
+C:\Users\tp103\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.runtimeconfig.json
+C:\Users\tp103\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.runtimeconfig.dev.json
+C:\Users\tp103\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.dll
+C:\Users\tp103\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.pdb
+C:\Users\tp103\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.csprojAssemblyReference.cache
+C:\Users\tp103\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.AssemblyInfoInputs.cache
+C:\Users\tp103\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.AssemblyInfo.cs
+C:\Users\tp103\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.dll
+C:\Users\tp103\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.pdb
