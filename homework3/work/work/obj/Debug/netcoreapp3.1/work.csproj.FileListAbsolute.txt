@@ -1,0 +1,11 @@
+C:\Users\tp103\source\repos\work\work\bin\Debug\netcoreapp3.1\work.exe
+C:\Users\tp103\source\repos\work\work\bin\Debug\netcoreapp3.1\work.deps.json
+C:\Users\tp103\source\repos\work\work\bin\Debug\netcoreapp3.1\work.runtimeconfig.json
+C:\Users\tp103\source\repos\work\work\bin\Debug\netcoreapp3.1\work.runtimeconfig.dev.json
+C:\Users\tp103\source\repos\work\work\bin\Debug\netcoreapp3.1\work.dll
+C:\Users\tp103\source\repos\work\work\bin\Debug\netcoreapp3.1\work.pdb
+C:\Users\tp103\source\repos\work\work\obj\Debug\netcoreapp3.1\work.csprojAssemblyReference.cache
+C:\Users\tp103\source\repos\work\work\obj\Debug\netcoreapp3.1\work.AssemblyInfoInputs.cache
+C:\Users\tp103\source\repos\work\work\obj\Debug\netcoreapp3.1\work.AssemblyInfo.cs
+C:\Users\tp103\source\repos\work\work\obj\Debug\netcoreapp3.1\work.dll
+C:\Users\tp103\source\repos\work\work\obj\Debug\netcoreapp3.1\work.pdb
