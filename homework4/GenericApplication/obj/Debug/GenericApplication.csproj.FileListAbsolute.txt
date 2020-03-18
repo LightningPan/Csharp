@@ -1,0 +1,13 @@
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\bin\Debug\GenericApplication.exe.config
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\bin\Debug\GenericApplication.exe
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\bin\Debug\GenericApplication.pdb
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\obj\Debug\GenericApplication.csprojAssemblyReference.cache
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\obj\Debug\GenericApplication.csproj.CoreCompileInputs.cache
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\obj\Debug\GenericApplication.exe
+C:\Users\jiaxy\source\repos\ch04\GenericApplication\obj\Debug\GenericApplication.pdb
+D:\OneDrive\2下\软件构造基础\第四讲-示例代码\GenericApplication\bin\Debug\GenericApplication.exe.config
+D:\OneDrive\2下\软件构造基础\第四讲-示例代码\GenericApplication\bin\Debug\GenericApplication.exe
+D:\OneDrive\2下\软件构造基础\第四讲-示例代码\GenericApplication\bin\Debug\GenericApplication.pdb
+D:\OneDrive\2下\软件构造基础\第四讲-示例代码\GenericApplication\obj\Debug\GenericApplication.csprojAssemblyReference.cache
+D:\OneDrive\2下\软件构造基础\第四讲-示例代码\GenericApplication\obj\Debug\GenericApplication.exe
+D:\OneDrive\2下\软件构造基础\第四讲-示例代码\GenericApplication\obj\Debug\GenericApplication.pdb
