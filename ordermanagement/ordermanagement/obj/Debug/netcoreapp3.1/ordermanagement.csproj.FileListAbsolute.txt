@@ -1,0 +1,3 @@
+C:\Users\tp103\source\repos\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.csprojAssemblyReference.cache
+C:\Users\tp103\source\repos\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfoInputs.cache
+C:\Users\tp103\source\repos\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfo.cs
