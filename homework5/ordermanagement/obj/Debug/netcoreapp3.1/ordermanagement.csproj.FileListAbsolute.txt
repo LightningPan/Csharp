@@ -1,0 +1,14 @@
+C:\Users\tp103\source\repos\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.csprojAssemblyReference.cache
+C:\Users\tp103\source\repos\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfoInputs.cache
+C:\Users\tp103\source\repos\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfo.cs
+D:\github\Csharp\ordermanagement\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.exe
+D:\github\Csharp\ordermanagement\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.deps.json
+D:\github\Csharp\ordermanagement\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.runtimeconfig.json
+D:\github\Csharp\ordermanagement\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.runtimeconfig.dev.json
+D:\github\Csharp\ordermanagement\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.dll
+D:\github\Csharp\ordermanagement\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.pdb
+D:\github\Csharp\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.csprojAssemblyReference.cache
+D:\github\Csharp\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfoInputs.cache
+D:\github\Csharp\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfo.cs
+D:\github\Csharp\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.dll
+D:\github\Csharp\ordermanagement\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.pdb
