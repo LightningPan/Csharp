@@ -1,0 +1,15 @@
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\bin\Debug\OrderManagement.exe.config
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\bin\Debug\OrderManagement.exe
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\bin\Debug\OrderManagement.pdb
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\bin\Debug\OrderService.exe
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\bin\Debug\OrderService.pdb
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\bin\Debug\OrderService.exe.config
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.csprojAssemblyReference.cache
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.Properties.Resources.resources
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.csproj.GenerateResource.cache
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.csproj.CoreCompileInputs.cache
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.csproj.CopyComplete
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.exe
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.pdb
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.MainForm.resources
+C:\Users\tp103\Desktop\OrderManagement\OrderManagement\obj\Debug\OrderManagement.EditForm.resources
