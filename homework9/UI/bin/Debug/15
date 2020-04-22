@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html id="ng-app" ng-app="crowdtest"><head><meta charset="utf-8"><meta name="baidu-site-verification" content="xAZB54yYrG" /><title>百度众测 | 众包任务平台</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta name="keywords" content="众测,百度众测,百度众测平台"><meta name="description" content="百度众测平台，全民众测，做做小任务，礼券奖品拿不停"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="telephone=no" name="format-detection"><!--<link rel="shortcut icon" href="http://www.baidu.com/favicon.ico">--><!--<link rel="icon" sizes="any" mask href="//www.baidu.com/img/baidu.svg">--><link rel="shortcut icon" href="https://www.baidu.com/cache/icon/favicon.ico" type="image/x-icon"><link rel="icon" sizes="any"  href="https://www.baidu.com/cache/icon/favicon.svg"><link rel="stylesheet" href="/crowdtest/css/n/global.min.css?v=a307beaa8cbc22a87212e12f0325317e"><link rel="stylesheet" href="/crowdtest/css/angular/bootstrap.min.css?v=8e794d8f01d6d1dc4edf9610d196103d"><style>[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}</style>
+<link rel="stylesheet" href="/crowdtest/css/less2css/all.min.css?v=9cd199f4897946b3f1e94a8a1376dc17"><link rel="stylesheet" href="/crowdtest/css/layout/all.min.css?v=3b0bc8e5cd8537cb9b36a81bf83d75ad">
+<link rel="stylesheet" href="/crowdtest/css/guide/guide.min.css?v=7fd5fd9bcfb0df8a850fb998f4897293"><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?b766d3667342a43e1042c0777220ab13";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();var baseUrl = '/';var base_url_module = '/crowdtest/';var base_dir_module = '/crowdtest/';var yii_csrf_token_global = '91609416d706952ac8f1765fd960bd7f3dc46a99';</script><script src="//code.bdstatic.com/npm/jquery@1.11.1/dist/jquery.min.js"></script><script src="/crowdtest/js/n/browser.js"></script><script src="/crowdtest/js/n/jquery.messager.js"></script><script src="/crowdtest/js/task_push/pushUtil.min.js?v=af346ce0d90a827d56ad9c0c60ffb393"></script><script src="/crowdtest/js/lib/trace_util.js?v=8baa0ba87ba1e436e83524ee0883cc45"></script></head><body><div class="container-head"><div class="main-head" id="main-head-1200"><div class="main-head-user"><span class="hidden-lte800"><a href="javascript:;" class="j-login-popup">登录</a><a href="/crowdtest/default/userreg" target="_blank">注册</a></span></div><div class="main-head-logo"><a href="/"><img src="/crowdtest/images/guide/ct_logo.png"></a></div><div class="main-head-user-response hidden"></div></div><div class="main-nav" id="main-nav-1200"><ul class="clearfix"><li><a href="/crowdtest/community/index">首页</a></li><li><a href="/mark/task/index">任务</a></li><li style="position:relative"><a href="/crowdtest/n/union/index">公会</a></li><li><a href="/crowdtest/n/giftSuit/index">礼品</a></li><li><a href="/crowdtest/home/ranklist">成就</a></li><li><a href="https://tieba.baidu.com/f?kw=%B0%D9%B6%C8%BF%F1%B2%E2%D0%D0%B6%AF%D7%E9" target="_blank" class="ct-trace-point" data-ct-trace-id="38">贴吧</a></li></ul></div><div class="main-nav-response hidden"><ul class="clearfix-response"><li><a href="/crowdtest/community/index">首页</a></li><li><a href="/mark/task/index">任务</a></li><li><a href="/crowdtest/n/union/index">公会</a></li><li><a href="/crowdtest/n/giftSuit/index">礼品</a></li></ul></div><div class="main-nav-response-left"><ul class="clearfix-response-other"><li><a href="/crowdtest/home/ranklist">成就</a></li><li><a href="https://tieba.baidu.com/f?kw=%B0%D9%B6%C8%BF%F1%B2%E2%D0%D0%B6%AF%D7%E9" target="_blank" class="ct-trace-point" data-ct-trace-id="38">贴吧</a></li><li><a href="/crowdtest/home/myHonor">个人中心</a></li><li><a href="javascript:;" class="j-login-popup">登录</a></li></ul></div><div class="main-nav-trigger hidden"><hr><hr><hr></div><div class="sub-nav"></div></div><div class="guide-wrap"><img style="display: block; width: 100%; height: auto;" src="/crowdtest/images/guide/ct_login_banner_x2_version20180629.png" alt=""><!--<a class="guide-banner" href="http://test.baidu.com/crowdtest/crowdhome/welcome?from=homepage0_banner" target="_blank"></a>--></div><div class="guide-main"><div class="guide-entry-wrap"><div class="guide-entry"><div class="guide-entry-img"><img class="guide-zhongce" src="/crowdtest/images/guide/zhongce_icon.png" alt=""></div><div class="guide-entry-title">众测测友</div><div class="guide-entry-desc">如果你</div><div class="guide-entry-desc">业务时间充裕、电脑操作熟练、热爱新鲜事物</div><ul class="guide-entry-list"><li class="guide-entry-list-node">我们有</li><li class="guide-entry-list-node">• 多种海量高薪任务等你来挑战</li><li class="guide-entry-list-node">• 志同道合的公会团队带你成长</li></ul><div class="guide-entry-btn"><a class="guide-entry-content" href="/crowdtest/communityTrain/base?from=welcomepage_zhuanqian">我要赚钱</a></div></div><div class="guide-entry"><div class="guide-entry-img"><img class="guide-alliance" src="/crowdtest/images/guide/alliance_icon.png" alt=""></div><div class="guide-entry-title">代理商</div><div class="guide-entry-desc">如果你</div><div class="guide-entry-desc">有一支靠谱的团队或公司，怀揣创业梦想</div><ul class="guide-entry-list"><li class="guide-entry-list-node">我们有</li><li class="guide-entry-list-node">• 完善的成长培养体系助你获取第一桶金</li><li class="guide-entry-list-node">• 数据标注、采集、问卷等项目邀你加入</li></ul><div class="guide-entry-btn" style="width: 116px;"><a class="guide-entry-content" href="/mark/home/newRecruit">申请代理商</a></div><div class="guide-is-alliance">已是代理商，<a class="j-login-popup" href="javascript:void(0);">登录</a></div></div><div class="guide-entry"><div class="guide-entry-img"><img class="guide-data" src="/crowdtest/images/guide/data_icon.png" alt=""></div><div class="guide-entry-title">数据需求方</div><div class="guide-entry-desc">如果你</div><div class="guide-entry-desc">正寻求数据众包交付解决方案</div><ul class="guide-entry-list"><li class="guide-entry-list-node">我们有</li><li class="guide-entry-list-node">• 覆盖多种应用场景的行业／专业解决方案</li><li class="guide-entry-list-node">• 文本、图片、语音、视频等数亿海量数据</li></ul><div class="guide-entry-btn"><a class="guide-entry-content" href="http://zhongbao.baidu.com/">获取方案</a></div></div></div></div><div class="container container-1200"></div><div class="footer">
+    <p>
+        <a href="mailto:crowdtest@baidu.com?subject=【商务合作】" target="_blank" class="mobile-yeying">商务合作</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="/about.html" target="_blank">关于众测</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="/crowdtest/help/friendSite" target="_blank">友情链接</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="/crowdtest/communityAcademy/detail?id=77" target="_blank">用户协议</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="/crowdtest/help/privacy" target="_blank">隐私政策</a>
+    </p>
+    <p>
+        &copy;2020 Baidu&nbsp;&nbsp;&nbsp;&nbsp; <a href="//www.baidu.com/duty/">使用百度前必读</a>
+        <a target="_blank" href="http://www.miibeian.gov.cn">京ICP证030173号</a>
+        <img style="width: 15px; height: 17px;" src="//gimg.baidu.com/img/gs.gif">
+    </p>
+</div>
+<script>
+    $('.mobile-yeying').on('click', function (e) {
+        if (!!navigator.userAgent.match(/AppleWebKit.*Mobile.*/)) {
+            window.open('http://ikefu.baidu.com/wise/zhongce#/');
+            e.preventDefault();
+            return false;
+        }
+    });
+</script>
+<!--[if lt IE 8]><script src="//cdn.bootcss.com/json3/3.3.2/json3.js"></script><![endif]--><script src="//test.baidu.com/crowdtest/js/raphael-min.js"></script><script src="/crowdtest/js/sea.js?v=235e0a18fbd3a6b9432b1460a54faa94"></script><script src="/crowdtest/js/seajs_config.min.js?v=68d7df495f2b32cf0b99740cdc690c67"></script><script src="/crowdtest/js/less.min.js?v=974e1e86cad0d2d97cb640063d23ac8f"></script><script src="/crowdtest/js/jquery.qrcode.min.js?v=05f0b1d7d4b9b0b4975870606d650e3c"></script><script src="/crowdtest/js/clipboard.min.js?v=bd70fd596a2300dc1ace73e46f9b2f7e"></script><script src="//code.bdstatic.com/npm/angular@1.4.6/angular.min.js"></script><script src="/crowdtest/js/angularjs/angular-filter.min.js"></script><script src="/crowdtest/js/angularjs/angular-file-upload.min.js"></script><script src="/crowdtest/js/angularjs/angular-contenteditable.js"></script><script src="/crowdtest/js/qrcode/qrcode.js"></script><script src="/crowdtest/js/angularjs/angular-qr.js"></script><script src="/crowdtest/js/angularjs/ui-bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script><script src="//passport.baidu.com/passApi/js/uni_login_wrapper.js?cdnversion=202004222349"></script><script>angular.module('ie7support', []).config(function($sceProvider) {$sceProvider.enabled(false);});var crowdtestModule = angular.module('crowdtest', ['ui.bootstrap', 'angular.filter', 'angularFileUpload', 'contenteditable', 'ja.qr']);crowdtestModule.config(['$httpProvider', function($httpProvider) {$httpProvider.defaults.xsrfCookieName = 'YII_CSRF_TOKEN';$httpProvider.defaults.xsrfHeaderName = 'X-YII-CSRF-TOKEN';$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';}]);crowdtestModule.config(['$compileProvider', function($compileProvider) {$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|baidu):/);}]);</script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?094fdfd158142b2b5a2c9fc3ac3e454a';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?5d1b7319dd4276dedce8695c91e8a86c";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>
+<script src="/crowdtest/js/layout.min.js?v=653afc1db721a883046ebf96a076fe73"></script><script>
+var isClick = false;
+$('.main-nav-trigger').click(function () {
+    $('.main-nav-response-left').toggleClass('active');
+
+    if (isClick === false) {
+        isClick = true;
+        $(window).scroll(function () {
+            $('.main-nav-response-left').removeClass('active');
+        });
+    }
+});
+$('.community-index-tab').mouseenter(function () {
+    $(this).find('.community-index-tab-static').css('display', 'none');
+    $(this).find('.community-index-tab-dynamic').css('display','inline-block');
+});
+$('.community-index-tab').mouseleave(function () {
+    $(this).find('.community-index-tab-static').css('display', 'inline-block');
+    $(this).find('.community-index-tab-dynamic').css('display', 'none');
+});
+$('.main-head-user-setting').mouseover(function () {
+    $('.main-head-user-setting ul').show();
+});
+$('.main-head-user-setting').mouseout(function () {
+    $('.main-head-user-setting ul').hide();
+});
+seajs.use('login/passport');
+</script>
+
+<script src="/crowdtest/js/lib/mobase.js?v=439794d1ca146c959ad7b78c8a21f8c5"></script></body></html>

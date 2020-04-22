@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"35893545"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="title" content="Press Releases | Baidu Inc" />
+<meta property="og:site_name" content="Baidu Inc" />
+<link rel="canonical" href="http://ir.baidu.com/press-releases/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://ir.baidu.com/press-releases" />
+<meta property="og:title" content="Press Releases | Baidu Inc" />
+<meta property="og:description" content="The Investor Relations website contains information about Baidu Inc &#039;s business for stockholders, potential investors, and financial analysts." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=0.36" />
+<link rel="shortcut icon" href="/sites/g/files/knoqqb24286/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="http://ir.baidu.com/press-releases" />
+<link rel="revision" href="http://ir.baidu.com/press-releases" />
+
+    <title>Press Releases | Baidu Inc</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/knoqqb24286/files/css/css_99v8ymF_mpzobuOf89FVg3FKhcjKqiwyFOXYVCVBOFg.css?q7is4s" />
+<link rel="stylesheet" media="all" href="/sites/g/files/knoqqb24286/files/css/css_CWRfz44aS9LCYoqQme1UqSiH6SDXByIyXjPFV1UWwUw.css?q7is4s" />
+<link rel="stylesheet" media="print" href="/sites/g/files/knoqqb24286/files/css/css__D2WM-c4OM1_pfbtgTDgEJuytcRqrDvsDI9Pd6PbUAc.css?q7is4s" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/knoqqb24286/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+    
+  </head>
+  <body class="body-sidebars-first nir-node nir-node--type-nir-landing-page nir-node--5816 path-node page-node-type-nir-landing-page">
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="header_wrap">
+    <div id="header"><a href="http://www.baidu.com/"><img width="116" src="/sites/g/files/knoqqb24286/themes/site/nir_pid2206/client/images/baidu_logo.png" /></a></div>
+</div>
+<div class="wrapper index">
+    <div class="w_left">
+          <div class="region region-sidebar-first">
+    
+
+<nav role="navigation" aria-labelledby="block-nir-pid2206-investorrelations-menu" id="block-nir-pid2206-investorrelations" class="block--system-menu-blockir block--system-menu-blockir--5816 block--sidebar-first--system-menu-block--ir block--sidebar-first--system-menu-block--ir--5816 block--62466881-d51c-4f8e-99a3-3f8326b98628 block--62466881-d51c-4f8e-99a3-3f8326b98628--5816 block block-menu navigation block-system-menublock menu--ir">
+                        
+    <h2 class="visually-hidden" id="block-nir-pid2206-investorrelations-menu">Investor Relations</h2>
+    
+
+                              <ul data-block-uuid="62466881-d51c-4f8e-99a3-3f8326b98628" class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/" target="" rel="" title="Main Investor Relations Page" data-drupal-link-system-path="&lt;front&gt;">HOME</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="" target="" rel="">ABOUT BAIDU </a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/company-overview" target="" rel="" data-drupal-link-system-path="node/9381">Company Overview</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/milestone" target="" rel="" data-drupal-link-system-path="node/9391">Milestones</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/corporate-governance/management" target="" rel="" data-drupal-link-system-path="node/5846">Management</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/corporate-governance/board-of-directors" target="" rel="" data-drupal-link-system-path="node/5841">Board of Directors</a>
+                  </li>
+          </ul>
+  
+                  </li>
+      	            <li class="side-menu__item menu-active">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;">Investor Relations</a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item menu-active">
+          <a href="/press-releases" target="" rel="" data-drupal-link-system-path="node/5816" class="is-active">Press Releases</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/financial-reports" target="" rel="" data-drupal-link-system-path="node/9466">Financial Reports</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/webcasts" target="" rel="" data-drupal-link-system-path="node/5826">Webcasts</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/stock-information/stock-quote" data-drupal-link-system-path="node/5911">Stock Information</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/financial-information/sec-filings" data-drupal-link-system-path="node/5876">SEC Filings</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/stock-information/analyst-coverage" data-drupal-link-system-path="node/5896">Analyst Coverage</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/ir-calendar" target="" rel="" class="highlight" title="Corporate Profile" data-drupal-link-system-path="node/5821">IR Calendar</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/shareholder-services/investor-faqs" data-drupal-link-system-path="node/5941">Investor FAQs</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/corporate-governance" target="" rel="" data-drupal-link-system-path="node/9461">Corporate Governance</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="http://csr.baidu.com/download.html" target="" rel="">CSR Report</a>
+                  </li>
+          </ul>
+  
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="" target="" rel=""> PRODUCTS &amp; SERVICES             </a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/Baidu-Core" target="" rel="" data-drupal-link-system-path="node/9401">Baidu Core</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/iqiyi" target="" rel="" data-drupal-link-system-path="node/9421">iQIYI</a>
+                  </li>
+          </ul>
+  
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="" target="" rel="">CONTACT US</a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/contact-form" target="" rel="" data-drupal-link-system-path="node/9426">Contact Form</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/notice-right-holders-block-0" target="" rel="" data-drupal-link-system-path="node/9451">IP Protection</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/sem" target="" rel="" data-drupal-link-system-path="node/9436">SEM</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/shareholder-services/email-alerts" target="" rel="" data-drupal-link-system-path="node/5946">Email Alerts</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+  </div>
+
+    </div>
+
+    <div class="w_mright">
+        <div class="ccbnContent lfg-printable-area">
+              <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-nir-pid2206-content" class="block--system-main-block block--system-main-block--5816 block--content--system-main-block block--content--system-main-block--5816 block--4eb3c991-3611-4753-8c7d-e7981c5b1302 block--4eb3c991-3611-4753-8c7d-e7981c5b1302--5816 block block-system block-system-main-block">
+  
+    
+      <article class="node node--type-nir_landing_page node--view-mode-full clearfix">
+  
+      <h1>
+              Press Releases
+          </h1>
+    
+
+  <div>
+    
+<div class="panel-display boxton clearfix " >
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="block-region-contentmain"><div class="block--search-form block--search-form--5816 block--contentmain--search-form block--contentmain--search-form--5816 block--98f825ee-3512-4d2a-ac0d-a47ee066105c block--98f825ee-3512-4d2a-ac0d-a47ee066105c--5816 block block-nir-search block-search-form">
+  
+    
+      <form data-block-uuid="98f825ee-3512-4d2a-ac0d-a47ee066105c" action="/search" method="get" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-item-query js-form-item-query form-no-label">
+        <input type="search" name="query" size="60" maxlength="128" placeholder="Search in press release" class="form-search required" required="required" aria-required="true" />
+
+        </div>
+<input type="hidden" name="f[0]" value="type:nir_news" />
+<input type="submit" name="op" value="Search" class="button button--primary js-form-submit form-submit" />
+
+</form>
+
+  </div>
+<div class="views-element-container block--views-blockwidget-news-table block--views-blockwidget-news-table--5816 block--contentmain--views-block--widget-news-table block--contentmain--views-block--widget-news-table--5816 block--ddd47721-4916-4bd7-9e4c-7413bf3b0ecb block--ddd47721-4916-4bd7-9e4c-7413bf3b0ecb--5816 block block-views block-views-blockwidget-news-table">
+  
+    
+      <div data-block-uuid="ddd47721-4916-4bd7-9e4c-7413bf3b0ecb"><div class="view view-widget-news view-id-widget_news view-display-id-table js-view-dom-id-a3c1559e7271bdaef8b7af91541860c5978166bb0930ce6ae868dadfb58df223">
+  
+    
+        <div class="view-filters">
+      <form class="views-exposed-form" data-drupal-selector="views-exposed-form-widget-news-table" action="/press-releases" method="get" id="views-exposed-form-widget-news-table" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-select form-item-field-nir-news-date-value-min js-form-item-field-nir-news-date-value-min">
+      <label for="edit-field-nir-news-date-value-min">Year:</label>
+        <select data-drupal-selector="edit-field-nir-news-date-value-min" id="edit-field-nir-news-date-value-min" name="field_nir_news_date_value[min]" size="1" class="form-select"><option value="" selected="selected">- Any -</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option></select>
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-widget-news" type="submit" id="edit-submit-widget-news" value="Filter" class="button js-form-submit form-submit" />
+<input data-drupal-selector="edit-reset" type="submit" id="edit-reset" name="op" value="Reset" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+    </div>
+    
+      <div class="view-content">
+      <table class="nirtable views-table views-view-table cols-2 collapse-table">
+      
+  <thead>
+      <tr>
+                                                  <th id="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date" scope="col"><a href="?order=field_nir_news_date&amp;sort=asc" title="sort by Date">Date<span class="tablesort"></span></a></th>
+                                                  <th id="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title" scope="col"><a href="?order=field_nir_news_title&amp;sort=asc" title="sort by Title and Summary">Title<span class="tablesort"></span></a></th>
+              </tr>
+    </thead>
+  
+  <tbody>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Apr 9, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-takes-measures-comply-government-directives" hreflang="en">Baidu Takes Measures to Comply with Government Directives</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , April 9, 2020 /PRNewswire/ -- Baidu, Inc. (NASDAQ: BIDU) (&quot;Baidu&quot; or the &quot;Company&quot;), a leading search engine, knowledge and information centered Internet platform and AI company, today announced that pursuant to directives of relevant PRC regulators, Baidu has suspended updating its
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Apr 1, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-pricing-us10-billion-notes-offering-0" hreflang="en">Baidu Announces Pricing of US$1.0 Billion Notes Offering</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , April 1, 2020 /PRNewswire/ --  Baidu, Inc. (Nasdaq: BIDU) (&quot;Baidu&quot; or the &quot;Company&quot;), a leading search engine, knowledge and information centered Internet platform, and AI company, today announced the pricing of its public offering of US$1.0 billion aggregate principal amount of its
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Mar 31, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-proposed-debt-offering-2" hreflang="en">Baidu Announces Proposed Debt Offering</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , March 31, 2020 /PRNewswire/ — Baidu, Inc. (Nasdaq: BIDU) (&quot;Baidu&quot; or the &quot;Company&quot;), a leading search engine, knowledge and information centered Internet platform, and AI company, today announced that it has filed a preliminary prospectus supplement with the United States Securities and
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Mar 13, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-inc-files-its-annual-report-form-20-f-3" hreflang="en">Baidu, Inc. Files Its Annual Report on Form 20-F</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , March 13, 2020 /PRNewswire/ --&amp;nbsp; Baidu, Inc. (the &quot;Company&quot;) (NASDAQ: BIDU), the leading Chinese language internet search provider, today announced it filed its annual report on Form 20-F for the fiscal year ended December 31, 2019 with the Securities and Exchange Commission on March &amp;nbsp;13 ,
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Feb 27, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-fourth-quarter-and-fiscal-year-2019-results" hreflang="en">Baidu Announces Fourth Quarter and Fiscal Year 2019 Results</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , Feb. 27, 2020 /PRNewswire/ -- Baidu, Inc. (NASDAQ: BIDU) (&quot;Baidu&quot; or the &quot;Company&quot;), a leading search engine, knowledge and information centered Internet platform and AI company, today announced its unaudited financial results for the fourth quarter and fiscal year ended December 31, 2019
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Jan 31, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-report-fourth-quarter-and-fiscal-year-2019-financial-0" hreflang="en">Baidu to Report Fourth Quarter and Fiscal Year 2019 Financial Results on February 27, 2020, and Updates its Financial Guidance</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , Jan. 31, 2020 /PRNewswire/ --  Baidu, Inc. (NASDAQ: BIDU) (&quot; Baidu &quot; or the &quot;Company&quot;), the leading Chinese language Internet search provider, today announced that the reporting date for its unaudited financial results for the fourth quarter and fiscal year ended December 31, 2019 has
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Jan 21, 2020 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-report-fourth-quarter-and-fiscal-year-2019-financial" hreflang="en">Baidu to Report Fourth Quarter and Fiscal Year 2019 Financial Results on February 6, 2020</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , Jan. 21, 2020 /PRNewswire/ -- Baidu, Inc. (Nasdaq: BIDU), the leading Chinese language Internet search provider, today announced that it will report its financial results for the fourth quarter and fiscal year ended December 31, 2019 , after the U.S. market closes on February 6, 2020 .
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Nov 6, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-third-quarter-2019-results" hreflang="en">Baidu Announces Third Quarter 2019 Results</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , Nov. 6, 2019 /PRNewswire/ -- Baidu, Inc. (NASDAQ: BIDU) (&quot; Baidu &quot; or the &quot;Company&quot;), the leading Chinese-language Internet search provider, today announced its unaudited financial results for the third quarter ended September 30, 2019 [1] .
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Oct 24, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-report-third-quarter-2019-financial-results-november-6" hreflang="en">Baidu to Report Third Quarter 2019 Financial Results on November 6, 2019</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , Oct. 24, 2019 /PRNewswire/ -- Baidu, Inc. (Nasdaq: BIDU ), the leading Chinese language Internet search provider, today announced that it will report its financial results for the third quarter ended September 30, 2019 , after the U.S. market closes on November 6, 2019 .
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Aug 19, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-second-quarter-2019-results" hreflang="en">Baidu Announces Second Quarter 2019 Results</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , Aug. 19, 2019 /PRNewswire/ --&amp;nbsp; Baidu, Inc. (NASDAQ: BIDU) (&quot; Baidu &quot; or the &quot;Company&quot;), the leading Chinese language Internet search provider, today announced its unaudited financial results for the second quarter ended June 30, 2019 [1] . &quot;Our focus on strengthening Baidu&#039;s mobile
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="00Z" timezone="America/New_York" class="datetime">Jul 29, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-report-second-quarter-2019-financial-results-august-19" hreflang="en">Baidu to Report Second Quarter 2019 Financial Results on August 19, 2019</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , July 29 , 2019 /PRNewswire/ -- Baidu, Inc.&amp;nbsp;(Nasdaq: BIDU ), the leading Chinese language Internet search provider, today announced that it will report its financial results for the second quarter ended June 30, 2019 , after the U.S. market closes on August 19 , 2019.&amp;nbsp;Baidu&#039;s&amp;nbsp;management
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="22Z" timezone="America/New_York" class="datetime">May 16, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-first-quarter-2019-results" hreflang="en">Baidu Announces First Quarter 2019 Results</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , May 16, 2019 /PRNewswire/ --&amp;nbsp; Baidu, Inc. (NASDAQ: BIDU) (&quot; Baidu &quot; or the &quot;Company&quot;), the leading Chinese language Internet search provider, today announced its unaudited financial results for the first quarter ended March 31, 2019 [1] . &quot; Baidu&#039;s mobile foundation continues to
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="24Z" timezone="America/New_York" class="datetime">May 16, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-announces-us1-billion-share-repurchase-program-2" hreflang="en">Baidu Announces US$1 Billion Share Repurchase Program</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , May 16, 2019 /PRNewswire/ -- Baidu, Inc. (NASDAQ: BIDU) (&quot; Baidu &quot; or the &quot;Company&quot;), &amp;nbsp;the leading Chinese language Internet search provider, today announced that its board of directors authorized a new share repurchase program under which the Company may repurchase up to US$1 billion of
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="49Z" timezone="America/New_York" class="datetime">Apr 19, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-report-first-quarter-2019-financial-results-may-16-2019" hreflang="en">Baidu to Report First Quarter 2019 Financial Results on May 16, 2019</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , April 19, 2019 /PRNewswire/ -- Baidu , Inc. (Nasdaq: BIDU), the leading Chinese language Internet search provider, today announced that it will report its financial results for the first quarter ended March 31, 2019 , after the U.S. market closes on May 16 , 2019. Baidu&#039;s management will
+</div>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-field-nir-news-date-table-column" class="views-field views-field-field-nir-news-date"><a href="#" class="summary-toggle nir-news-widget-summary-toggle-date"><span>Toggle Summary</span></a><time datetime="21Z" timezone="America/New_York" class="datetime">Mar 15, 2019 </time>          </td>
+                                                                                        <td headers="view-field-nir-news-title-table-column" class="views-field views-field-field-nir-news-title">
+<a href="/news-releases/news-release-details/baidu-inc-files-its-annual-report-form-20-f-2" hreflang="en">Baidu, Inc. Files Its Annual Report on Form 20-F</a>
+<div class="nir-news-table-teaser summary-hidden">
+  BEIJING , March 15 , 2019 /PRNewswire/ -- Baidu, Inc. (the &quot;Company&quot;) (NASDAQ: BIDU), the leading Chinese language internet search provider, today announced it filed its annual report on Form 20-F for the fiscal year ended December 31, 2018 with the Securities and Exchange Commission on March 15,
+</div>
+          </td>
+              </tr>
+      </tbody>
+</table>
+
+    </div>
+  
+        <nav class="pager" role="navigation" aria-labelledby="pagination-heading">
+    <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
+    <ul class="pager__items js-pager__items">
+                                                        <li class="pager__item is-active">
+                                          <a href="?items_per_page=15&amp;page=0" title="Current page">
+            <span class="visually-hidden">
+              Current page
+            </span>1</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?items_per_page=15&amp;page=1" title="Go to page 2">
+            <span class="visually-hidden">
+              Page
+            </span>2</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?items_per_page=15&amp;page=2" title="Go to page 3">
+            <span class="visually-hidden">
+              Page
+            </span>3</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?items_per_page=15&amp;page=3" title="Go to page 4">
+            <span class="visually-hidden">
+              Page
+            </span>4</a>
+        </li>
+                          <li class="pager__item pager__item--ellipsis" role="presentation">&hellip;</li>
+                          <li class="pager__item pager__item--next">
+          <a href="?items_per_page=15&amp;page=1" title="Go to next page" rel="next">
+            <span class="visually-hidden">Next page</span>
+            <span aria-hidden="true">Next</span>
+          </a>
+        </li>
+                          <li class="pager__item pager__item--last">
+          <a href="?items_per_page=15&amp;page=14" title="Go to last page">
+            <span class="visually-hidden">Last page</span>
+            <span aria-hidden="true">Last</span>
+          </a>
+        </li>
+          </ul>
+  </nav>
+
+  
+          <div class="view-footer">
+          
+        </div>
+    </div>
+</div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer_wrapper">
+    <div class="footer">
+        <a href="/disclaimer" target="_blank">Disclaimer</a> |
+        <a href="/baidu-statement-privacy-protection" target="_blank">Privacy</a> |
+        <span>
+            Copyright © 2020 Baidu, Inc. All Rights Reserved.
+         </span>
+    </div>
+</div>
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgclientweb2090 ";</script>
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/5816","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"core\/drupal.collapse,core\/html5shiv,nir_base\/adobe_omniture,nir_base\/lib,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_ckeditor_datatables\/datatables,nir_multimedia\/nir_multimedia,nir_pid2206\/override,radix_layouts\/radix_layouts,system\/base,views\/views.module","theme":"nir_pid2206","theme_token":null},"ajaxTrustedUrl":{"\/press-releases":true},"user":{"uid":0,"permissionsHash":"c9577c5df5cf1f6a6618739b5430121268b63830c2e7e854c38a5001146030a8"}}</script>
+<script src="/sites/g/files/knoqqb24286/files/js/js_F0E-FuvuM_xPWklW7JH5MfoPI3fD11HkgDLiW5b-G7A.js"></script>
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"761e715901","applicationID":"35893545,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH0xfCFVfb0VHAD5HUF5cVRFvV1lQWQE+QVpbXV4=","queueTime":0,"applicationTime":254,"atts":"ShJUF18aSEg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,10 @@
+C:\Users\tp103\source\repos\Crawler\UI\bin\Debug\UI.exe.config
+C:\Users\tp103\source\repos\Crawler\UI\bin\Debug\UI.exe
+C:\Users\tp103\source\repos\Crawler\UI\bin\Debug\UI.pdb
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.Form1.resources
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.exe
+C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.pdb

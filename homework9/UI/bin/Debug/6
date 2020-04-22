@@ -1,0 +1,900 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="m1imKvW1HK" />
+  <link rel="shortcut icon" href="/Public/img/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no" />
+<!-- 删除默认的苹果工具栏和菜单栏 ： 即启用 WebApp 全屏模式  -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 在web app应用下状态条（屏幕顶部条）的颜色；默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）若值为“black-translucent”将会占据页面px位置，浮在页面上方（会覆盖页面20px高度–iphone4和itouch4的Retina屏幕为40px）。 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 忽略数字自动识别为电话号码 ,忽略识别邮箱 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait" />
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="true" />
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true" />
+<!-- 360强制全屏 -->
+<meta name="360-fullscreen" content="true" />
+<!-- 站内搜索站点验证 -->
+<meta name="baidu-site-verification" content="m1imKvW1HK" />
+<link rel="shortcut icon" href="/Public/img/favicon.ico" type="image/x-icon">
+<script src="/Public/js/fontbase.js?v=12"></script>
+<link href="/Public/css/lib/bootstrap.min.css?v=14" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel="stylesheet" href="/Public/css/common.css?v=16">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb9a77820b2fa17d7223b50a01ab1aa7a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+  <link href="/Public/css/lib/swiper.min.css?v=3" rel="stylesheet">
+  <link rel="stylesheet" href="/Public/css/index.css?v=17">
+  <title>关于百度</title>
+  <meta name="description" content="百度是一家持续创新的,以“用科技让复杂世界更简单”为使命的高科技公司。">
+  <meta name="keywords" content="关于百度、百度公司、百度公司官网、百度集团、百度集团官网、百度怎么样、百度公司怎么样、百度集团怎么样、百度是一家什么样的公司、百度工作环境、百度办公环境、百度工作怎么样、在百度工作怎么样。">
+</head>
+
+<body id="indexAdmin">
+  <div class="bd-content-nav nav-show J-bd-nav">
+  <div class="section nav-section">
+    <div class="nav-box">
+      <div class="row">
+        <div class="col-sm-2 col-xs-12">
+          <a href="/home/index">
+            <img src="/Public/img/logo.png?v=15" alt="" class="logo">
+          </a>
+        </div>
+        <div class="col-sm-10 col-xs-12">
+          <ul class="bd-nav">
+            <li class="nav-bd-link active"><a href="/home/index" target="_blank">关于百度</a></li>
+            <li class="nav-bd-link"><a href="//www.baidu.com/more/" target="_blank">关于产品</a></li>
+            <li class="nav-bd-link"><a href="/home/index/join_us" target="_blank">加入我们</a></li>
+            <li class="nav-bd-link"><a href="/home/index/contact_us" target="_blank">联系我们</a></li>
+            <div class="sideline"></div>
+          </ul>
+        </div>
+        <div class="bd-content-fun">
+          <div class="home-div">
+            <span class="cn-home-link">中文</span>|
+            <a href="//ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" class="en-home-link" target="_blank">EN</a>
+          </div>
+          <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=6706059176758103565' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="h5-nav-bar J-bd-nav">
+  <!-- <div class="h5-nav-search-btn"></div> -->
+  <div class="logo-box">
+    <img src="/Public/img/logo.png?v=15" alt="" class="h5-nav-logo">
+  </div>
+  <svg id="list" class="h5-nav-toggle-box" width="44" height="44" viewBox="0, 0, 44, 44"></svg>
+  <div class="h5-nav-list">
+    <a href="/home/index" class="h5-nav h5-active" target="_blank">关于百度</a>
+    <a href="//www.baidu.com/more/" class="h5-nav" target="_blank">关于产品</a>
+    <a href="/home/index/join_us" class="h5-nav" target="_blank">加入我们</a>
+    <a href="/home/index/contact_us" class="h5-nav" target="_blank">联系我们</a>
+    <a href="//ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" class="h5-nav" target="_blank">ENGLISH</a>
+  </div>
+</div>
+<div class="h5-nav-mask"></div>
+
+  <div class="main">
+    <div class="main-body">
+      <div class="full-section">
+        <!-- 判断是跳链接 还是二级页面 -->
+          <a href="https://html5.yztwork.com/vsite/baidu_yq/index.html?from=timeline&amp;isappinstalled=0" class="link" target="_blank">
+                        <div class="section banner-section" style="background-image: url('http://static.home.baidu.com/homebd/bfnghjdkelcima1583738798.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T07%3A26%3A39Z%2F-1%2F%2F96a361140ed7d5baeffe6aa839067166928abf132ae29fb12d25e4f89617d885')"></div>
+          </a>
+        <!-- 判断是跳链接 还是二级页面 -->
+          <a href="http://home.baidu.com/home/index/news_detail/id/17924" class="link" target="_blank">
+                        <div class="section mb-banner-section">
+            <img src="http://static.home.baidu.com/homebd/mjafknlicgbhed1559717309.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-06-05T06%3A48%3A30Z%2F-1%2F%2F562ac6eafc6107e0edeeee595d7f2299649a2053754753d5a5e80006200b8363" alt="" class="mb-banner">
+          </div>
+          </a>      </div>
+      <div class="full-section news-section">
+        <div class="section">
+          <div class="bd-home-news card-deck-wrapper">
+            <div class="news-content">
+              <div class="swiper-slide swiper-no-swiping">
+                <!-- 判断是跳链接 还是二级页面 -->
+                  <a href="http://ai.baidu.com/" target="_blank">
+                                        <div class="card bd-home-new">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img" src="http://static.home.baidu.com/homebd/imlbejgkndchaf1496971659.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-09T01%3A27%3A39Z%2F-1%2F%2F25b707ca10a5e3ef1300fc624c81c33c6c6519306163eea9b527a3feca5ffa2a" alt="Card image cap">
+                        <div class="card-block">
+                          <div class="bd-news-span">
+                            百度AI开放平台                            <!-- <span class="bd-newspan-line"></span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>              </div>
+              <div class="swiper-slide swiper-no-swiping">
+                <!-- 判断是跳链接 还是二级页面 -->
+                  <a href="http://dueros.baidu.com/" target="_blank">
+                                        <div class="card bd-home-new">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img" src="http://static.home.baidu.com/homebd/jgchdfeimanlbk1507862286.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-10-13T02%3A38%3A06Z%2F-1%2F%2Fa3800e1ca37ba6621ccbc31f789cc0c91162f44f4ee231a99239a662ece2f064" alt="Card image cap">
+                        <div class="card-block">
+                          <div class="bd-news-span">
+                            DuerOS，唤醒万物                            <!-- <span class="bd-newspan-line"></span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>              </div>
+              <div class="swiper-slide swiper-no-swiping">
+                <!-- 判断是跳链接 还是二级页面 -->
+                  <a href="http://apollo.auto/" target="_blank">
+                                        <div class="card bd-home-new">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img" src="http://static.home.baidu.com/homebd/cjaghbeimldnkf1528365802.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2018-06-07T10%3A03%3A23Z%2F-1%2F%2F9b856951d800dfaebb7644932bcbccfda86f237430c4bb6f0afbebf03d51d087" alt="Card image cap">
+                        <div class="card-block">
+                          <div class="bd-news-span">
+                            百度自动驾驶平台Apollo5.5                            <!-- <span class="bd-newspan-line"></span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="full-section h5-news-section">
+        <!-- 判断是跳链接 还是二级页面 -->
+          <a href="http://ai.baidu.com/" class="h5-news-item" target="_blank">
+                        <div class="h5-news-item-left">
+            <div class="img-outer">
+              <div class="img-inner">
+                <img class="card-img" src="http://static.home.baidu.com/homebd/imlbejgkndchaf1496971659.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-09T01%3A27%3A39Z%2F-1%2F%2F25b707ca10a5e3ef1300fc624c81c33c6c6519306163eea9b527a3feca5ffa2a" alt="Card image cap">
+              </div>
+            </div>
+          </div>
+          <div class="h5-news-item-right">
+            百度AI开放平台          </div>
+          </a>        <a href="http://dueros.baidu.com/" class="h5-news-item" target="_blank">
+                        <div class="h5-news-item-left">
+            <div class="img-outer">
+              <div class="img-inner">
+                <img class="card-img" src="http://static.home.baidu.com/homebd/jgchdfeimanlbk1507862286.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-10-13T02%3A38%3A06Z%2F-1%2F%2Fa3800e1ca37ba6621ccbc31f789cc0c91162f44f4ee231a99239a662ece2f064" alt="Card image cap">
+              </div>
+            </div>
+          </div>
+          <div class="h5-news-item-right">
+            DuerOS，唤醒万物          </div>
+          </a>        <a href="http://apollo.auto/" class="h5-news-item" target="_blank">
+                        <div class="h5-news-item-left">
+            <div class="img-outer">
+              <div class="img-inner">
+                <img class="card-img" src="http://static.home.baidu.com/homebd/elcmibfkgndhja1528365540.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2018-06-07T09%3A59%3A00Z%2F-1%2F%2F37329d00344955400ff5d6babefe4608534741fa58e4bedc0901e94343cfef5f" alt="Card image cap">
+              </div>
+            </div>
+          </div>
+          <div class="h5-news-item-right">
+            百度自动驾驶平台Apollo5.5          </div>
+          </a>        <a href="/home/index/news_list" class="h5-more">查看更多</a>
+      </div>
+      <div class="full-section dynamic-section">
+        <div class="section">
+          <div class="section-title">百度动态</div>
+          <div class="bd-home-dynamic-content">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="bd-dynamic-news">
+                  <div class="dynamic-title1">
+                    新闻动态
+                  </div>
+                  <div class="news-list">
+                    <div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="/home/index/news_detail/id/17939" class="news-title" data-id="17939" target="_blank">北京发布“中国标准” 自动驾驶路测报告，百度Apollo再获第一</a>
+                          <div class="news-time">
+                            2020-03-02                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="/home/index/news_detail/id/17938" class="news-title" data-id="17938" target="_blank">百度发布Q4财报：营收289亿元 净利润92亿元</a>
+                          <div class="news-time">
+                            2020-02-28                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="/home/index/news_detail/id/17937" class="news-title" data-id="17937" target="_blank">百度成立3亿元疫情及公共卫生安全攻坚专项基金，持续驰援防控</a>
+                          <div class="news-time">
+                            2020-01-26                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="/home/index/news_detail/id/17936" class="news-title" data-id="17936" target="_blank">5712件！百度再夺中国人工智能专利榜第一名！</a>
+                          <div class="news-time">
+                            2019-12-05                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="/home/index/news_detail/id/17935" class="news-title" data-id="17935" target="_blank">百度又要在阳泉“盖房”了！还要建一个自动驾驶示范区</a>
+                          <div class="news-time">
+                            2019-11-22                          </div>
+                        </div>
+                      </div><div class="news-item">
+                        <div class="decoration">
+                          <div class="news-circle">
+                            <div class="solid-circle"></div>
+                          </div>
+                        </div>
+                        <div class="news-box">
+                          <a href="/home/index/news_detail/id/17934" class="news-title" data-id="17934" target="_blank">李彦宏乌镇演讲：智能经济带来新变革，产业智能化需修炼三重境界</a>
+                          <div class="news-time">
+                            2019-10-20                          </div>
+                        </div>
+                      </div>                  </div>
+                  <div class="more-news">
+                    <a href="/home/index/news_list" target="_blank">
+                      <span class="more-news-tip">更多新闻</span>
+                      <!-- <img data-original="/Public/img/gray_right.png" alt="" class="more-news-img "> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="bd-dynamic-topic">
+                  <div class="dynamic-title1 topic-title">专题</div>
+                  <div class="bd-topic-items">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="/home/index/special/id/58" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/beadfmhncjglik1583902836.jpeg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-11T05%3A00%3A37Z%2F-1%2F%2Fa7e3b21fca88d35939132f28b3fe30243a22335e5c7de99249d3513f711aa3eb" alt="Card image">
+                            <div class="card-img-bottomlay">
+                              2019百度知识峰会                            </div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="/home/index/special/id/48" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/ahfejmbikndgcl1540895137.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2018-10-30T10%3A25%3A37Z%2F-1%2F%2F89bed8efd78936e80475ec5ebea1bde927659bb944ad42a2ecf8087cafafb2c6" alt="Card image">
+                            <div class="card-img-bottomlay">
+                              百度AI行业应用手册                            </div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="/home/index/special/id/53" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/amlceigdjhbnkf1551444589.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-03-01T12%3A49%3A49Z%2F-1%2F%2Ffe36a4b83f630a8cc2b7ad2d393d6f504449f4208ca7076473a9fa85f43652f0" alt="Card image">
+                            <div class="card-img-bottomlay">
+                              百度人工智能下乡记                            </div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-xs-6">
+                        <a href="/home/index/special/id/57" class="item" target="_blank">
+                                                    <div class="img-outer">
+                          <div class="img-inner">
+                            <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/hmnjlebgkcidaf1583746616.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T09%3A36%3A56Z%2F-1%2F%2Fdbb126ede1d8cd1653fc449a9d924f86a9f63e2067f89fd4f4a0fad8868a0ab1" alt="Card image">
+                            <div class="card-img-bottomlay">
+                              百度AI寻人：3年寻亲成功10000例                            </div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="inwork-indicator" class="index1"></div>
+      <div class="full-section inwork-section bd-home-inwork">
+        <div class="section">
+          <div class="section-title inwork-section-title">工作在百度</div>
+          <div class="section-content inwork-section-content">
+            <div class="row card-deck">
+              <div class="col-sm-4 J-inwork-item video-link-wrap" vid='0'>
+                  <div class="card bd-inwork-item">
+                    <div class="card-block bd-card-title">
+                      <span class="bd-card-span">我们的故事<span class="bd-font-bottomline"></span></span>
+                    </div>
+                    <div class="bd-card-mod">
+                      <div class="img-outer">
+                        <div class="img-inner">
+                          <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/eciadjhnmbglfk1496935062.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A42Z%2F-1%2F%2F7a5dda2678084065c79294c81c134e5512c8635900169a10dc2aff78f0749029" alt="Card image cap">
+                          <div class="bd-work-coverbg"></div>
+                          <div class="bd-work-cover">
+                            <img src="/Public/img/play.png?v=12" alt="" class="video-link">
+                            <div class="bd-work-slogan">时光里的百度</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                                              <div class="col-sm-4 J-inwork-item">
+                  <a href="http://home.baidu.com/home/index/join_us" class="card bd-inwork-item" target="_blank">
+                                        <div class="card-block bd-card-title">
+                    <span class="bd-card-span">加入我们<span class="bd-font-bottomline"></span></span>
+                  </div>
+                  <div class="bd-card-mod">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/bnhdmeifkclgaj1496935048.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A28Z%2F-1%2F%2F17fdc9e7d7d7f4cef6fa3775acdb745b4711566f9cb55aa4354269661060c541" alt="Card image cap">
+                        <div class="bd-work-coverbg"></div>
+                        <div class="bd-work-cover">
+                          <div class="bd-work-slogan">
+                            <p style="box-sizing: border-box; margin: 0px 0px 10px;">招最好的人，给最大的空间</p><p style="box-sizing: border-box; margin: 0px 0px 10px;">看最后的结果，让优秀人才脱颖而出</p>                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>                              <div class="col-sm-4 J-inwork-item">
+                  <a href="http://quanjing.baidu.com/baidu" class="card bd-inwork-item" target="_blank">
+                                        <div class="card-block bd-card-title">
+                    <span class="bd-card-span">在这里工作<span class="bd-font-bottomline"></span></span>
+                  </div>
+                  <div class="bd-card-mod">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/nambjidhegkclf1496935030.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A11Z%2F-1%2F%2Fa9b6a155b49be13ce9a2ea7b399f84dd4be5a2acca53cb1c3edd32cd45ea4b5d" alt="Card image cap">
+                        <div class="bd-work-coverbg"></div>
+                        <div class="bd-work-cover">
+                          <div class="bd-work-slogan">
+                            <p>百度全景<br/></p>                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>            </div>
+          </div>
+        </div>
+      </div>
+      <div class="full-section h5-inwork-section">
+        <div class="section">
+          <div class="h5-inwork-title">
+            <span class="h5-inwork-title-text">加入我们</span>
+            <div class="h5-inwork-title-underline"></div>
+          </div>
+          <a href="/home/index/join_us" class="h5-inwork-content">
+                        <div class="img-outer">
+            <div class="img-inner">
+              <img class="card-img" src="http://static.home.baidu.com/homebd/bnhdmeifkclgaj1496935048.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A28Z%2F-1%2F%2F17fdc9e7d7d7f4cef6fa3775acdb745b4711566f9cb55aa4354269661060c541">
+              <div class="h5-inwork-cover">
+                <div class="h5-inwork-slogan">
+                  <p style="box-sizing: border-box; margin: 0px 0px 10px;">招最好的人，给最大的空间</p><p style="box-sizing: border-box; margin: 0px 0px 10px;">看最后的结果，让优秀人才脱颖而出</p>                </div>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <!--  <div class="bd-home-ourSearch">
+        <div class="bd-ourSearch-title">大家都在搜</div>
+        <div class="bd-ourSearch-list">
+          <img data-original="/Public/img/bd_home_ourSearch_bg.png" alt="" class="bd-ourSearch-img">
+        </div>
+      </div> -->
+      <div class="full-section bd-home-ourSearch">
+        <!--  <div class="section"> -->
+        <div class="section-title">大家都在搜</div>
+        <div class="ourSearch-content" style="background-image: url('/Public/img/search-bg.png?v=12')">
+          <div class="ourSearch-conten-bo">
+            <div class="ourSearch-content-box1">
+              <div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=美国累计确诊78万&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">美国累计确诊78万</a><a href="https://www.baidu.com/s?wd=朱秀英去世&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">朱秀英去世</a><a href="https://www.baidu.com/s?wd=江苏淮安放松限购&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">江苏淮安放松限购</a><a href="https://www.baidu.com/s?wd=杭州地铁16号线开通&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">杭州地铁16号线开通</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=李佳琦回应抽烟&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">李佳琦回应抽烟</a><a href="https://www.baidu.com/s?wd=维珍澳航濒临破产&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">维珍澳航濒临破产</a><a href="https://www.baidu.com/s?wd=周鸿祎卸任&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">周鸿祎卸任</a><a href="https://www.baidu.com/s?wd=OPPO副总裁离职&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">OPPO副总裁离职</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=王思聪回应陪练&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">王思聪回应陪练</a><a href="https://www.baidu.com/s?wd=马思唯帮唱袁娅维&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">马思唯帮唱袁娅维</a><a href="https://www.baidu.com/s?wd=5G信号覆盖珠峰&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">5G信号覆盖珠峰</a><a href="https://www.baidu.com/s?wd=汪峰今天发新专辑&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">汪峰今天发新专辑</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=GOT7回归&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">GOT7回归</a><a href="https://www.baidu.com/s?wd=河北博野发生爆炸&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">河北博野发生爆炸</a><a href="https://www.baidu.com/s?wd=蝙蝠侠推迟上映&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">蝙蝠侠推迟上映</a><a href="https://www.baidu.com/s?wd=欠薪球员外卖为生&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">欠薪球员外卖为生</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=人民海军71周年&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">人民海军71周年</a><a href="https://www.baidu.com/s?wd=马云第三援非捐助&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">马云第三援非捐助</a><a href="https://www.baidu.com/s?wd=猫和老鼠导演去世&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">猫和老鼠导演去世</a><a href="https://www.baidu.com/s?wd=齐齐哈尔积雪2米&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">齐齐哈尔积雪2米</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=蔡卓宜方否认退赛&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">蔡卓宜方否认退赛</a><a href="https://www.baidu.com/s?wd=同程回应高管出走&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">同程回应高管出走</a><a href="https://www.baidu.com/s?wd=娄艺潇否认新恋情&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">娄艺潇否认新恋情</a><a href="https://www.baidu.com/s?wd=捷豹路虎裁员一半&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">捷豹路虎裁员一半</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=北京大风连刮三天&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">北京大风连刮三天</a><a href="https://www.baidu.com/s?wd=大象模型戴口罩&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">大象模型戴口罩</a><a href="https://www.baidu.com/s?wd=武汉公共交通恢复&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">武汉公共交通恢复</a><a href="https://www.baidu.com/s?wd=陈伟霆剃头&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">陈伟霆剃头</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=央行下调LPR利率&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">央行下调LPR利率</a><a href="https://www.baidu.com/s?wd=小贝为鹿晗庆生&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">小贝为鹿晗庆生</a><a href="https://www.baidu.com/s?wd=加拿大枪击事件&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">加拿大枪击事件</a><a href="https://www.baidu.com/s?wd=陕西新增21例&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">陕西新增21例</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=23项税费优惠政策&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">23项税费优惠政策</a><a href="https://www.baidu.com/s?wd=辽代白塔快塌了&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">辽代白塔快塌了</a><a href="https://www.baidu.com/s?wd=星巴克人造肉菜单&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">星巴克人造肉菜单</a><a href="https://www.baidu.com/s?wd=边伯贤五月回归&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">边伯贤五月回归</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=哈佛回应特朗普&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">哈佛回应特朗普</a><a href="https://www.baidu.com/s?wd=马龙入选梦之队&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">马龙入选梦之队</a><a href="https://www.baidu.com/s?wd=内蒙古中考延期&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">内蒙古中考延期</a><a href="https://www.baidu.com/s?wd=孙杨不在奥运名单&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">孙杨不在奥运名单</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=黑龙江等多地降雪&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">黑龙江等多地降雪</a><a href="https://www.baidu.com/s?wd=周冬雨代言维密&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">周冬雨代言维密</a><a href="https://www.baidu.com/s?wd=齐齐哈尔暴雪&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">齐齐哈尔暴雪</a><a href="https://www.baidu.com/s?wd=我的刺猬女孩开播&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">我的刺猬女孩开播</a>                </div><div class="ourSearch-section-content" style="background-image: url('/Public/img/bo.png?v=12')">
+                  <div class="inner"></div>
+                  <div class="inner2"></div>
+                  <a href="https://www.baidu.com/s?wd=基贤苞娜恋爱&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-1">基贤苞娜恋爱</a><a href="https://www.baidu.com/s?wd=广州返校核酸检测&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-2">广州返校核酸检测</a><a href="https://www.baidu.com/s?wd=杨幂红秀封面&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-3">杨幂红秀封面</a><a href="https://www.baidu.com/s?wd=互联网女皇报告&tn=SE_fengyunbangBD_x3kuz7ef&rsv_dl=fyb_n_homebd" target="_blank" class="hot-search hot-search-4">互联网女皇报告</a>                </div>            </div>
+          </div>
+          <!--      <div class="ourSearch-aim-move">
+              <div class="ourSearch-aim-line">
+                <div class="ourSearch-aim" style="background-image: url('/Public/img/yellow-line.png')"></div>
+                <div class="ourSearch-aim" style="background-image: url('/Public/img/yellow-line.png')"></div>
+                <div class="ourSearch-aim" style="background-image: url('/Public/img/yellow-line.png')"></div>
+                <div class="ourSearch-aim" style="background-image: url('/Public/img/yellow-line.png')"></div>
+              </div>
+            </div> -->
+        </div>
+        <!--  </div> -->
+      </div>
+      <div class="full-section doodle-section">
+        <div class="section">
+          <div class="section-title">我们的Doodle</div>
+          <div class="doodle-container">
+            <div class="doodle-content">
+              <div class="swiper-container doodle-swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">2020妇女节</div>
+                        <div class="doodle-item-time">2020-03-08</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/difgheblankjmc1586347963.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-04-08T12%3A12%3A43Z%2F-1%2F%2Fb799fef671a6e7da7d7f62eb29c2ea87c5e289f993792d77dfed196ff68165a2" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">致敬抗“疫”英雄</div>
+                        <div class="doodle-item-time">2020-02-18</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/egfcidkjlmbnah1583751202.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A53%3A22Z%2F-1%2F%2F5603d825b58ea64b3c965144905847c9d6463aa5268cdcc2761bdec34d2a11c3" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">抗击新冠肺炎疫情</div>
+                        <div class="doodle-item-time">2020-02-12</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/ajegilhkfnbdcm1583751151.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A52%3A31Z%2F-1%2F%2F1ace4ebaaa3cd19982d8be20b4ca693ac13c4999a4048178d9ed41db178ac15f" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">春节</div>
+                        <div class="doodle-item-time">2020-01-25</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/eifmjdnlhbkagc1583751013.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A50%3A13Z%2F-1%2F%2F94844d256c1c07092c9843b516342276e57d204a11ca347a5acc8ec41f001b11" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">腊八节</div>
+                        <div class="doodle-item-time">2020-01-02</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/hdamickbgjflne1583750994.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A49%3A54Z%2F-1%2F%2Fde773a1979fab559f0aecb5321ac816db2f52e3323cd0b6971a53dc30c75e8c8" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">元旦</div>
+                        <div class="doodle-item-time">2020-01-01</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/kbdgamjchlinfe1583750962.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A49%3A23Z%2F-1%2F%2Fbfbb4885aa618cb80270415948a81e1dc82680042f345f9e99f33e13a34d60ed" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">元旦前夜</div>
+                        <div class="doodle-item-time">2019-12-31</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/mnbgaleckjfihd1583750603.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A43%3A23Z%2F-1%2F%2F4fb17989980b1b77e66df2be28b4b16f5bf7badeb39c3ee0242783fa0c8ebff0" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">圣诞节</div>
+                        <div class="doodle-item-time">2019-12-25</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/bahildjemcngkf1583750582.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A43%3A02Z%2F-1%2F%2F065f544a9c0aa74247accaa76ddd8471c22eaa314db0a3d479f47ba82222757b" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">国家公祭日</div>
+                        <div class="doodle-item-time">2019-12-13</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/knlmciafeghbdj1583750557.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A42%3A37Z%2F-1%2F%2Fa836bc05252d60564464565ba9eac9cc657485fd6aa40a6e8ea502ef5c4f5262" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">万圣节</div>
+                        <div class="doodle-item-time">2019-11-01</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/mjigdnklcfhaeb1583750523.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A42%3A04Z%2F-1%2F%2Fe36134124058748a6912c916ad51ea5e94f992cf4a704cb074312551ea512fbe" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">国庆节</div>
+                        <div class="doodle-item-time">2019-10-01</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/ceidfjlnhmgkab1583750432.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A40%3A32Z%2F-1%2F%2Fe76b9a260ed3d177ffe84ef6391a7c3dad04ac54831e594fa18db729d48e224b" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">中秋节</div>
+                        <div class="doodle-item-time">2019-09-13</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/chefgmlbinajdk1583750394.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A39%3A54Z%2F-1%2F%2F7c65f5b3c31453987a2ed9c4bb182a89ec750f3e40e7ba5b039b70e546b03b59" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">教师节</div>
+                        <div class="doodle-item-time">2019-09-10</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/jdgfebmhalncki1583750364.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A39%3A25Z%2F-1%2F%2F9b7cf5f3753064697adbc481315eb076cd6ca3435daa45852040a9e25e25a1f0" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">白露</div>
+                        <div class="doodle-item-time">2019-09-08</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/ecmlkjhgbdfain1583750050.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2020-03-09T10%3A34%3A10Z%2F-1%2F%2F12bd9ce2b4629d20caa49700f0b8b056eeeaab0e19d66b209eb42119b0646710" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">七夕节</div>
+                        <div class="doodle-item-time">2019-08-07</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/adekjibmhcnfgl1565603103.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-08-12T09%3A45%3A04Z%2F-1%2F%2F380ba53ff9d010462e9681f216b692098caea811ef03cdc0a785d6e77efad567" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">大暑</div>
+                        <div class="doodle-item-time">2019-07-23</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/lgkeihdbnjcmfa1565603084.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-08-12T09%3A44%3A44Z%2F-1%2F%2Fcda7055d219f24c49a711029a01134554ffd1b61e325bf3b704ee246e061f688" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">世界Emoji日</div>
+                        <div class="doodle-item-time">2019-07-17</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/enfmajhciblkdg1565603063.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-08-12T09%3A44%3A23Z%2F-1%2F%2F3344370d252a2094a66ca0b6892f4676ade3c7945db7e9d86db2d4f96b89c9c2" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">父亲节</div>
+                        <div class="doodle-item-time">2019-06-16</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/efkbjcdnaiglhm1560928386.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-06-19T07%3A13%3A06Z%2F-1%2F%2F5f6f3fc58a482c2b3459e8f9fbf789f1e816c5ae3735aec29d79f60e1e25533d" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">端午节</div>
+                        <div class="doodle-item-time">2019-06-07</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/elhidbgmfnckja1560928358.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-06-19T07%3A12%3A38Z%2F-1%2F%2F5c9eef3c9254a48f823e8fa136592a982800194b65d5f42de9301b78df7f62ec" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div><div class="swiper-slide">
+                      <div class="doodle-item">
+                        <div class="doodle-item-title">全国爱眼日</div>
+                        <div class="doodle-item-time">2019-06-06</div>
+                        <div class="doodle-img-box">
+                          <img data-src="http://static.home.baidu.com/homebd/hnjlabkfdmeicg1559732817.gif?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2019-06-05T11%3A06%3A57Z%2F-1%2F%2F301d41cf5c9a8912af5b9570ff844130266430eacd649160e02314e2bd62f66e" alt="" class="doodle-img swiper-lazy">
+                          <div class="swiper-lazy-preloader"></div>
+                        </div>
+                      </div>
+                    </div>                </div>
+                <div class="swiper-button-prev doodle-swiper-button-prev"></div>
+                <div class="swiper-button-next doodle-swiper-button-next"></div>
+              </div>
+            </div>
+            <a href="//logo.baidu.com/" class="bd-ourDoodle-more" target="_blank">查看更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="full-section company-section">
+        <div class="section">
+          <div class="bd-home-company-desc">
+            <div class="section-title">百度公司介绍</div>
+            <div class="section-content company-section-content">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card bd-desc-item">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img data-original="http://static.home.baidu.com/homebd/dhigknjlbfeacm1496932994.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A43%3A14Z%2F-1%2F%2F99bc8596c108d7606079aaa89ee4c6696598560cd92c31b6c170b8f030e9d01a" alt="" class="lazy">
+                        <div class="card-cover">
+                          我们的核心价值观                          <span class="bd-desc-titleline"></span>
+                          <div class="bd-desc-content">
+                            <p style="text-align: center;">简单可依赖</p>                          </div>
+                          <a href="/home/index/company_culture" class="bd-desc-btn" target="_blank">了解更多</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card bd-desc-item">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img data-original="http://static.home.baidu.com/homebd/hgjleabdmicfnk1496932982.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A43%3A03Z%2F-1%2F%2F7fc96ae9f1c723502b2e5035f9a53431f7744e417803f49133b45ac660cf68ec" alt="" class="lazy">
+                        <div class="card-cover">
+                          我们的公司                          <span class="bd-desc-titleline"></span>
+                          <div class="bd-desc-content">
+                            <p>百度以“用科技让复杂的世界更简单”为使命，以“成为最懂用户，并能帮助人们成长的全球顶级高科技公司”为愿景。</p>                          </div>
+                          <a href="/home/index/company" class="bd-desc-btn" target="_blank">了解更多</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card bd-desc-item">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img data-original="http://static.home.baidu.com/homebd/infclkjhadbemg1496932970.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A42%3A51Z%2F-1%2F%2Feef783f53d195f23bd132d0c3c293e16976811e53bd459309e0b6bc50de581ab" alt="" class="lazy">
+                        <div class="card-cover">
+                          百度之路                          <span class="bd-desc-titleline"></span>
+                          <div class="bd-desc-content">
+                            <p>百度大事记</p>                          </div>
+                          <a href="/home/index/baidu_road" class="bd-desc-btn" target="_blank">了解更多</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card bd-desc-item">
+                    <div class="img-outer">
+                      <div class="img-inner">
+                        <img data-original="http://static.home.baidu.com/homebd/hjlfigcndabkem1496932921.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A42%3A01Z%2F-1%2F%2Fe48079a6a6194296a51fdb43c004309fce946de1cce07eac76b72da8d722d81d" alt="" class="lazy">
+                        <div class="card-cover">
+                          我们的管理团队                          <span class="bd-desc-titleline"></span>
+                          <div class="bd-desc-content">
+                                                      </div>
+                          <a href="/home/index/management_team" class="bd-desc-btn" target="_blank">了解更多</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="full-section bottom-section">
+  <div class="section">
+    <div class="bd-home-bottom">
+      <div class="bd-bottom-share">
+        <span>实时资讯请关注：</span>
+
+
+        <div class="share-wechat">
+                    <img src="http://static.home.baidu.com/homebd/canbfldghejikm1496932813.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2Fa795f1f97d12e2a8c9da9862672bd4fec4a887237ec8883e8a3974e9a52b3624" class="share-wechat-img" alt="">
+                    <img src="http://static.home.baidu.com/homebd/djkgaclebfhnim1496932814.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2F9dfa094e984958f1fefb4c3a95b5f8da3e60c759c30442b2479559bfbcdacf2c" class="share-wechat-qrcode">
+                  </div>
+                        <a href="http://weibo.com/baiduguanfang?refer_flag=1001030101_&amp;is_hot=1" target="_blank">
+                  <img src="http://static.home.baidu.com/homebd/fnejlmkaghcdib1496932842.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A43Z%2F-1%2F%2F5907b18db08f16dba8613f5117fa9c699a09ac79273e32ef0a1f114b7bdd6e55" alt="">
+                </a>                <a href="https://www.facebook.com/BaiduIncorporated" target="_blank">
+                  <img src="http://static.home.baidu.com/homebd/ldmfajnhcbkegi1496932864.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A05Z%2F-1%2F%2F2a180dd88df9a8a7af776fd7239773fab056d1af32cf701e234f5664133a559b" alt="">
+                </a>                <a href="https://twitter.com/Baidu_Inc" target="_blank">
+                  <img src="http://static.home.baidu.com/homebd/ldgjhfknbaicem1496932883.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A23Z%2F-1%2F%2F9ec183749754c187c58c2d5b66a8d2f4bd59f6258188aae327addba639a1631d" alt="">
+                </a>
+      </div>
+
+      <div class="bd-bottom-moremsg">
+        <div class="bd-more-msg">更多信息</div>
+        <a href="http://csr.baidu.com/" class="bd-more-duty bottom-cooperation" target="_blank">社会责任</a><a href="http://home.baidu.com/home/index/contact_us" class="bd-more-duty bottom-cooperation" target="_blank">联系我们</a>      </div><div class="bd-bottom-moremsg">
+        <div class="bd-more-msg">商业合作</div>
+        <a href="http://union.baidu.com/customerLogin.html?fromu=http%3A%2F%2Funion.baidu.com%2F" class="bd-more-duty bottom-cooperation" target="_blank">百度联盟</a><a href="http://e.baidu.com/?subsite=bj" class="bd-more-duty bottom-cooperation" target="_blank">百度推广</a><a href="http://pro.baidu.com/" class="bd-more-duty bottom-cooperation" target="_blank">营销中心</a>      </div><div class="bd-bottom-moremsg">
+        <div class="bd-more-msg">更多资源</div>
+        <a href="http://home.baidu.com/media_resource/" class="bd-more-duty bottom-cooperation" target="_blank">媒体资源库</a>      </div>      <div class="bd-bottom-icp">&copy; Baidu <a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a> 京ICP证030173号</div>
+    </div>
+  </div>
+</div>
+
+<div class="return-top">
+  <img src="/Public/img/return-top.png?v=12" alt="" class="return-img">
+</div>
+<div class="pc-return">
+  <img src="/Public/img/pc-backtop.png?v=12" alt="" class="pc-return-img">
+</div>
+<div class="mobile-bd-home-bottom">
+  <div class="bd-bottom-share">
+    <span>实时资讯请关注：</span>
+
+
+
+    <div class="share-wechat">
+                <img src="http://static.home.baidu.com/homebd/canbfldghejikm1496932813.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2Fa795f1f97d12e2a8c9da9862672bd4fec4a887237ec8883e8a3974e9a52b3624" class="share-wechat-img" alt="">
+                <img src="http://static.home.baidu.com/homebd/djkgaclebfhnim1496932814.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A14Z%2F-1%2F%2F9dfa094e984958f1fefb4c3a95b5f8da3e60c759c30442b2479559bfbcdacf2c" class="m-share-wechat-qrcode">
+              </div>
+                     <a href="http://weibo.com/baiduguanfang?refer_flag=1001030101_&amp;is_hot=1" target="_blank">
+              <img src="http://static.home.baidu.com/homebd/fnejlmkaghcdib1496932842.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A40%3A43Z%2F-1%2F%2F5907b18db08f16dba8613f5117fa9c699a09ac79273e32ef0a1f114b7bdd6e55" alt="">
+            </a>           <a href="https://www.facebook.com/BaiduIncorporated" target="_blank">
+              <img src="http://static.home.baidu.com/homebd/ldmfajnhcbkegi1496932864.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A05Z%2F-1%2F%2F2a180dd88df9a8a7af776fd7239773fab056d1af32cf701e234f5664133a559b" alt="">
+            </a>           <a href="https://twitter.com/Baidu_Inc" target="_blank">
+              <img src="http://static.home.baidu.com/homebd/ldgjhfknbaicem1496932883.png?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T14%3A41%3A23Z%2F-1%2F%2F9ec183749754c187c58c2d5b66a8d2f4bd59f6258188aae327addba639a1631d" alt="">
+            </a>
+  </div>
+  <div class="mobile-flex">
+    <div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content">公司介绍<img src="/Public/img/mobile-arrow-up.png?v=12" class="mobile-arrow-up"><img src="/Public/img/mobile-arrow-down.png?v=12" class="mobile-arrow-down"></div>
+           <ul class="mobile-bd-detail">
+            <li><a href="http://home.baidu.com/home/index/company_culture" target="_blank">核心价值观</a></li><li><a href="http://home.baidu.com/home/index/company" target="_blank">百度简介</a></li><li><a href="http://home.baidu.com/home/index/baidu_road" target="_blank">百度大事记</a></li><li><a href="http://home.baidu.com/home/index/management_team" target="_blank">管理团队</a></li>        </ul>
+      </div><div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content">更多信息<img src="/Public/img/mobile-arrow-up.png?v=12" class="mobile-arrow-up"><img src="/Public/img/mobile-arrow-down.png?v=12" class="mobile-arrow-down"></div>
+           <ul class="mobile-bd-detail">
+            <li><a href="http://csr.baidu.com/" target="_blank">社会责任</a></li><li><a href="http://home.baidu.com/home/index/contact_us" target="_blank">联系我们</a></li>        </ul>
+      </div><div class="mobile-bd-bottom-moremsg mobile-flex-box">
+           <div class="mobile-bd-bottom-content">商业合作<img src="/Public/img/mobile-arrow-up.png?v=12" class="mobile-arrow-up"><img src="/Public/img/mobile-arrow-down.png?v=12" class="mobile-arrow-down"></div>
+           <ul class="mobile-bd-detail">
+            <li><a href="http://e.baidu.com/?subsite=bj" target="_blank">百度推广</a></li><li><a href="http://union.baidu.com/customerLogin.html?fromu=http%3A%2F%2Funion.baidu.com%2F" target="_blank">百度联盟</a></li><li><a href="http://pro.baidu.com/" target="_blank">营销中心</a></li>        </ul>
+      </div>
+  </div>
+  <div class="mobile-bd-bottom-icp">&copy; Baidu <a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a> 京ICP证030173号</div>
+</div>
+<div class="loading"></div>
+
+    <div class="video-mask" videoId='0'>
+        <img src="/Public/img/close_video_mask.png?v=12" alt="" class="close-video-mask">
+        <div class="video-title">我们的故事</div>
+        <div class="video-container">
+          <video src="http://static.home.baidu.com/homebd/1495104075.mp4" controls class="video-item"></video>
+        </div>
+        <div class="video-desc">
+          <p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在最美的年华里，走进最接近梦想的地方。</span></p><p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在这里，我们亲眼见证技术的力量，一起用今天的努力，改变不久后的未来。</span></p><p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">百度四季延时，为了留住飞逝的韶光，送给时光里追梦的你。</span></p><p style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">如果我们的征途是星辰大海，愿你我青春无悔。</span><br/></p>        </div>
+      </div>            </include>
+    <script src="/Public/js/lib/jquery.min.js?v=16"></script>
+<script src="/Public/js/rem.min.js?v=16"></script>
+<script src="/Public/js/lib/bootstrap.min.js?v=16"></script>
+<script src="/Public/js/lib/snap.svg-min.js?v=16"></script>
+<script src="/Public/js/lib/mustache.min.js?v=16"></script>
+<!-- <script src="/Public/js/scroll.js"></script> -->
+<script src="/Public/js/common.js?v=16"></script>
+<script>
+var width = $(window).width();
+if (width > 768) {
+  window._hmt && window._hmt.push(['_trackEvent', '入口统计','pc端']);
+  var height = $(window).height();
+  $(window).scroll(function() {
+    var top = $(window).scrollTop();
+    if (top > height) {
+      $(".pc-return").show();
+    } else {
+      $(".pc-return").hide();
+    }
+  });
+  $("body").on("click", ".pc-return", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  });
+} else {
+  window._hmt && window._hmt.push(['_trackEvent', '入口统计','手机端']);
+  $(".main").on("click", ".return-img", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+  });
+}
+</script>
+<script type="text/javascript">
+var GV = {
+  ROOT: "/",
+};
+</script>
+
+    <script src="/Public/js/lib/jquery.lazyload.min.js?v=14"></script>
+    <script src="/Public/js/lib/swiper.min.js?v=14"></script>
+    <script src="/Public/js/index.js?v=15"></script>
+    <script type="text/javascript">
+    var doodleSwiper = new Swiper('.doodle-swiper-container', {
+      initialSlide: 0,
+      loop: true,
+      slidesPerView: 3,
+      loopAdditionalSlides: 1,
+      loopedSlides: 3,
+      nextButton: '.doodle-swiper-button-next',
+      prevButton: '.doodle-swiper-button-prev',
+      lazyLoading: true
+    });
+    </script>
+</body>
+
+</html>

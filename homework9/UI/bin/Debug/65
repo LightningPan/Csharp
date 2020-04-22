@@ -1,0 +1,1212 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"35893545"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="title" content="Financial Reports | Baidu Inc" />
+<meta property="og:site_name" content="Baidu Inc" />
+<link rel="canonical" href="http://ir.baidu.com/financial-reports/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://ir.baidu.com/financial-reports" />
+<meta property="og:title" content="Financial Reports | Baidu Inc" />
+<meta property="og:description" content="The Investor Relations website contains information about Baidu Inc &#039;s business for stockholders, potential investors, and financial analysts." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=0.36" />
+<link rel="shortcut icon" href="/sites/g/files/knoqqb24286/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="http://ir.baidu.com/financial-reports" />
+<link rel="revision" href="http://ir.baidu.com/financial-reports" />
+
+    <title>Financial Reports | Baidu Inc</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/knoqqb24286/files/css/css_8zWKN6qWWUtDIuPxDLTytXs0iepG3wRB9x86fVDdjDc.css?q7is4s" />
+<link rel="stylesheet" media="all" href="/sites/g/files/knoqqb24286/files/css/css_uDns3ooKnFjmQS8LjKPcJP3gZlcUZ6iVSFzcaGyjMU8.css?q7is4s" />
+<link rel="stylesheet" media="print" href="/sites/g/files/knoqqb24286/files/css/css__D2WM-c4OM1_pfbtgTDgEJuytcRqrDvsDI9Pd6PbUAc.css?q7is4s" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/knoqqb24286/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+    
+  </head>
+  <body class="body-sidebars-first nir-node nir-node--type-nir-landing-page nir-node--9466 path-node page-node-type-nir-landing-page">
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="header_wrap">
+    <div id="header"><a href="http://www.baidu.com/"><img width="116" src="/sites/g/files/knoqqb24286/themes/site/nir_pid2206/client/images/baidu_logo.png" /></a></div>
+</div>
+<div class="wrapper index">
+    <div class="w_left">
+          <div class="region region-sidebar-first">
+    
+
+<nav role="navigation" aria-labelledby="block-nir-pid2206-investorrelations-menu" id="block-nir-pid2206-investorrelations" class="block--system-menu-blockir block--system-menu-blockir--9466 block--sidebar-first--system-menu-block--ir block--sidebar-first--system-menu-block--ir--9466 block--62466881-d51c-4f8e-99a3-3f8326b98628 block--62466881-d51c-4f8e-99a3-3f8326b98628--9466 block block-menu navigation block-system-menublock menu--ir">
+                        
+    <h2 class="visually-hidden" id="block-nir-pid2206-investorrelations-menu">Investor Relations</h2>
+    
+
+                              <ul data-block-uuid="62466881-d51c-4f8e-99a3-3f8326b98628" class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/" target="" rel="" title="Main Investor Relations Page" data-drupal-link-system-path="&lt;front&gt;">HOME</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="" target="" rel="">ABOUT BAIDU </a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/company-overview" target="" rel="" data-drupal-link-system-path="node/9381">Company Overview</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/milestone" target="" rel="" data-drupal-link-system-path="node/9391">Milestones</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/corporate-governance/management" target="" rel="" data-drupal-link-system-path="node/5846">Management</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/corporate-governance/board-of-directors" target="" rel="" data-drupal-link-system-path="node/5841">Board of Directors</a>
+                  </li>
+          </ul>
+  
+                  </li>
+      	            <li class="side-menu__item menu-active">
+          <a href="/" data-drupal-link-system-path="&lt;front&gt;">Investor Relations</a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/press-releases" target="" rel="" data-drupal-link-system-path="node/5816">Press Releases</a>
+                  </li>
+      	            <li class="side-menu__item menu-active">
+          <a href="/financial-reports" target="" rel="" data-drupal-link-system-path="node/9466" class="is-active">Financial Reports</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/webcasts" target="" rel="" data-drupal-link-system-path="node/5826">Webcasts</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/stock-information/stock-quote" data-drupal-link-system-path="node/5911">Stock Information</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/financial-information/sec-filings" data-drupal-link-system-path="node/5876">SEC Filings</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/stock-information/analyst-coverage" data-drupal-link-system-path="node/5896">Analyst Coverage</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/ir-calendar" target="" rel="" class="highlight" title="Corporate Profile" data-drupal-link-system-path="node/5821">IR Calendar</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/shareholder-services/investor-faqs" data-drupal-link-system-path="node/5941">Investor FAQs</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/corporate-governance" target="" rel="" data-drupal-link-system-path="node/9461">Corporate Governance</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="http://csr.baidu.com/download.html" target="" rel="">CSR Report</a>
+                  </li>
+          </ul>
+  
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="" target="" rel=""> PRODUCTS &amp; SERVICES             </a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/Baidu-Core" target="" rel="" data-drupal-link-system-path="node/9401">Baidu Core</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/iqiyi" target="" rel="" data-drupal-link-system-path="node/9421">iQIYI</a>
+                  </li>
+          </ul>
+  
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="" target="" rel="">CONTACT US</a>
+                                    <ul class="menu side-menu">
+          	            <li class="side-menu__item ">
+          <a href="/contact-form" target="" rel="" data-drupal-link-system-path="node/9426">Contact Form</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/notice-right-holders-block-0" target="" rel="" data-drupal-link-system-path="node/9451">IP Protection</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/sem" target="" rel="" data-drupal-link-system-path="node/9436">SEM</a>
+                  </li>
+      	            <li class="side-menu__item ">
+          <a href="/shareholder-services/email-alerts" target="" rel="" data-drupal-link-system-path="node/5946">Email Alerts</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+    </nav>
+
+  </div>
+
+    </div>
+
+    <div class="w_mright">
+        <div class="ccbnContent lfg-printable-area">
+              <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-nir-pid2206-content" class="block--system-main-block block--system-main-block--9466 block--content--system-main-block block--content--system-main-block--9466 block--4eb3c991-3611-4753-8c7d-e7981c5b1302 block--4eb3c991-3611-4753-8c7d-e7981c5b1302--9466 block block-system block-system-main-block">
+  
+    
+      <article class="node node--type-nir_landing_page node--view-mode-full clearfix">
+  
+      <h1>
+              Financial Reports
+          </h1>
+    
+
+  <div>
+    
+<div class="panel-display boxton clearfix " >
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-content panel-panel">
+        <div class="panel-panel-inner">
+          <div class="block-region-contentmain"><div class="block--financial-reports block--nir-assets__widget block--nir-assets__widget--9466 block--contentmain--nir-assets__widget block--contentmain--nir-assets__widget--9466 block--0cff2ff0-cdc9-4eac-8fc1-b963d6051dfa block--0cff2ff0-cdc9-4eac-8fc1-b963d6051dfa--9466 block block-nir-assets block-nir-assets__widget">
+  
+    
+      <div class="nir-widget">
+      <div class="nir-widget--label">
+      Download PDF of Financial Reports
+    </div>
+    <div class="nir-widget--content">
+        <div class="nir-widget--list">
+              
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2019</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/0bd14b2a-c2e7-4d72-8024-68bfd296b2a2" type="application/pdf; length=442400" title="BIDU - Q1 2019 Earnings Release 2.pdf">Q1</a></span><span class="filesize"> 442.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/91f91e3c-8b88-42be-90e2-a9a9ea06b1f5" type="application/pdf; length=468471" title="BIDU - Q2 2019 Earnings Release.pdf">Q2</a></span><span class="filesize"> 468.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/5005840a-db72-4446-8c15-2f55b7518d39" type="application/pdf; length=491678" title="BIDU - Q3 2019 Earnings Release_b.pdf">Q3</a></span><span class="filesize"> 491.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/9e8f63e2-f22b-4cba-8e65-9120ba40fa35" type="application/pdf; length=580167" title="BIDU - Q4 2019 Earnings Release (1).pdf">Q4</a></span><span class="filesize"> 580.1 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/ee02be35-ab39-496b-9119-3f30a5e99e6f" type="application/pdf; length=2359545" title="0001193125-20-073092.pdf">Annual</a></span><span class="filesize"> 2.3 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2018</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/626b8f84-5d34-49b7-b4ab-4f9f03cb8a2b" type="application/pdf; length=395202" title="BIDU -- Q1 2018 Earnings Release-d.pdf">Q1</a></span><span class="filesize"> 395.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/24f96e6a-218f-4a3f-89e9-cbe5daac720f" type="application/pdf; length=396786" title="BIDU_Q2_2018_Earnings_Release.pdf">Q2</a></span><span class="filesize"> 396.7 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/72497712-134d-48d1-8d96-5363d74569cf" type="application/pdf; length=306991" title="BIDU -- Q3 2018 Earnings Release.pdf">Q3</a></span><span class="filesize"> 306.9 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/40b3bccb-b4bc-453b-890b-5a6ac2624c98" type="application/pdf; length=372644" title="BIDU -- Q4 2018 Earnings Release.pdf">Q4</a></span><span class="filesize"> 372.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/4ce88b07-60fe-4561-9cc9-2b0e0ec9dfd6" type="application/pdf; length=6174235" title="Baidu 2018 Form 20-F.pdf">Annual</a></span><span class="filesize"> 6.1 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2017</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/7788c2fd-feec-4b96-ab53-a7e5938cb3d1" type="application/pdf; length=178819" title="BIDU_ --_ Q1_2017_Earnings_Release.pdf">Q1</a></span><span class="filesize"> 178.8 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/799bc3aa-e928-46ab-b042-988c05cfbba1" type="application/pdf; length=335988" title="BIDU -- Q2 2017 Earnings Release.pdf">Q2</a></span><span class="filesize"> 335.9 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/af6caa62-a466-43ad-afbc-0be8c67e2600" type="application/pdf; length=337188" title="BIDU -- Q3 2017 Earnings Release.pdf">Q3</a></span><span class="filesize"> 337.1 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/10697097-82ae-4722-b998-f97b88bc0e15" type="application/pdf; length=514683" title="BIDU -- Q4 2017 Earnings Release.pdf">Q4</a></span><span class="filesize"> 514.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/014fbdb7-8fcf-4ff3-b01e-1e7544efa4b7" type="application/pdf; length=2230491" title="Baidu 2017 Form 20-F.pdf">Annual</a></span><span class="filesize"> 2.2 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2016</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/ba200284-16e8-45eb-b14a-ea385f178b3f" type="application/pdf; length=510348" title="Q1 2016 Earnings Release.pdf">Q1</a></span><span class="filesize"> 510.3 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/df33dc3e-7530-4b6a-9b63-8028b5d04ffc" type="application/pdf; length=64806" title="BIDUQ22016EarningsRelease.pdf">Q2</a></span><span class="filesize"> 64.8 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/80ab32dc-45e6-4510-8bbd-610bda64848b" type="application/pdf; length=230530" title="BIDU_--_Q3_2016_Earnings_Release.pdf">Q3</a></span><span class="filesize"> 230.5 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/b7b83b7e-8134-45d6-8290-c4c1b27098b7" type="application/pdf; length=327629" title="BIDU -- Q4 and FY 2016 Earnings Release.pdf">Q4</a></span><span class="filesize"> 327.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/e249a0f8-082a-4f8a-b60d-7417fa2f8e7e" type="application/pdf; length=4218455" title="Baidu 2016 20F.pdf">Annual</a></span><span class="filesize"> 4.2 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2015</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/ae7db6be-ce6f-465d-875f-1d231e4377da" type="application/pdf; length=225677" title="Q1 2015 Earnings Release.pdf">Q1</a></span><span class="filesize"> 225.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/1c194b2c-9410-4b8a-ac49-ca5119d44c6c" type="application/pdf; length=272835" title="Q2 2015 Earnings Release.pdf">Q2</a></span><span class="filesize"> 272.8 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/bcf2f779-c60b-4a45-a420-82518904db4e" type="application/pdf; length=206911" title="2015 Q3 Earnings Release1.pdf">Q3</a></span><span class="filesize"> 206.9 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/d5fc291c-1c02-487f-a66f-894ee41b7390" type="application/pdf; length=336823" title="Q4 2015 and FY2015 Earnings Release.pdf">Q4</a></span><span class="filesize"> 336.8 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/530c4b57-5d90-4c93-91c6-a91ff65dcaa2" type="application/pdf; length=2047027" title="Baidu 2015 20-F.PDF">Annual</a></span><span class="filesize"> 2 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2014</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/7c4f6ef7-72a9-473b-a951-4027bc80fc81" type="application/pdf; length=109418" title="Q1 2014 Earnings Release.pdf">Q1</a></span><span class="filesize"> 109.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/cfddd93f-3abf-4944-b1ee-d0a12228d172" type="application/pdf; length=160439" title="Q2 2014 Earnings Release.pdf">Q2</a></span><span class="filesize"> 160.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/3d3e4f1c-db6e-475d-9d32-163a668277c3" type="application/pdf; length=289063" title="Q3 2014 Earnings Release.pdf">Q3</a></span><span class="filesize"> 289 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/d62377aa-77db-465d-97bc-938ef91e98a0" type="application/pdf; length=245191" title="Q4 2014 and FY2014 Earnings Release.pdf">Q4</a></span><span class="filesize"> 245.1 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/39c9d0ab-4694-4c28-9881-a7989eebf00a" type="application/pdf; length=13420420" title="2014 Baidu Annual Report.pdf">Annual</a></span><span class="filesize"> 13.4 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2013</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/df8138c5-9fdf-48f4-af2e-75ab87b75be2" type="application/pdf; length=207190" title="BIDU - Q12013 Earnings Release.pdf">Q1</a></span><span class="filesize"> 207.1 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/2fa2535a-a618-43aa-abcc-1da37734d618" type="application/pdf; length=280583" title="BIDU - Q22013 Earnings Release.pdf">Q2</a></span><span class="filesize"> 280.5 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/f4bcf23a-6b83-41cc-a4f9-57f2c260f927" type="application/pdf; length=167256" title="BIDU - Q32013 Earnings Release.pdf">Q3</a></span><span class="filesize"> 167.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/38b02fcd-0cd1-46db-be47-7e994bdd6ec5" type="application/pdf; length=122795" title="BIDU - Q4 2014 and FY2014 Earnings Release.pdf">Q4</a></span><span class="filesize"> 122.7 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/4ba339d1-51b2-495f-8b77-e442cc255fc0" type="application/pdf; length=3957325" title="BIDU_20F_2013.pdf">Annual</a></span><span class="filesize"> 3.9 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2012</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/ae99b57c-bf09-41f7-a93d-2250883ef99a" type="application/pdf; length=106711" title="BIDU - Q12012 Earnings Release.pdf">Q1</a></span><span class="filesize"> 106.7 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/6483c504-6d54-4068-bd0b-63e3c6c44455" type="application/pdf; length=238050" title="BIDU - Q22012 Earnings Release.pdf">Q2</a></span><span class="filesize"> 238 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/6957d403-0d00-4427-814f-81034351149f" type="application/pdf; length=205731" title="BIDU - Q3 2012 earnings release.pdf">Q3</a></span><span class="filesize"> 205.7 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/439dc615-e952-4678-a901-659c03bb53f0" type="application/pdf; length=401198" title="BIDU -- Q4 2012 earnings release.pdf">Q4</a></span><span class="filesize"> 401.1 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/d2db4b84-3785-436b-967c-f3bb650673cc" type="application/pdf; length=14680497" title="BaiduAR2012.pdf">Annual</a></span><span class="filesize"> 14.6 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2011</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/cc33e315-17a8-4511-a1c8-09441550cba4" type="application/pdf; length=124968" title="2011Q1BIDU.pdf">Q1</a></span><span class="filesize"> 124.9 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/1a35eb80-acc4-4eec-ae6d-e37da643c122" type="application/pdf; length=106460" title="BIDU - Q22011 Earnings Release pdf.pdf">Q2</a></span><span class="filesize"> 106.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/e0435944-c628-4f90-8676-212e43f7c8c4" type="application/pdf; length=215243" title="BaiduQ32011PressReleaseFinalpdf1.pdf">Q3</a></span><span class="filesize"> 215.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/0f0c94d1-516b-43cb-b391-0ecdbd4258bc" type="application/pdf; length=138441" title="BIDU - Q4 2011 Earnings Release.pdf">Q4</a></span><span class="filesize"> 138.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/0e9c8e37-d962-461c-8fff-1c5238fb2f12" type="application/pdf; length=4352143" title="2011_AR_BIDU.pdf">Annual</a></span><span class="filesize"> 4.3 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2010</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/160be26e-7ae7-4973-a351-011171b7c844" type="application/pdf; length=41476" title="BIDU_Q1_2010_Earnings_Release.pdf">Q1</a></span><span class="filesize"> 41.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/64539f59-e71a-4c30-8d82-98b5b213e89a" type="application/pdf; length=43767" title="Bidu-2Q-2010-Release-.pdf">Q2</a></span><span class="filesize"> 43.7 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/d5b49012-b1f5-4270-900c-bf5bfab1f767" type="application/pdf; length=91657" title="Baidu_Q3_2010_2.pdf">Q3</a></span><span class="filesize"> 91.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/120714fc-afd6-4b1c-ad2c-39cb86d6b031" type="application/pdf; length=7144749" title="BIDU4QFY10Results.pdf">Q4</a></span><span class="filesize"> 7.1 MB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/2c81b925-93d7-4a0c-83b5-371a9fd9da85" type="application/pdf; length=10945728" title="2010_AR_BIDU.pdf">Annual</a></span><span class="filesize"> 10.9 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2009</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/31231138-d707-49ff-958e-bc5243309490" type="application/pdf; length=52412" title="Q1 2009 Earnings Release.pdf">Q1</a></span><span class="filesize"> 52.4 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/9d843d68-4d27-49b6-8c27-0f57247b8325" type="application/pdf; length=48539" title="BIDU Q2 2009 Earnings Release.pdf">Q2</a></span><span class="filesize"> 48.5 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/b91aca6e-6492-4256-94c4-51c344f519fa" type="application/pdf; length=43259" title="BIDU -- Q3 2009 Earnings Release -- Complete.pdf">Q3</a></span><span class="filesize"> 43.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/f0bf27fd-1aa4-471a-bdbe-d36245fe30a2" type="application/pdf; length=48668" title="Baidu_4Q2009.pdf">Q4</a></span><span class="filesize"> 48.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/e484580f-7c1a-42f5-8419-c8f4e029286e" type="application/pdf; length=968435" title="BIDU_2009 Annual_Report_Final.pdf">Annual</a></span><span class="filesize"> 968.4 KB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2008</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/d88508dc-e729-417f-ab46-f6de02b8bacf" type="application/pdf; length=50297" title="q12008EarningsResults.pdf">Q1</a></span><span class="filesize"> 50.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/59f46d2c-5c71-4cf5-ae76-237da053d3ea" type="application/pdf; length=52071" title="Q208EarningsRelease.pdf">Q2</a></span><span class="filesize"> 52 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/358c3473-8638-49eb-a855-8b30913920bc" type="application/pdf; length=52293" title="BIDUQ308EarningsRelease.pdf">Q3</a></span><span class="filesize"> 52.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/b7bf2f68-2c14-4255-a6f1-84e761264fc2" type="application/pdf; length=66168" title="Q408PressRelease.pdf">Q4</a></span><span class="filesize"> 66.1 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/87307006-07c1-4b61-8ed9-8bc5f8aacee7" type="application/pdf; length=3520218" title="BIDU_AR_2008.pdf">Annual</a></span><span class="filesize"> 3.5 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2007</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/6510ee3e-f664-4a48-aa57-3528f8f8ca6f" type="application/pdf; length=78339" title="Q107EarningsRelease.pdf">Q1</a></span><span class="filesize"> 78.3 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/5d51fdcb-1a0e-4465-a0d5-dd48804886af" type="application/pdf; length=132889" title="¸´¼þ BIDU Q2 2007 Earnings Release FINAL 10.20pm.pdf">Q2</a></span><span class="filesize"> 132.8 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/bf6b43d9-9d90-41a4-ba8c-cb5d8c459aca" type="application/pdf; length=62256" title="3Q07EarningsRelease.pdf">Q3</a></span><span class="filesize"> 62.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/f8785e36-2fdf-4ba0-a1c6-85ef9d44c6aa" type="application/pdf; length=69309" title="Baidu4Q07EarningsReleasefinal _2_.pdf">Q4</a></span><span class="filesize"> 69.3 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/e21da0ed-a5c4-442f-977f-f99ea554a022" type="application/pdf; length=1368578" title="888.pdf">Annual</a></span><span class="filesize"> 1.3 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2006</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/2325841b-bbbe-4c84-82d1-c9e27b476f2f" type="application/pdf; length=52587" title="Q106EarningsRelease.pdf">Q1</a></span><span class="filesize"> 52.5 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/de63cde4-3555-4ab3-b2af-851ff89d5ebb" type="application/pdf; length=62266" title="Q206EarningsRelease.pdf">Q2</a></span><span class="filesize"> 62.2 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/29495fdb-9079-4e20-b35b-3b0037989592" type="application/pdf; length=51778" title="Q306EarningsRelease.pdf">Q3</a></span><span class="filesize"> 51.7 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/4fd5c3ae-c1c9-43ec-a463-a29c5ec4a4db" type="application/pdf; length=87652" title="Q406EarningsRelease.pdf">Q4</a></span><span class="filesize"> 87.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/806b47ae-ddf1-40f6-a2ce-d6a0fa756a97" type="application/pdf; length=3837946" title="2006AnnualReport.pdf">Annual</a></span><span class="filesize"> 3.8 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="field__item">2005</div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+      <div class="nir-widget--field nir-widget--asset--list-of-files">
+      
+<div class="field-nir-document">
+      <div class="nir-widgets--file-list--hide-filesize field__item">
+<article role="article" class="node node--nir-asset--asset-link node--type-nir-asset node--view-mode-asset-link">
+  <div class="node__content">
+    
+      <div class="field field--name-field-nir-document field--type-file field--label-hidden field__items">
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/81b8b185-98a4-4f43-9ef6-63d8ebfd6926" type="application/pdf; length=91681" title="2005Q2EarningsRelease.pdf">Q2</a></span><span class="filesize"> 91.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/ea1a8ab9-6966-4de1-b4ba-4e0403b92cc9" type="application/pdf; length=91681" title="2005Q2EarningsRelease.pdf">Q3</a></span><span class="filesize"> 91.6 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/73508964-099f-4ca1-99d7-c790aeb81eeb" type="application/pdf; length=124098" title="2005Q3EarningsRelease.pdf">Q4</a></span><span class="filesize"> 124 KB</span>
+</div>
+
+        </div>
+              <div class="field__item">
+            <div class="file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"> <a href="http://ir.baidu.com/static-files/7d4cade1-81b6-4a97-b92b-3948bd62d505" type="application/pdf; length=27397923" title="BIDU_AR_2005.pdf">Annual</a></span><span class="filesize"> 27.3 MB</span>
+</div>
+
+        </div>
+          </div>
+  
+  </div>
+</article>
+</div>
+  </div>
+    </div>
+  
+</article>
+
+          </div>
+    <div class="nir-widget--pager">
+      
+    </div>
+    <div class="nir-widget--total-results">
+      
+    </div>
+  </div>
+</div>
+  </div>
+<div class="block-content--nir-lp-block block-content--nir-lp-block--9691 block--block-contentb22bf8fb-5a64-4baa-965a-ab4d979e95aa block--block-contentb22bf8fb-5a64-4baa-965a-ab4d979e95aa--9466 block--contentmain--block-content--b22bf8fb-5a64-4baa-965a-ab4d979e95aa block--contentmain--block-content--b22bf8fb-5a64-4baa-965a-ab4d979e95aa--9466 block--f3a4e5cf-1c99-431d-a2f2-0db8682687a7 block--f3a4e5cf-1c99-431d-a2f2-0db8682687a7--9466 block block-block-content block-block-contentb22bf8fb-5a64-4baa-965a-ab4d979e95aa">
+  
+    
+      
+            <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item"><span class="ccbnDisclaimer" style="padding-top:30px"> We will provide a hard copy of our <span class="black_font">annual report</span> containing our audited consolidated financial statements, free of charge, to our stakeholders and ADS holders upon request. Please send your request <a class="tip_link" href="/contact-form"><span class="black_font">here</span>. </a></span></div>
+      
+</div>
+      
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.boxton -->
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer_wrapper">
+    <div class="footer">
+        <a href="/disclaimer" target="_blank">Disclaimer</a> |
+        <a href="/baidu-statement-privacy-protection" target="_blank">Privacy</a> |
+        <span>
+            Copyright © 2020 Baidu, Inc. All Rights Reserved.
+         </span>
+    </div>
+</div>
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgclientweb2090 ";</script>
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/9466","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"classy\/node,core\/drupal.collapse,core\/html5shiv,nir_base\/adobe_omniture,nir_base\/lib,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_ckeditor_datatables\/datatables,nir_multimedia\/nir_multimedia,nir_pid2206\/override,radix_layouts\/radix_layouts,system\/base","theme":"nir_pid2206","theme_token":null},"ajaxTrustedUrl":[],"user":{"uid":0,"permissionsHash":"c9577c5df5cf1f6a6618739b5430121268b63830c2e7e854c38a5001146030a8"}}</script>
+<script src="/sites/g/files/knoqqb24286/files/js/js_F0E-FuvuM_xPWklW7JH5MfoPI3fD11HkgDLiW5b-G7A.js"></script>
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"761e715901","applicationID":"35893545,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH0xfCFVfb0VHAD5HUF5cVRFvV1lQWQE+QVpbXV4=","queueTime":0,"applicationTime":801,"atts":"ShJUF18aSEg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
