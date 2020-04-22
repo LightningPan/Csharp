@@ -8,3 +8,13 @@ C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.csproj.GenerateResource.cach
 C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.exe
 C:\Users\tp103\source\repos\Crawler\UI\obj\Debug\UI.pdb
+D:\github\Csharp\homework9\UI\bin\Debug\UI.exe.config
+D:\github\Csharp\homework9\UI\bin\Debug\UI.exe
+D:\github\Csharp\homework9\UI\bin\Debug\UI.pdb
+D:\github\Csharp\homework9\UI\obj\Debug\UI.csprojAssemblyReference.cache
+D:\github\Csharp\homework9\UI\obj\Debug\UI.Form1.resources
+D:\github\Csharp\homework9\UI\obj\Debug\UI.Properties.Resources.resources
+D:\github\Csharp\homework9\UI\obj\Debug\UI.csproj.GenerateResource.cache
+D:\github\Csharp\homework9\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\github\Csharp\homework9\UI\obj\Debug\UI.exe
+D:\github\Csharp\homework9\UI\obj\Debug\UI.pdb
