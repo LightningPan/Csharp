@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="转载请注明出处：葡萄城官网，葡萄城为开发者提供专业的开发工具、解决方案和服务，赋能开发者。 原文出处：https://blog.bitsrc.io/vuejs-3-0-0-beta-features-" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>还学的动吗？ 盘点下Vue.js 3.0.0 那些让人激动的功能 - 葡萄城技术团队 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue.min.css?v=MH15aYd6DmX-6TABpA2xkiKENy3GAhiM2dh5rOPH89I" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/powertoolsteam/custom.css?v=KDTRb5vfz/nVENrK/SKAmf5xzTs=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue-mobile.min.css?v=X7swQJ1TyCJAf6FMVjDPbYhUAiMdNFddEy1-m0_TbFQ" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/powertoolsteam/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/powertoolsteam/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/powertoolsteam/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 71844;
+        var currentBlogApp = 'powertoolsteam';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleBlue';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/powertoolsteam/">葡萄城技术团队</a>
+</div>
+<div class="subtitle">
+
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/powertoolsteam/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%91%A1%E8%90%84%E5%9F%8E%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/powertoolsteam/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+532&nbsp;</span>
+<span id="stats_article_count">文章 - 
+0&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+4459</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                <div id="post_detail">
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/powertoolsteam/p/12791820.html">还学的动吗？ 盘点下Vue.js 3.0.0 那些让人激动的功能</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <blockquote>
+<p align="left">转载请注明出处：<a href="https://www.grapecity.com.cn/" target="_blank">葡萄城官网</a>，葡萄城为开发者提供专业的开发工具、解决方案和服务，赋能开发者。</p>
+<p align="left">原文出处：https://blog.bitsrc.io/vuejs-3-0-0-beta-features-im-excited-about-c70b82fac163</p>
+</blockquote>
+<p align="left">&nbsp;</p>
+<p>路漫漫其修远兮，吾将上下而求索。&mdash;&mdash;献给所有为 Vue的发展而默默付出的开发者们。</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto" src="https://img2020.cnblogs.com/blog/139239/202004/139239-20200428085703403-786644649.png" alt=""></p>
+<p align="center">(图片来源于网络)</p>
+<p>前几天，Vue正式进入了beta阶段，作为一个日渐流行的JavaScript库，Vue.js由Evan You和Vue社区的284多名成员创建。如今，它已拥有超过120万用户，并成为用来解决大型单页web应用程序的有效手段。</p>
+<p align="left"><img style="display: block; margin-left: auto; margin-right: auto" src="https://img2020.cnblogs.com/blog/139239/202004/139239-20200428085718016-1290052072.png" alt=""></p>
+<p align="center">(图片来源于网络)</p>
+<p style="text-align: left;" align="center">&nbsp;</p>
+<p>在撰写本文时，Vue.js 3.0.0已经对外发布了Beta版，其中最重要的变化是受React Hooks的启发，在新的API中允许使用基于函数的方式编写组件。</p>
+<p align="center"><img style="display: block; margin-left: auto; margin-right: auto" src="https://img2020.cnblogs.com/blog/139239/202004/139239-20200428085750265-1075532273.png" alt=""></p>
+<p align="center">(图片来源于网络)</p>
+<p>以下是Vue.js 3.0.0 中的新功能：</p>
+<ul>
+<li>允许使用基于函数的方式编写组件</li>
+<li>虚拟DOM重写可提高性能并改善TypeScript支持</li>
+<li>原生门户</li>
+<li>Fragments&nbsp;片段（不会在DOM树中渲染的虚拟元素）</li>
+<li>全局mounting</li>
+<li>有条件地暂停组件渲染</li>
+</ul>
+<p>我们将从性能、代码优化（Tree-shaking）、函数式API（Composition API）等方面，盘点 Vue.js 3.0.0 中那些让人激动的功能。</p>
+<p>&nbsp;</p>
+<h2>性能</h2>
+<p>Vue.js的发展，向来都是以提高开发与构建的速度为驱动，对比3.0和此前的Vue版本，这一点尤为明显。由于虚拟DOM已被完全重写，因此这个新版本将比以往更快。</p>
+<p>对于服务器端渲染，Vue.js 3.0.0的性能提高了2倍，速度提高了3倍。同时，组件的初始化现在也更加高效，甚至具有了编译器通知的快速执行路径。</p>
+<p>&nbsp;</p>
+<h2>代码优化（Tree-shaking）</h2>
+<p>在Vue.js 3.0.0中，提供了&ldquo;摇树&rdquo;支持，即通过"摇"我们的JS文件，将其中用不到的代码"摇"掉。</p>
+<p align="center"><img style="display: block; margin-left: auto; margin-right: auto" src="https://img2020.cnblogs.com/blog/139239/202004/139239-20200428085819398-116638206.png" alt=""></p>
+<p align="center">(图片来源于网络)</p>
+<p>具体来说，在 webpack 项目中，有一个入口文件，相当于一棵树的主干，入口文件有很多依赖的模块，相当于树枝。在实际情况中，虽然依赖了某个模块，但其实只使用其中的某些功能。通过 tree-shaking，便可将没有使用的模块摇掉，这样来达到代码优化的目的。</p>
+<p>现在，Vue中可选的大多数功能都支持&ldquo;摇树&rdquo;，例如过渡和v模型。这极大地减小了Vue应用程序的大小，例如一个标准HelloWorld系统现在的文件大小仅为13.5kb（通过使用composition API，它的大小甚至可以降到11.75kb）。</p>
+<p>&ldquo;摇树&rdquo;的出现，允许一个包括了所有运行时功能的项目大小可缩至22.5kb。这意味着即使增加了更多功能，Vue 3.0.0仍然比任何2.x版本都轻盈。</p>
+<p>&nbsp;</p>
+<h2>Composition API</h2>
+<p>Composition API 是一种全新的逻辑重用和代码组织方法。</p>
+<p>Vue团队主要对当前的Composition API进行了添加和改进，而不是进行重大更新，这让已经熟悉了Vue2语法的人可以更容易上手。</p>
+<p>此前，我们经常使用&ldquo;options&rdquo;API （如data、methods、computed等属性）来构建组件，目的就是为了将逻辑添加到Vue组件中。这种方法最大的缺点是：它本身并不是一个标准的JavaScript代码。因此，您需要确切地知道模板中可以访问哪些属性以及this关键字的行为。在底层，Vue编译器需要将此属性转换为标准代码。正因为如此，我们无法从自动建议或类型检查中获益。</p>
+<p>&nbsp;</p>
+<p>所以，Vue团队推出了composition API来解决这些问题，它具备了在Vue组件中使用和重用纯JS函数的灵活性和自由度。</p>
+<p>composition API如下所示：</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:javascript;gutter:true;">&lt;script&gt;
+export default {
+         setup() {
+           return {
+             average(), range(), median()
+           }
+         }
+       } function average() { } 
+function range() { } 
+function median() { }
+&lt;/script&gt;
+</pre>
+</div>
+<p>使用composition API并不意味着不能使用&ldquo;options&rdquo;API。相反，我们可以将 composition API与options API一起使用。（就像在React的钩子中那样）</p>
+<p>&nbsp;</p>
+<h2>Fragments</h2>
+<p class="hw">Vue JS将在 3.0.0版本中引入类似React Fragments的功能，该功能的主要需求是因为在之前的版本中Vue模板只能拥有一个根节点，因此，当创建类似像下面这样的组件时，将返回错误：</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:javascript;gutter:true;">&lt;template&gt; 
+&lt;div&gt;Root1&lt;/div&gt; 
+&lt;div&gt;Root2&lt;/div&gt; 
+&lt;/template&gt;
+</pre>
+</div>
+<p>任何Vue组件都需要绑定在单个根节点中，在3.0中将内置允许模板组件拥有多个根节点功能，这一点和React的功能类似。</p>
+<p>&nbsp;</p>
+<h2>Teleport</h2>
+<p class="ip">Teleport（以前称为Portal）是将子节点渲染到DOM谱系之外的DOM节点中的安全通道，例如弹出窗口甚至是模式。在此之前，使用CSS通常会遇到很多麻烦，现在Vue允许您使用&lt;Teleport&gt;在模板部分中进行处理。我相信Teleport受到React门户的启发，并将随Vue JS的3.0.0版本一起提供。</p>
+<p class="ip">&nbsp;</p>
+<h2>Suspense</h2>
+<p class="ip">Suspense的提供可以让我们在应用延迟加载一些内容的同时，使加载过程可视化，这个过程可以是一个加载动画或是一个占位符，这样无疑会使用户体验更流畅，也会让程序的性能从感知层面上有一些提升。</p>
+<p class="ip">&nbsp;</p>
+<h2>更好的TypeScript支持</h2>
+<p class="ip">Vue 3.0版本已经使用了TypeScript重写，对于终端用户来讲，不论用户使用的是TS还是JS，都会获得更好的编程体验，包括静态检查等。即使你用的是JS，你仍然可以得到参数的提示、类型声明，甚至可以跳进类型声明中去看源码， TS与JS在代码和API之间没有太大区别。并且，目前如果你喜欢使用Class组件，它仍受支持。</p>
+<p class="ip">&nbsp;</p>
+<h2>当前Vue 3.0.0的版本状态</h2>
+<p class="hw">根据GitHub上该项目的发布计划，Vue 3.0.0版的正式发布计划定于<a href="https://github.com/vuejs/vue/projects/6" target="_blank">2020年第一季度</a>。目前来看进度是有一些延迟。但Vue 3.0.0正式beta测试仍然按计划启动了，这意味着日程中所有请求都已经处理和完成。</p>
+<p class="hw">现在团队的重点是文档和升级指南的创建，另外Router和Vuex还有一些兼容性的改动，最后可能会还有一些实验性的小工具，例如：Vite，它是一个支持热更新的web服务器，实际用起来还是挺有意思的。</p>
+<p class="hw">&nbsp;</p>
+<h2>2.x系列会有最后一次小版本更新</h2>
+<p class="hw">作为可能是Vue 3.x版本正式发行之前的2.x系列的最后一个小版本更新。它将从3.0.0版本向后移植兼容，并加上在3.0.0删除的功能显示相应的弃用警告。</p>
+<p class="hw">&nbsp;</p>
+<h2>最后</h2>
+<p>根据已通过的测试来说明这个版本是市场上最快的前端框架。你可以在<a href="https://t.co/7TP5ZMtjK4?amp=1" target="_blank">此处</a>查看这次直播的ppt，以上为这次Vue 3.0.0 Beta的功能说明，是否有你喜欢的内容呢？</p>
+<p>　　</p>
+<p>　　</p>
+<p style="text-align: left;" align="center">&nbsp;</p>
+<p style="text-align: left;" align="center">&nbsp;</p>
+<p style="text-align: left;" align="center">&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 09:00</span>&nbsp;
+<a href="https://www.cnblogs.com/powertoolsteam/">葡萄城技术团队</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12791820" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12791820);return false;">收藏</a></div>
+        </div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 71844, cb_blogApp = 'powertoolsteam', cb_blogUserGuid = 'b79ef175-fb74-df11-ba8f-001cf0cd104b';
+    var cb_entryId = 12791820, cb_entryCreatedDate = '2020-04-28 09:00', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>    </div>
+</div>
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 葡萄城技术团队
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    <div id="page_end_html">
+        <div style="display:none;"><script language="javascript" type="text/javascript" src="//js.users.noscript.cnitblog.com/19083604.js"></script>
+<noscript><a href="//www.noscript.cnitblog.com/?19083604" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="//img.users.noscript.cnitblog.com/19083604.asp" style="border:none" /></a></noscript></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98869130-1', {'allowAnchor': true});
+  ga('send', 'pageview', {'page': location.pathname+location.search+location.hash});
+
+</script>
+    </div>
+</body>
+</html>

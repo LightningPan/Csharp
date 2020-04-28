@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hanstrovsky - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/hanstrovsky/custom.css?v=3RqyK8d4XxcvMABDzJsv0mvfurQ=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/hanstrovsky/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/hanstrovsky/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/hanstrovsky/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 519488;
+        var currentBlogApp = 'hanstrovsky';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <canvasid="c_n9"width="1920"height="990"style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<script src="https://files.cnblogs.com/files/siwuxie095/canvas-nest.min.js" defer></script>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/hanstrovsky/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/hanstrovsky/">Hanstrovsky</a>
+</h1>
+<h2>
+种一棵树最好的时间是十年前，其次是现在。
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/hanstrovsky/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Hanstrovsky">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/hanstrovsky/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+16&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12792253.html">
+    伤其十指，不如断其一指，谈谈我的学习计划
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一个不能被有效执行的计划，做的再好，也是烂计划。 计划的三要素 我认为计划有三个要素，一是目标，二是时间，三是事务，计划就是在某个时间要达成某个目标所需要做的事务清单，同一个时间段，目标要简单明确，并且不宜过多，时间要清晰，事务要具体。像前段时间我做的计划就不合理，完全围绕着时间展开，把每天的时间排            <a href="https://www.cnblogs.com/hanstrovsky/p/12792253.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 21:01 Hanstrovsky 阅读 (55) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12792253" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/04/18.html">2020年4月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12725112.html">
+    如何使用Swagger-UI在线生成漂亮的接口文档
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、简单介绍 Swagger是一个实现了OpenAPI(OpenAPI Specification)规范的工具集。OpenAPI是Linux基金会的一个项目，试图通过定义一种用来描述API格式或API定义的语言，来规范RESTful服务开发过程。 swagger大大方便了前后端开发人员，用过的人都说            <a href="https://www.cnblogs.com/hanstrovsky/p/12725112.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 12:29 Hanstrovsky 阅读 (318) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12725112" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/03/30.html">2020年3月30日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12600907.html">
+    如何在Linux服务器上部署jar包
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：启动程序方法 1、上传jar包到linux服务器下 2、启动jar包 ​ 前台模式 java –jar XXXX.jar（注意这个命令启动时，断开服务连接后，服务就关闭了） ​ 后台模式 nohup java jar XXXX.jar XX.log 2 &amp;1&amp;（xx.log代表日志输出文件） 终止程            <a href="https://www.cnblogs.com/hanstrovsky/p/12600907.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-30 20:25 Hanstrovsky 阅读 (172) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12600907" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/03/19.html">2020年3月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12527022.html">
+    使用PageHelper插件分页时，如何对对象进行转换以及添加属性
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、插件介绍 PageHelper是针对Mybaits的分页插件，支持任何复杂的单表、多表分页。 二、基本用法 以springboot为例，有两种方式配置，一种是传统的，引入依赖，编写配置类；一种是使用application.yml进行配置。 第一种 1.引入依赖 2.配置插件 第二种 1.引入依赖            <a href="https://www.cnblogs.com/hanstrovsky/p/12527022.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-19 22:22 Hanstrovsky 阅读 (131) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12527022" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/03/09.html">2020年3月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12520142.html">
+    在Java中使用Collections.sort 依据多个字段排序
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、如何使用Collections工具类进行排序 使用Collections工具类进行排序主要有两种方式： 1.对象实现Comparable接口，重写compareTo方法 2.传入一个比较器对象Comparator。 还是用上面的student，不去实现Comparable接口。 二、依据多个字段            <a href="https://www.cnblogs.com/hanstrovsky/p/12520142.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-09 20:56 Hanstrovsky 阅读 (185) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12520142" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/02/18.html">2020年2月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12327460.html">
+    关于JAVA中源码级注解的编写及使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、注解简介： 1.1.什么是“注解”： ​ 在我们编写代码时，一定看到过这样的代码： ​ 其中的@Override，就是一个“注解”，@Override一般出现在重写equals()或者toString()方法的上边，意思是告诉编译器：下边的代码是重写父类方法的。这时编译器会按照“重写”的语法严格            <a href="https://www.cnblogs.com/hanstrovsky/p/12327460.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-02-18 18:47 Hanstrovsky 阅读 (157) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12327460" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2020/01/19.html">2020年1月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12197006.html">
+    关于数据库设计的三范式与反三范式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：范式 （数据库设计范式，数据库的设计范式）是符合某一种级别的关系模式的集合。构造数据库必须遵循一定的规则。在关系数据库中，这种规则就是范式。关系数据库中的关系必须满足一定的要求，即满足不同的范式。 一、 第一范式 一个字段只记录一件事 在任何一个关系数据库中，第一范式（1NF）是对关系模式的基本要求            <a href="https://www.cnblogs.com/hanstrovsky/p/12197006.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-19 15:34 Hanstrovsky 阅读 (72) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12197006" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/12/23.html">2019年12月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12083971.html">
+    如何使用Spring Securiry实现前后端分离项目的登录功能
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如果不是前后端分离项目，使用SpringSecurity做登录功能会很省心，只要简单的几项配置，便可以轻松完成登录成功失败的处理，当访问需要认证的页面时，可以自动重定向到登录页面。但是前后端分离的项目就不一样了，不能直接由后台处理，而是要向前端返回相应的json提示。 在本例的介绍中，主要解决了以下            <a href="https://www.cnblogs.com/hanstrovsky/p/12083971.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-12-23 15:24 Hanstrovsky 阅读 (164) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12083971" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/11/23.html">2019年11月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11918890.html">
+    关于配置Nginx反向代理后SpringSecurity认证失败的问题解决
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：问题背景 最近在写的一个项目，采用前后端分离的方式进行开发，登录认证使用的是SpringSecurity框架。 问题描述 在项目部署的时候出现了一个问题，在自己电脑上运行的时候一切顺畅，可是部署到服务器上就一直登录失败，分别测试了前端和后端的代码，独立运行没有问题，打开F12查看返回的提示是发生了重            <a href="https://www.cnblogs.com/hanstrovsky/p/11918890.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-23 17:30 Hanstrovsky 阅读 (340) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11918890" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/11/20.html">2019年11月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11896290.html">
+    如何在后台封装el-tree所需要的数据格式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：背景 最近遇到了一个分层级展示指标的需求，前端使用el tree树形组件，要求按官方文档的格式提供数据。 数据格式： 封装思路 1、首先我们需要获取到所有的节点，新建一个集合result来保存所有顶级节点，也就是parentId为空的或指定值。 2、然后我们需要找出二级节点存入到顶级节点的child            <a href="https://www.cnblogs.com/hanstrovsky/p/11896290.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-20 10:57 Hanstrovsky 阅读 (400) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11896290" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/11/15.html">2019年11月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11867878.html">
+    如何使用Sping Data JPA更新局部字段
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：问题描述 在更新数据时，有时候我们只需要更新一部分字段，其他字段保持不变。Spring Data JPA并未提供现成的接口，直接使用save()更新会导致其他字段被Null覆盖掉。 解决办法 通常有两种方法解决此问题： 1、通过传入对象的id，从数据库中查询得到原始对象，然后将要修改的字段封装到原始            <a href="https://www.cnblogs.com/hanstrovsky/p/11867878.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-15 16:58 Hanstrovsky 阅读 (692) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11867878" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/10/24.html">2019年10月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11735207.html">
+    简单说说基于JWT的token认证方式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、什么是认证 好多人不知道什么是认证，认证，其实就是服务端确认用户身份。Http协议是无状态的，客户端发送一条请求，服务端返回一条响应，二者就算做成一单买卖，一拍两散。在很久以前，互联网所能提供的服务仅仅是一些页面的浏览，服务器并不需要知道是谁在访问自己，而随着互联网的发展，在很多应用场景记住用户            <a href="https://www.cnblogs.com/hanstrovsky/p/11735207.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-24 21:53 Hanstrovsky 阅读 (175) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11735207" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/10/15.html">2019年10月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11681783.html">
+    关于近期学习状态的一些反思
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、前言 这段时间一直也没有什么能看到的长进，嘴上一直说学习学习的，但是没有目标，没有计划，行动也是漫无目的，看不到收获，努力学习变成了空喊口号，名副其实地成了个积极废人，每天早早下班，却白白浪费了大好的业余时间。其他方面也是一样的，比如健身减肥，未来如果这个状态持续下去恐怕会恶性循环，越来越消极不            <a href="https://www.cnblogs.com/hanstrovsky/p/11681783.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-15 23:05 Hanstrovsky 阅读 (582) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11681783" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/09/27.html">2019年9月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11601010.html">
+    为什么要使用构造方法进行依赖注入
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、前言 我们在使用Spring框架进行开发时，不可避免的要进行依赖注入（Dependency Injection），也就是把实例从Spring容器中取出来进行使用。Spring的依赖注入方式主要有三种，分别为Constructor、Setter和Field。有了选择的余地，令人纠结的地方就来了，这            <a href="https://www.cnblogs.com/hanstrovsky/p/11601010.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-27 23:29 Hanstrovsky 阅读 (395) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11601010" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/08/01.html">2019年8月1日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/10970092.html">
+    为什么我要写技术博客
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：做什么事，总要有些目的。有了目的，才有坚持下去的理由。 一、写博客的好处 1、知识梳理 我们在工作中不可避免地会遇到一些问题，很多时候这些问题没有什么系统性，没有规律可言。而解决这些问题的过程，便是一个人成长进步的过程。但是如果不能把学到的东西整理消化，那么很可能一段时间之后，还要在同样的地方跌倒第            <a href="https://www.cnblogs.com/hanstrovsky/p/10970092.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-01 21:00 Hanstrovsky 阅读 (12) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10970092" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/hanstrovsky/archive/2019/07/15.html">2019年7月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/11182346.html">
+    打开Java的大门，寻找新世界的OnePiece
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：初次听到Java这个词，还是在读高中的时候，大概是08、09年那样子。当时只是认识那个咖啡的图标，我记得好像是在诺基亚手机上看到的，打开游戏的过程很慢，界面只有一个冒着热气的咖啡杯。 一晃多年，Java日益强大。这里，我打算利用博客这个平台将之前所学，现在所学，以及将来所学，随时做一些总结，以加深对            <a href="https://www.cnblogs.com/hanstrovsky/p/11182346.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-07-15 21:18 Hanstrovsky 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11182346" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Hanstrovsky
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="预处理指令pragma 在系统中加入预处理器指令一般是用来允许不是基本c语言规范部分的行为。不支持pragma的编译器会忽略pragma指令提示的那些语句，这样就允许使用pragma的程序在不支持它们" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>使用openmp进行并行编程 - 红拂与妹奔 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/yiyefuyou/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/yiyefuyou/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/yiyefuyou/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 583406;
+        var currentBlogApp = 'yiyefuyou';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/yiyefuyou/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/yiyefuyou/">红拂与妹奔</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/yiyefuyou/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E7%BA%A2%E6%8B%82%E4%B8%8E%E5%A6%B9%E5%A5%94">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/yiyefuyou/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+9&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+0</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/yiyefuyou/p/12797532.html">使用openmp进行并行编程</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h3 id="预处理指令pragma">预处理指令pragma</h3>
+<p>在系统中加入预处理器指令一般是用来允许不是基本c语言规范部分的行为。不支持pragma的编译器会忽略pragma指令提示的那些语句，这样就允许使用pragma的程序在不支持它们的平台上运行。</p>
+<h1 id="第一个程序：hello">第一个程序：hello</h1>
+<pre><code class="language-c++">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;omp.h&gt;
+
+void Hello(void); // Thread function
+
+int main(int argc, char* argv[]) {  
+	// Get number of threads from command line  
+	int thread_count = strtol(argv[1], NULL, 10);
+	#pragma omp parallel num_threads(thread_count)  
+	Hello();
+    return 0;
+}
+
+void Hello(void) {
+	int my_rank = omp_get_thread_num();
+	int thread_count = omp_get_num_threads();
+
+	printf(&quot;Hello from thread %d of %dnn\n&quot;, my_rank, thread_count);
+}
+</code></pre>
+<h2 id="hello例子的分析：">Hello例子的分析：</h2>
+<h3 id="最基本的并行原语">最基本的并行原语</h3>
+<p>用于运行代码块的线程数可以动态生成。</p>
+<pre><code>pragma omp parallel  :
+</code></pre>
+<p>当程序到达parallel指令时，原来的线程继续执行，另外的线程被启动。在openmp语法中，执行并行块的线程集合（原始线程和新的线程被称为线程组，原始的线程被称为主线程，额外的线程称为从线程。每个线程组成员都调用指令后的代码块。</p>
+<h3 id="num_thread-">num_thread( )</h3>
+<pre><code># pragma omp parallel num_threads ( thread_count )
+</code></pre>
+<p>一个从句例子（用于修饰原语），可用于指定线程数量</p>
+<h3 id="omph">omp.h</h3>
+<pre><code>#include &lt;omp.h&gt;
+</code></pre>
+<p>使用openmp必须含omp.h头文件</p>
+<h3 id="strtol-">strtol( )</h3>
+<pre><code>long strtol(const char* number p,char** end p,int base);
+</code></pre>
+<p>使用stdlib.h中的strtol来获得线程数<br>
+ps:一些系统因素可能会限制可以启动的线程数量；OpenMP 并不保证能够启动指定个的线程；</p>
+<p>多数系统能够启动上百甚至上千的线程；除非启动的太多，一般都能满足要求。</p>
+<h1 id="例子梯形积分法">例子:梯形积分法</h1>
+<p><img src="https://uploader.shimo.im/f/d206UbhHaUc26vij.png!thumbnail" alt="图片"></p>
+<p>如果每个子区间有相同的宽度，并且定义h=(b-a)/n，xi=a+ih，i=0, 1, ...， n,那么近似值将是：</p>
+<p><img src="https://uploader.shimo.im/f/Cej6yMu9GecrRSrf.png!thumbnail" alt="图片"></p>
+<pre><code> //串行算法实现//
+ Input: a, b, n ;
+ h = (b*a)/n;
+ approx = (f(a) + f(b))/2.0;
+ for (i = 1; i &lt;= n-1; i++) {
+ 	x_i = a + i*h;
+ 	approx += f(x_i);
+ }
+ approx = h*approx;
+</code></pre>
+<h2 id="第一种尝试">第一种尝试</h2>
+<ol>
+<li>定义两种类型的任务:</li>
+</ol>
+<p>​	a) 计算单个梯形的面积；</p>
+<p>​	b) 将面积加起来。</p>
+<ol start="2">
+<li>在第一阶段，没有通信开销；但第二阶段每个任务需要通信。</li>
+</ol>
+<p>考虑一个问题：结果不可预估——<strong>引入互斥量</strong></p>
+<pre><code>pragma omp critical   global_result += my_result ;
+</code></pre>
+<h3 id="第一个版本">第一个版本</h3>
+<pre><code> #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;omp.h&gt;
+
+  void Trap(double a, double b, int n, double  global_result p);
+  int main(int argc, char  argv[]){
+    double  global_result = 0.0;
+    double  a, b;
+    int     n;
+    int     thread_count;
+
+    thread_count = strtol(argv[1], NULL, 10);
+    printf(&quot;Enter a, b, and n n&quot;);
+    scanf(&quot;%lf %lf %d&quot;, &amp;a, &amp;b, &amp;n);
+#   pragma omp parallel num_threads(thread_count)
+    Trap(a, b, n, &amp;global_result);
+
+    printf(&quot;With n = %d trapezoids, our estimate n&quot;, n);
+    printf(&quot;of the integral from %f to %f = %.14e n&quot;,
+    a, b, global_result);
+    return 0;
+}    /∗  main ∗/
+    
+    void Trap(double a, double b, int n, double* global_result_p)
+      double  h, x, my_result;
+      double  local_a, local_b;
+      int  i, local n;
+      int my_rank = omp_get_thread_num();
+      int thread_count = omp_get_num_threads();
+        
+      h = (b−a)/n;
+      local_n = n/thread_count;
+      local_a = a + my_rank*local_n*h;
+      local_b = local_a + local_n*h;
+      my_result = (f(local_a) + f(local_b))/2.0;
+      for (i = 1; i &lt;= local_n−1; i++){
+        x = local_a + i*h;
+        my_result += f(x);
+       }
+  `   ` my_result = my_result*h;
+   #  pragma omp critical
+      ∗global_result_p += my_result;
+  }    /∗  Trap ∗/
+</code></pre>
+<h3 id="作用域">作用域</h3>
+<p>在串行程序中, 变量的作用域包含了所有可以使用变量的区域；</p>
+<p>在OpenMP中, 变量的作用域还要包括可以访问该变量的并行区域。</p>
+<p>能被所有线程访问的变量具有 shared（共享） 作用域；</p>
+<p>只能被一个线程访问的变量具有 private （私有）作用域.</p>
+<p>默认的作用域是 shared.</p>
+<h3 id="规约从句：">规约从句：</h3>
+<p>替代（在parallel块中声明一个私有变量和将临界区移到函数调用之）</p>
+<p>归约：将相同的归约操作符重复的应用到操作数序列来得到一个结果的计算。</p>
+<p>所有操作的中间结果存储在一个变量中：归约变量</p>
+<pre><code>reduction(&lt;operator&gt;:&lt;variable list&gt;)
+</code></pre>
+<p>新的代码：</p>
+<pre><code>global_result = 0.0;
+#  pragma omp parallel num threads(thread count)\
+ reduction(+: global_result)
+global_result += Local_trap(double a, double b, int n);
+</code></pre>
+<h3 id="parallel-for">parallel for</h3>
+<p>能够生成一队线程来执行接下来的语句块；</p>
+<p>语句块必须是一个for循环；</p>
+<p>通过将循环切分给不同的线程来实现并行。</p>
+<p>只有迭代次数确定的循环才可以被并行化。</p>
+<pre><code>h = (b−a)/n;
+approx = (f(a) + f(b))/2.0;
+#  pragma omp parallel for num threads(thread_count) reduction(+: approx)
+for (i = 1; i &lt;= n−1; i++)
+approx += f(a + i∗h); approx = h∗approx;
+</code></pre>
+<p>可被并行化的for循环形式：<br>
+<img src="https://uploader.shimo.im/f/cYVsBNP2Lq8GCNGh.png!thumbnail" alt="图片"></p>
+<p>**ps:  **index 必须是整数或者指针 (e.g., 不能是浮点数)；</p>
+<p>start, end, 和 incr 必须具有相应的类型。 例如, 如果index 是一个指针, 那么 incr 必须是一个整型；</p>
+<p>start, end, 和 incr 在循环执行过程中不能被修改；</p>
+<p>在循环执行过程中, 变量 index 只能被for语句修改。</p>
+<h3 id="数据依赖">数据依赖</h3>
+<p>1.OpenMP 编译器并不检查循环迭代中的数据依赖问题；</p>
+<p>2.一般来说，OpenMP无法处理带有数据依赖的循环。</p>
+<p>解决思路：设计私有变量并且保证其私有作用域（private子句）</p>
+<h3 id="default子句">default子句</h3>
+<p>编译器强制要求程序员指定在块中使用的外部变量的作用范围。</p>
+<pre><code>double sum = 0.0;
+# pragma omp parallel for num threads(thread count)\
+default(none) reduction(+:sum) private(k, factor)\
+ shared(n)
+for (k = 0; k &lt; n; k++){
+  if (k % 2 == 0)
+    factor = 1.0;
+  else
+    factor = −1.0;
+  sum += factor/(2∗k+1);
+}
+</code></pre>
+<h3 id="for指令">for指令</h3>
+<p>并不创建线程，使用已经在parallel块中创建的线程。</p>
+<pre><code>#  pragma omp for
+</code></pre>
+<h3 id="解决循环调用问题：schedule--type--chunksize-">解决循环调用问题：schedule ( type , chunksize )</h3>
+<p>type 可以是:<br>
+static: 提前把任务分配好；</p>
+<p>dynamic or guided: 在运行时动态分配；</p>
+<p>dynamic:</p>
+<p>任务被分成 chunksize 大小的连续段；</p>
+<p>每个线程执行一小块, 当有一个线程执行完时, 它会请求获得1个新的；</p>
+<p>重复上述过程，直到完成计算；</p>
+<p>chunksize 可以被去掉;当去掉时, chunksize 默认为1.</p>
+<p>guided:</p>
+<p>每个线程执行一小块, 当有一个线程执行完时, 它会请求获得1个新的；</p>
+<p>但是，新的任务块是不断变小的；</p>
+<p>如果不指定chunksize，那么默认会降到1.</p>
+<p>如果指定了chunksize, 则会降到指定的chunksize, 除了最后一块可能小于chunksize.</p>
+<p>auto: 编译器或者运行时系统决定调度策略；</p>
+<p>runtime: 运行时决定。</p>
+<p>chunksize 是一个正整数</p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 21:51</span>&nbsp;
+<a href="https://www.cnblogs.com/yiyefuyou/">红拂与妹奔</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797532" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12797532);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 583406, cb_blogApp = 'yiyefuyou', cb_blogUserGuid = 'c9cbb966-aa21-4994-3921-08d7a7ac135e';
+    var cb_entryId = 12797532, cb_entryCreatedDate = '2020-04-28 21:51', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 红拂与妹奔
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

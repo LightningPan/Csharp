@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="写在前面 学习很难，克服惰性。每天学一点，不会的就少一点。 懦夫从不启程，弱者死于路中，只剩我们前行，一步都不能停。 养成习惯很重要，先从点赞开始吧！ 最近跟一位进入大厂的朋友深夜畅谈(其实是不断的安" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>绩效沟通季的瓜不好吃，小心下一个吃瓜的是你？ - 程序员之道 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=hlpQ1CJDwwJXDxv2HNauUmW3NjyWzoMaw1uER19SLT0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/chanllenge/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/chanllenge/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/chanllenge/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 556429;
+        var currentBlogApp = 'chanllenge';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/chanllenge/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/chanllenge/">程序员之道</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/chanllenge/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B9%8B%E9%81%93">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/chanllenge/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+11&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+4</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/chanllenge/p/12797175.html">绩效沟通季的瓜不好吃，小心下一个吃瓜的是你？</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <blockquote>
+<p>写在前面<br>
+学习很难，克服惰性。每天学一点，不会的就少一点。<br>
+懦夫从不启程，弱者死于路中，只剩我们前行，一步都不能停。<br>
+养成习惯很重要，先从点赞开始吧！</p>
+</blockquote>
+<p>最近跟一位进入大厂的朋友深夜畅谈(其实是不断的安慰他)，道哥的朋友当然大多数都是程序员，这位朋友还是程序员中的佼佼者，因为在去年10月份进入了某大厂，不说名字大家也知道的哈。当时入职的package并不高，我还提醒他‘package有点低，有两种情况，1、部门不太行，开不起工资；2、对你的能力不太认可。综上，还是应该往上谈一谈’。朋友微微一笑(并不倾城额)，能力总能得到认可吧，好好干呗，反正是个好程序员。<br>
+<img src="https://img-blog.csdnimg.cn/20200428200528258.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="结果">结果</h3>
+<p>就在前几天晚上，这位朋友突然跟我微信语音聊了两三个小时，从他的语气可以听出他的心情非常差，明明一个大老爷们，竟然都感觉他随时要哭出来一样。他跟我说的无非两个事情。1.工作非常努力，也有很多产出。2.但主管领导给他绩效打了1，也就是组里垫底，意味着他这几个月白干，0涨薪，0年终，0股票。</p>
+<p>我跟他聊了很多，从小时候贫穷的农村，到互联网，到程序员，到外太空，人一辈子很长，这半年时间并不算什么；人本身就很渺小，在很多有时候有太多的无可奈何。向前看，但不要向💰看，不要因为别人否定自己，你就自抛自弃，时间还长着呢，大家骑驴看唱本，走着瞧。<br>
+<img src="https://img-blog.csdnimg.cn/20200428200631760.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="程序员几宗罪">程序员几宗罪</h3>
+<p>大家同为程序员，但程序员与程序员之间的差别可大着咧。你能跟PUA大厂的领导和同事们撕逼么。一切看似风平浪静，但水面之下实则波诡云谲，暗流涌动。我想了一下，大多数程序员可能都有以下几个缺点：</p>
+<ol>
+<li>自信，甚至于自大。能通过层层筛选进入大厂或者一家新的公司，能力应该有所不俗吧，或者至少把自己包装的很不俗。所谓绩效考核，肯定也是最末尾的才是被淘汰么，我这么优秀，怎么可能是我呢？</li>
+<li>沟通能力太差。一般越是优秀的程序员，沟通能力越是差，或许是习惯于常年与计算机的0-1简单沟通吧。不屑与复杂人交往，不屑于表现、撕逼、攀扯。这在不同的公司代表的结果可能不一样，在不同的领导下面结果也不一样。</li>
+<li>情商低。工作情商低，生活上情商低，不会哄老婆，哄女朋友(首先得有个女朋友哈)，这一点我也深有体会，以至于偶尔会怀疑自己是否智商也低。总之，有时候觉得这个世界好复杂，怎么在这个复杂的世界面前，觉得自己像一张随时被撕破的白纸一样呢？</li>
+<li>向上沟通，向上管理能力差。程序员干几年，是个普通程序员。再多干几年，那你就不应该再是一个普通的程序员了，主管对你不信任，随意蹂躏，能这样吗？你得学会向上沟通，表现自己的亮点，让老板的老板注意到你，如果你是老板老板的红人，主管还敢给你穿小鞋么？额额，好像说的有点像拍马屁了。是的，必要的时候还是要学会点拍马屁的手段的。</li>
+<li>把控能力弱，也就是别人常说的owner意识。要学会把控住可能发生的风险，比别人多想几步，多看几步，所谓跳出来才能看全景，有时候，需要放空一下自己，把事情看得更清楚，要慢慢学会owner意识，先从把控简单的事情开始，然后慢慢放大，如果在你的世界里，绝大多数的事情都在你的掌握之中，那你无疑就蜕变成另外一种人了，估计离阶级蜕变不远了。</li>
+<li>说话少，想的也少。老哥，这个世界真的很复杂。懵懂应届生进入国企，央企，确实体会不到人心复杂。但是有些互联网大厂讲的就是狼性文化啊，你表现的如此小白兔，你不被牺牲，那牺牲谁？话可以少说，但不可不说，说就要说到点子上，想的就需要更多了。要时刻警惕，任何人都不可信，要有自己的判断力，遇事多想，少说，真到你说的时候，一语就要摁住对方的喉咙。</li>
+<li>其实这都不是你的错，只是那个人刚好是你而已。这个世界很复杂，充满了各种游戏规则。是个人情的世界，并不是说你不好，你不够优秀，你的工作能力不强，领导就是需要个背锅的，权衡利弊之下，觉得你是最好拿捏的小白兔，you are chosen，就是这么简单，just so so。<br>
+<img src="https://img-blog.csdnimg.cn/20200428200754952.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
+</ol>
+<p>刚好凑足了7宗罪，哈哈，纯碎个人瞎扯了，各位看官想喷就喷吧！</p>
+<h3 id="逆袭之路">逆袭之路</h3>
+<p><img src="https://img-blog.csdnimg.cn/20200428200834750.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>被欺负了就忍着？要是你，你怎么办？可能有一下几种处理方式：</p>
+</blockquote>
+<ol>
+<li>忍气吞声呗，人在屋檐下不得不低头。</li>
+<li>干，撕，拼了，who怕who。</li>
+<li>有理有据有节沟通。</li>
+</ol>
+<p>第一种方式可能是大部分人选择的，而后不少人默默的选择了离职，此处不留爷自有留爷处，既然干的不爽，我也懒得与你理会，那就换个环境呗。</p>
+<p>第二种方式，是所谓的撕逼大战，每到绩效大季，各种撕逼大战会上演，简直比年度的宫斗剧还要复杂，是的，真正的职场，真的是充满尔虞我诈的是非之地，一不留神，就被套路了进去，有些耿直、爽快之人，实在是咽不下去这口气，于是和领导硬刚，撕就撕呗，谁怕谁，大不了离职走人。天底下又不是只有你一个黄世仁。</p>
+<p>接下来我们重点来说说第三种方式，有理有据有节，拿到这种不公平的对待，我们的目的是什么，当然是要“刚”了，但是凡事要讲究方式方法，摆事实，讲道理，我也不跟你明着撕逼，但其实我摆的事实就是在撕逼，我是在用一种文明的方式，告诉你，老子觉得你不公平，而且老子还要让你的主管知道，欺负人不是白欺负的，老实人就是任人鱼肉的么，你也太小看老实巴交的程序员了。这个时候就要表现你平时鲜不为人知的一面了，让你老板觉得，我靠，没看出来，他竟然是这样的，这次的软柿子是捏错了。同时，你是在摆事实，讲道理啊，没有撕逼，没有骂街，大家都很文明的沟通嘛，所以他也不能把你怎么样。</p>
+<h3 id="沟通技巧">沟通技巧</h3>
+<p><img src="https://img-blog.csdnimg.cn/20200428200934498.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<ol>
+<li>沟通第一要义，地位平等。不要以为对方是你的领导，你就觉得低人一头，不敢说话，说话不敢大声。同级沟通要真实，向下沟通要坦诚，向上沟通要平等。大家都是人，你虽然级别比我高，但你也不是什么都对，什么都行啊，并没有什么好怕的。</li>
+<li>沟通第二要义，讲道理，摆事实，少牵扯他人。沟通么，讲的就是自己的事情，少说与自己无关的人，摆自己的事实，证据，不要撒谎，不要打小报告，就事论事，对事不对人。你们难道能堵住天下悠悠众口，总的给你阐述自己的机会嘛。</li>
+<li>沟通第三要义，倾听。真正好的猎手一定是以静制动，充分倾听、等待，总结对方说话的要点，脑子里迅速过一下有没有一些漏洞，或者说他说的基本全是胡扯，就是蒙人呢。然后就可以抓住各个漏洞，逐一击破。</li>
+<li>沟通总则，把话说圆，让别人无话可说。凡事当然是有对错了，说话最高超的技巧就是，要把话说圆满，看他还怎么辩解，怎么批评你。举个例子，就比如说，有人批判你没有owner精神，然后还列举了你的一个例子。你反驳的时候肯定不能围绕着一个例子去反驳，你要说，这件事情上，你看到的是这样，其实我背后还做了很多，举例owner相关的事情，另外还平时还很刻意训练、提高自己的owner意识，把风险降低到最低，然后再举例再说明，最后再说，当然我做的还不够，还需要继续努力，你看看领导这个逼货还能说出什么。</li>
+</ol>
+<h3 id="总结">总结</h3>
+<p><img src="https://img-blog.csdnimg.cn/202004282011203.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>
+人生的路很长，不要因为一时的悲伤或不愉快就否定自己，不要把工作中不好的情绪带回家里。既然工作中要求你是个演员，那我们就戴好自己的面具，工作时好好演戏(也得好好提升能力啊，不能忘本啊)，下班时摘下面具，做真实快乐的自己，把幸福快乐留给家庭和孩子。<br>
+<img src="https://img-blog.csdnimg.cn/20200428201240144.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW5sbGVuZ2U=,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>
+真心希望每个善良的程序员都能遇到一个善良的领导，希望每一颗善良程序员的心不要被欺骗，希望我们永远活在一个纯粹的世界中，但如果有人要打破它，那我们就是要反抗。</p>
+<blockquote>
+<p>写在后面<br>
+坚持和习惯是学习中的两大绊脚石，先从养成点赞和评论开始吧，😁！</p>
+</blockquote>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 20:52</span>&nbsp;
+<a href="https://www.cnblogs.com/chanllenge/">程序员之道</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797175" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12797175);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 556429, cb_blogApp = 'chanllenge', cb_blogUserGuid = '628ea53f-c9b3-4c3b-9e9a-08d753a9a8fd';
+    var cb_entryId = 12797175, cb_entryCreatedDate = '2020-04-28 20:52', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 程序员之道
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

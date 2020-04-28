@@ -1,0 +1,984 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>phpWeChat开发教程 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/phpwechat/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/phpwechat/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/phpwechat/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 325015;
+        var currentBlogApp = 'phpwechat';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <div style="width: 1000px; margin: 8px auto">
+<a href="https://www.apipost.cn/" target="_blank">可直接生成文档的API调试、管理工具</a>
+</div>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/phpwechat/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/phpwechat/">phpWeChat教程</a>
+</h1>
+<h2>
+教你10天学会phpWechat，快速开发PC网站+微信公共号
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/phpwechat/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/phpWeChat%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/phpwechat/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+61&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+4</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2019/03/07.html">2019年3月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/10487077.html">
+[置顶]    使用ApiPost模拟发送get、post、delete、put等http请求
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：现在的模拟发送请求插件很多比如老外的postman等，但亲测咱们国内的 ApiPost 更好用一些。            <a href="https://www.cnblogs.com/phpwechat/p/10487077.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-07 00:42 phpWeChat开发教程 阅读 (6372) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10487077" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2018/08/17.html">2018年8月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/9492521.html">
+[置顶]    模拟POST、Get 请求的工具----APIpost（中文版POSTMAN）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：模拟POST、Get 请求的工具 APIpost（中文版POSTMAN） 快速生成、一键导出api文档 在线模拟调试，结果实时返回 模拟登录后请求API 支持团队协作 官网：https://www.apipost.cn/ 模拟POST、Get 请求的工具 APIpost（中文版POSTMAN） 快速            <a href="https://www.cnblogs.com/phpwechat/p/9492521.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2018-08-17 11:42 phpWeChat开发教程 阅读 (1406) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9492521" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2017/01/15.html">2017年1月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6287608.html">
+[置顶]    10天学会phpWeChat——第十天：phpWeChat的会员注册、登录以及微信网页开发
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：通过前面的系列教程，我们系统的讲解了phpWeChat从视图端、控制器端到模型端的操作流程；熟悉了phpWeChat的目录结构；掌握了视图端模板如何创建一个丰富的表单和模型端如何操作数据库。这一切都是传统Web以及现代H5开发的核心。            <a href="https://www.cnblogs.com/phpwechat/p/6287608.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-01-15 19:09 phpWeChat开发教程 阅读 (5710) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6287608" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6287448.html">
+[置顶]    10天学会phpWeChat——第九天：数据库增、删、改、查(CRUD)操作
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：数据库的操作(CRUD)是一个现代化计算机软件的核心，尤其针对web应用软件。虽然在前面的几讲里，我们针对数据库操作大致有了一些了解，但今天我们需要再次强化下。除了新瓶装老酒，我们今天还引入一个新的数据库操作方法：连贯操作。            <a href="https://www.cnblogs.com/phpwechat/p/6287448.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-01-15 17:25 phpWeChat开发教程 阅读 (2603) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6287448" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6287330.html">
+[置顶]    10天学会phpWeChat——第八天：Form类，丰富表单提交的字段类型
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在实际的生产环境中，文章投稿、商品上传等操作并不会简单局限于一个text和textarea组成的表单。在实际中，我们可能会用到web富文本编辑器（如ueditor、markdown）、图片上传、多图上传、附件上传、地图标注等更加丰富的表单类型。            <a href="https://www.cnblogs.com/phpwechat/p/6287330.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-01-15 16:30 phpWeChat开发教程 阅读 (2074) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6287330" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2017/01/06.html">2017年1月6日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6255929.html">
+[置顶]    10天学会phpWeChat——第七天：创建一个自适应PC网站+H5移动端的模块
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：通过前面六讲的系列教程，我们完成了一个包含后台的文章管理模块。但，phpWeChat的初衷并不仅限于此，帮您迅速创建一个PC网站+微信公共号才是满足时代需求的模块。
+
+今天，我们开始《10天学会phpWeChat》的第七讲：创建一个自适应PC网站+H5移动端的模块。            <a href="https://www.cnblogs.com/phpwechat/p/6255929.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-01-06 13:14 phpWeChat开发教程 阅读 (3635) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6255929" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2016/12/30.html">2016年12月30日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6238489.html">
+[置顶]    10天学会phpWeChat——第六天：实现新闻的后台管理
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：通过前面五讲的系列教程，我们完成了一个简单模块的前端发布、列表展示、详情展示。实际生产环境中，所有前台的数据都会有对应的后台操作进行统筹管理。我们称之为后台管理系统。            <a href="https://www.cnblogs.com/phpwechat/p/6238489.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-30 23:01 phpWeChat开发教程 阅读 (2924) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6238489" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2016/12/28.html">2016年12月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6229845.html">
+[置顶]    10天学会phpWeChat——第五天：实现新闻投稿功能
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在前几讲里，我们逐渐实现了自己小模块的新闻列表展示、新闻详情展示功能，现在您已经初步有能力开发一个phpWeChat小模块了，本文将在已开发的hello world模块基础上，增加一个新的功能——新闻投稿。            <a href="https://www.cnblogs.com/phpwechat/p/6229845.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-28 16:06 phpWeChat开发教程 阅读 (2700) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6229845" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6229143.html">
+[置顶]    10天学会phpWeChat——第四天：大U函数U()的使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在第三天，我们创建了一个“增强版”的文章模块，实现了数据从数据库到视图端展示的流程。但是我们仅仅是实现了数据列表的展示，对于文章详情等页面跳转并未涉及。本文重点讲解phpWeChat一个十分重要的前端函数U()。            <a href="https://www.cnblogs.com/phpwechat/p/6229143.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-28 13:33 phpWeChat开发教程 阅读 (2317) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6229143" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6228058.html">
+[置顶]    10天学会phpWeChat——第三天：从数据库读取数据到视图
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在第二天，我们创建了我们的第一个phpWeChat功能模块，但是比较简单。实际生产环境中，我们不可能有如此简单的需求。更多的情况是数据存储在MySql数据库中，我们开发功能模块的作用就是将这些数据从MySql读取并通过视图多样化的呈现给用户。            <a href="https://www.cnblogs.com/phpwechat/p/6228058.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-28 02:14 phpWeChat开发教程 阅读 (3239) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6228058" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6228007.html">
+[置顶]    10天学会phpWeChat——第二天：hello world！我的第一个功能模块
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：今天我们开始进入《10天学会phpWeChat》系列教程的第二天：创建我的第一个hello world! 功能模块。            <a href="https://www.cnblogs.com/phpwechat/p/6228007.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-28 00:30 phpWeChat开发教程 阅读 (5438) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6228007" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2016/12/27.html">2016年12月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6227036.html">
+[置顶]    10天学会phpWeChat——第一天：核心框架的目录结构
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本博客系列将图文结合，详细介绍phpWeChat 的使用方法，今天进入phpWeChat系列教程之《10天学会phpWeChat》的第一天——phpWeChat的根目录结构。            <a href="https://www.cnblogs.com/phpwechat/p/6227036.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-27 18:23 phpWeChat开发教程 阅读 (7837) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6227036" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/6226503.html">
+[置顶]    欢迎你，phpWeChat 开发者
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：感谢您使用 phpWeChat 来作为自己网站或者微信公共号的开发工具。phpWeChat 是一款高效、稳定的网站+微信公共号内容管理系统（CMS），也可称之为一个PHP开发框架。            <a href="https://www.cnblogs.com/phpwechat/p/6226503.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2016-12-27 16:50 phpWeChat开发教程 阅读 (3367) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6226503" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12797560.html">
+    ApiPost如何在预执行脚本里添加请求参数？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：ApiPost V3引入了预执行脚本和后执行脚本的概念，详细可以通过链接：《ApiPost的预执行脚本和后执行脚本》了解学习更多。本文主要介绍如何在预执行脚本里增加请求参数。            <a href="https://www.cnblogs.com/phpwechat/p/12797560.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 21:55 phpWeChat开发教程 阅读 (7) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797560" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12797553.html">
+    ApiPost的预执行脚本和后执行脚本
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：ApiPost的预执行脚本和后执行脚本主要是用来定义变量。但是它们有什么区别呢？ 预执行脚本 在当前接口发送请求前执行的脚本，可以理解为beforeSend的时候执行。 一般在这里，我们可以设置一些前置的变量，比如{{url}}或者其他发送时需要携带的变量。 变量的定义方法，可以参考：ApiPost            <a href="https://www.cnblogs.com/phpwechat/p/12797553.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 21:54 phpWeChat开发教程 阅读 (3) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797553" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12794172.html">
+    比postman更好用的apipost，如何测试post请求并发送json类型参数
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：引言 ApiPost（官网：https://www.apipost.cn/）是一个国产的、跟Postman差不多的、用来测试Web API的软件，提供window、mac、linux版本下载，对于有在开发Web API的开发者相当有用，同时由于它是国产软件，完全中文界面更加友好，也符合中国开发者的使            <a href="https://www.cnblogs.com/phpwechat/p/12794172.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 14:42 phpWeChat开发教程 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12794172" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12791557.html">
+    apipost v3文档模式在哪里？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：ApiPost简介： ApiPost是一个支持团队协作，并可直接生成文档的API调试、管理工具。它支持模拟POST、GET、PUT等常见请求，是后台接口开发者或前端、接口测试人员不可多得的工具 。 apipost v3文档模式在哪里？ ApiPost v3采用了更方便的文档分享模式，如下： 新版Ap            <a href="https://www.cnblogs.com/phpwechat/p/12791557.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 03:14 phpWeChat开发教程 阅读 (8) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12791557" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2020/04/27.html">2020年4月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12791057.html">
+    postman如何生成rap一类的接口文档？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：postman如何生成rap一类的接口文档？ 答案是不行的。 强烈推荐一款比postman更好用的接口测试工具 apipost，官网&#160;https://www.apipost.cn/ 它不仅拥有postman的接口测试功能，更拥有比rap更好用的接口文档生成与管理功能！ 墙裂推荐！            <a href="https://www.cnblogs.com/phpwechat/p/12791057.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-27 23:27 phpWeChat开发教程 阅读 (3) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12791057" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12789201.html">
+    比postman更好用接口调试工具ApiPost
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：强烈推荐apipost：https://www.apipost.cn/ 提升开发、测试团队效率，可直接生成文档的API调试、管理工具！            <a href="https://www.cnblogs.com/phpwechat/p/12789201.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-27 19:23 phpWeChat开发教程 阅读 (3) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12789201" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12770798.html">
+    apipost接口测试测试结果不对？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：apipost接口测试测试结果不对？ 排查以下几项： 1、如果您是在测试上传文件接口，请不要在header头里添加 content-type参数； 2、另外看看您是不是切换到了【响应】选项：            <a href="https://www.cnblogs.com/phpwechat/p/12770798.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 23:02 phpWeChat开发教程 阅读 (6) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770798" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12770762.html">
+    apipost 导出文档响应为空？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：很多小伙伴问，为什么apipost 导出文档响应为空？那是因为你么有添加响应示例。 ApiPost生成的文档怎么添加响应示例？很简单：            <a href="https://www.cnblogs.com/phpwechat/p/12770762.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 22:54 phpWeChat开发教程 阅读 (9) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770762" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12770489.html">
+    ApiPost V3创事记：一个痛并快乐着的创业故事
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 无论是对于国家，还是对于我们个人，2020年4月，是注定是一个不同往年的4月。一场突如起来的疫情打破了我们原来的生活曲线，让我们知道了什么是苦难，什么是团结，什么是坚持，什么是胜利。 一、大幕开启 随着国内疫情的缓解，中文版接口调试与文档管理工具ApiPost&#160;的开发团队重新踏上了面向未来的征            <a href="https://www.cnblogs.com/phpwechat/p/12770489.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 21:53 phpWeChat开发教程 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770489" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12770480.html">
+    使用ApiPost 的Path变量方便的测试restful接口
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：restful的接口格式似乎是一阵风，到处都在说，这种风格的确很有意义，类似： http://example.com/api/users/1 //GET 获取标识为1用户信息 ApiPost支持把像这样的restful风格链接中的uid也就是1作为参数单独提出来，这样的话比较方便调试和解释。 只需要            <a href="https://www.cnblogs.com/phpwechat/p/12770480.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 21:52 phpWeChat开发教程 阅读 (8) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770480" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/12770477.html">
+    为什么ApiPost看不到同事的协作数据？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：很多小伙伴问：为什么我同事修改了接口数据，而我这里看不到，重启软件都不行！ApiPost有Bug！ 其实，这个不是Bug，而是协作数据的一种保护。 为了防止协作数据替换，只有点击左侧的“下载协作数据”按钮才会替换云端（协作）数据到本地（下图）。 如果您只是为了查看最新文档，建议使用文档分享功能：ht            <a href="https://www.cnblogs.com/phpwechat/p/12770477.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 21:51 phpWeChat开发教程 阅读 (8) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770477" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2019/09/20.html">2019年9月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/11558289.html">
+    中文版Postman测试需要登陆才能访问的接口（基于Cookie）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在后台在开发、调试接口时，常常会遇到需要登陆才能请求的接口。今天，我们讲解利用ApiPost的环境变量，解决这种需要先登录再请求的接口依赖情况。            <a href="https://www.cnblogs.com/phpwechat/p/11558289.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-20 17:02 phpWeChat开发教程 阅读 (285) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11558289" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2019/09/17.html">2019年9月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/11532258.html">
+    fireFox模拟 post请求、上传插件,火狐浏览器中文postman插件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：ApiPost拥有FireFox拓展插件、Chrome拓展插件、Window客户端、Mac客户端、Linux客户端5大版本，软件界面清爽，使用简单，功能类似PostMAN和Rap的结合，更适合中文版的国人使用。            <a href="https://www.cnblogs.com/phpwechat/p/11532258.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-17 10:51 phpWeChat开发教程 阅读 (1518) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11532258" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2019/06/23.html">2019年6月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/11071979.html">
+    MySQL单表最大记录数不能超过多少？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：从性能角度来讲，MySQL单表数据不要超过多少呢？业界流传是500万行。超过500万行就要考虑分表分库了。            <a href="https://www.cnblogs.com/phpwechat/p/11071979.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-06-23 10:22 phpWeChat开发教程 阅读 (7325) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11071979" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/phpwechat/archive/2019/06/05.html">2019年6月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/phpwechat/p/10980071.html">
+    ApiPost（中文版postman）如何发送一个随机数或者时间戳？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：当我们的请求参数是一个时间戳或者随机数时，我们可以用ApiPost的内建变量            <a href="https://www.cnblogs.com/phpwechat/p/10980071.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-06-05 15:53 phpWeChat开发教程 阅读 (591) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10980071" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/phpwechat/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 phpWeChat开发教程
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <div style="width: 1000px; margin: 8px auto">
+<a href="https://www.apipost.cn/" target="_blank">可直接生成文档的API调试、管理工具</a>
+</div>
+    </div>
+</body>
+</html>

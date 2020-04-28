@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>狂奔的小狮子 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=QOYYSTCMV24crecFWClKz9msINKIFz9bTbzK1xaWbEw" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=0pGk3D9Ik_jI4q1TALBT2ybOjIePHS_80_0J4DDOQiY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/spring87/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/spring87/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/spring87/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 168343;
+        var currentBlogApp = 'spring87';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'darkgreentrip';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/spring87/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/spring87/">狂奔的小狮子</a>
+</h1>
+<h2>
+耳 没有喧闹
+眼 没有缤纷
+嘴 沉默不语
+夜 安静依然
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/spring87/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E7%8B%82%E5%A5%94%E7%9A%84%E5%B0%8F%E7%8B%AE%E5%AD%90">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/spring87/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+386&nbsp; </span>
+<span id="stats_article_count">文章 - 
+4&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+14</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/12797585.html">
+    Flutter loading
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="cnblogs-post-body" id="postlist_postbody_12797585">
+        正文内容加载中...
+    </div>
+    <script type="text/javascript">getBlogPostBody(12797585);</script>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 21:59 狂奔的小狮子 阅读 (0) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797585" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2020/03/05.html">2020年3月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/12423097.html">
+    Android studio Mac 选中代码块不能编辑解决方案
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Android studio Mac 选中代码块不能编辑，或者键盘无效。 是因为Android studio集成了vim编辑器，选中就进入vim编辑模式了。 需要手动关掉这个就行，Tools-&gt; Vim Emulator 别勾选就行。 Fuck！！！l            <a href="https://www.cnblogs.com/spring87/p/12423097.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-05 21:58 狂奔的小狮子 阅读 (57) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12423097" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2020/03/03.html">2020年3月3日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/12405297.html">
+    AndroidStudio输入法不能编辑解决方案
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：问题： 在使用Android Studio时发现输入法不能编辑 解决方案： 切换启动的JDK，由于Android Studio默认使用的是自带的jre，因此需要将其改成我们自己装的JDK，然后再恢复，步骤如下： 双击shift唤出搜索框，然后输入switch boot JDK ，并点击选项，如图所示            <a href="https://www.cnblogs.com/spring87/p/12405297.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-03 22:43 狂奔的小狮子 阅读 (63) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12405297" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2019/11/13.html">2019年11月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/11850443.html">
+    Android ConstraintLayout 小记
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：* 可以圆形定位view之间的位置，通过View的中心，来定位不同半径和弧度的距离。 layout_constraintCircle&#160;: references another widget id layout_constraintCircleRadius&#160;: the distance to the             <a href="https://www.cnblogs.com/spring87/p/11850443.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-13 16:12 狂奔的小狮子 阅读 (28) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11850443" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2019/04/25.html">2019年4月25日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/10770572.html">
+    设计模式？ GoF
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：GoF &gt;&gt;&gt;&#160;Gang of Four.四人帮 是Design Patterns: Elements of Reusable Object-Oriented Software （设计模式：可重用面向对象软件的元素）这本书的四个作者简称，改书四个作者分别是 Erich Gamma, Richard             <a href="https://www.cnblogs.com/spring87/p/10770572.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-04-25 19:56 狂奔的小狮子 阅读 (95) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10770572" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2018/09/01.html">2018年9月1日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/9570270.html">
+    Android 读写权限，已经授权情况下，仍然(Permission denied)
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：首次安装APP，获取读写权限以后， 当读取文件时候，仍然会遇见(Permission denied)错误，解决方案是杀掉APP，重新打开APP即可。 应该属于部分版本系统的bug，直到APP所有的processes被killed，操作系统才会更新设置里面的权限设置，解决方案 代码判断是否授权成功的状            <a href="https://www.cnblogs.com/spring87/p/9570270.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2018-09-01 14:39 狂奔的小狮子 阅读 (1665) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9570270" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2018/06/22.html">2018年6月22日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/9211800.html">
+    Android studio   Program type already present: com.****.BuildConfig
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Android studio 抛错，是因为有2个module在&#160;AndroidManifest.xml 里面具有一样的package name,修改不同名字即可。 还有一种情况是多个module对同一个library(eg: jar)引入多次，此时，可以一个module引入，另外一个module引入            <a href="https://www.cnblogs.com/spring87/p/9211800.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2018-06-22 09:07 狂奔的小狮子 阅读 (12343) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9211800" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2018/01/08.html">2018年1月8日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/8243882.html">
+    Android  MediaPlayer播放项目res/raw和res/assets下的音频文件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1..播放res/raw 2.播放res/assets            <a href="https://www.cnblogs.com/spring87/p/8243882.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2018-01-08 17:44 狂奔的小狮子 阅读 (3549) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8243882" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2017/12/28.html">2017年12月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/8134966.html">
+    我的博客即将入驻“云栖社区”，诚邀技术同仁一同入驻。
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：我的博客即将入驻“云栖社区”，诚邀技术同仁一同入驻。            <a href="https://www.cnblogs.com/spring87/p/8134966.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-12-28 11:56 狂奔的小狮子 阅读 (92) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8134966" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/spring87/archive/2017/12/27.html">2017年12月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/spring87/p/8126482.html">
+    Mac 解压zip文件错误：无法将&quot;*.zip&quot;解压缩到&quot;&quot; （错误 1-操作不被允许）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：错误提示： 无法将&quot;*.zip&quot;解压缩到&quot;&quot; （错误 1-操作不被允许）或者 解压缩失败 英文提示： &quot;Unable to unarchive into file path&quot; (Error 1 - Operation not permitted.) or &quot;Decompression Failed&quot;            <a href="https://www.cnblogs.com/spring87/p/8126482.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-12-27 16:35 狂奔的小狮子 阅读 (21218) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8126482" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/spring87/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 狂奔的小狮子
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <br>
+    </div>
+</body>
+</html>

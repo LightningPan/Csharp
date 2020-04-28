@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bigyoungs - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/coffee/bundle-coffee.min.css?v=pdMIVgsH8kXt-vOWnlL0N20TlHt3UyP9HzGgocfsP4s" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.min.css?v=na9bpAY4yh7uEWCcrXj3vfJM3VBse8YtU6-5fUUQPz0" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/bigyoung/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/bigyoung/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/bigyoung/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 433267;
+        var currentBlogApp = 'bigyoung';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'coffee';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/bigyoung/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/bigyoung/">Bigyoungs</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+	<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/bigyoung/">
+首页</a>
+</li>
+	<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Bigyoungs">
+联系</a></li>
+	<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/bigyoung/rss/">
+订阅</a>
+	
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/bigyoung/rss/">
+    <img src="/skins/coffee/images/xml.gif" alt="订阅" />
+</a></li>
+</ul>
+
+
+
+			<div class="blogStats">
+				
+				<!--done-->
+随笔- 
+14&nbsp;
+文章- 
+0&nbsp;
+评论- 
+0&nbsp;
+
+
+
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12797505.html">
+    【Django 2.2文档系列】Model 外键中的on_delete参数用法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：场景 我们用Django的Model时，有时候需要关联外键。关联外键时，参数: 的几个配置选项到底是干嘛的呢，你知道吗？ 参数介绍 级联删除。Django会模拟SQL约束的行为，在删除此条数据时，同事删除外键关联的对象。 比如：用户的有一个外键关联的是用户的健康记录表，当用户删除时，配置了这个参数的            <a href="https://www.cnblogs.com/bigyoung/p/12797505.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 21:48 Bigyoungs 阅读 (7) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797505" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/27.html">2020年4月27日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12789955.html">
+    CentOS下宝塔如何部署Django项目？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：基础环境 装好宝塔服务 宝塔里装好【Python项目管理器】 宝塔里装好【Nginx】 把Django项目代码发到服务器 把代码放到服务器上有两种方法： 方法一：服务器上安装Git，通过Git Clone代码到服务器上 方法二：通过宝塔的FTP工具把代码上传上去 注意： 在目录: 下新建一个文件夹，            <a href="https://www.cnblogs.com/bigyoung/p/12789955.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-27 20:48 Bigyoungs 阅读 (46) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12789955" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/26.html">2020年4月26日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12782328.html">
+    Django编写自定义manage.py 命令
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：官网文档地址： &quot;编写自定义 django admin 命令&quot; 金句： 你所浪费的今天，正是昨天死的人所期待的明天。 开篇话： 的命令我们用了很多，要是我们想要使用一些特定的较长的命令时，比如： （命令作用：运行项目测试时，使用指定的配置文件），这时每次运行的就很麻烦，可以通过设定自定义manage            <a href="https://www.cnblogs.com/bigyoung/p/12782328.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 21:18 Bigyoungs 阅读 (30) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12782328" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/25.html">2020年4月25日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12775098.html">
+    威联通（Nas）-设置自定义镜像源
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 打开 Container Station 2. 点击左侧 属性 ，切换到 Registry服务器 ，点击 新增 ，如下图 &quot; &quot; 3. 填写镜像信息，网址：https://p31wiatp.mirror.aliyuncs.com ，填写完后，记得点击一下 测试 ，验证一下网络是否畅通，一般是可            <a href="https://www.cnblogs.com/bigyoung/p/12775098.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-25 20:29 Bigyoungs 阅读 (19) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12775098" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12770832.html">
+    django-admin和manage.py用法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：官网文档地址： &quot;django admin和manage.py&quot; 金句： 所有的天赋，都来自于你对你喜欢的某种事物的模仿与学习，否则你就不会有这种天赋。 开篇话： 我们在Django开发过程中，命令行执行最多的应该就是 ，今天聊聊manage.py这个命令。 记录要点： 1. 和`manage.py            <a href="https://www.cnblogs.com/bigyoung/p/12770832.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 23:10 Bigyoungs 阅读 (27) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770832" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12760699.html">
+    如何设置站长统计的代码居中
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：站长统计代码居中格式如下： 一般代码要放在``之前。 如果是把统计代码放到 块中，要把它放在``之前。 本文首发于 &quot;BigYoung小站&quot;            <a href="https://www.cnblogs.com/bigyoung/p/12760699.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 14:43 Bigyoungs 阅读 (23) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12760699" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12760299.html">
+    Windows AD 报错解决:UAC File Virtualization服务启动失败 此驱动程序被阻止加载
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：环境 Windows Server 2012 R2 问题 日志报错： 原因 如果已在服务器上禁用UAC，通常会出现此错误。 如果在服务器上禁用了UAC，则我们还必须禁用 服务，以停止有关UAC文件虚拟化的事件ID错误。 解决办法 禁用luafv服务 打开注册表编辑器（regedit.exe）并导航到            <a href="https://www.cnblogs.com/bigyoung/p/12760299.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 13:45 Bigyoungs 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12760299" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12743803.html">
+    登录微软账号的Windows电脑如何远程？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一般情况下，我们都使用的是Windows电脑的本地账户。但是随着Windows 10的推广，现在微软也开始主推微软账号登录Windows电脑了。 现在遇到一个问题，就是远程Windows电脑时，提示连接不上，刚开始以为是远程服务没有开，后来开了也不行，折腾了一会，才发现问题所在。 打开远程服务 我的            <a href="https://www.cnblogs.com/bigyoung/p/12743803.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 12:51 Bigyoungs 阅读 (51) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12743803" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/19.html">2020年4月19日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12732065.html">
+    如何查看Django ORM执行的SQL语句
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Django ORM对数据库操作的封装相当完善，日常大部分数据库操作都可以通过ORM实现。但django将查询过程隐藏在了后台，这在开发时可能会略显晦涩，并且使用方式不当还会造成开销过大。 那么如何查看django何时执行了什么sql语句呢？答案是使用Logging。 先直接上方法，在setting            <a href="https://www.cnblogs.com/bigyoung/p/12732065.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-19 16:24 Bigyoungs 阅读 (40) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12732065" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bigyoung/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bigyoung/p/12722922.html">
+    Django 表单处理流程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Django 的表单处理：视图获取请求，执行所需的任何操作，包括从模型中读取数据，然后生成并返回HTML页面（从模板中），我们传递一个包含要显示的数据的上下文。使事情变得更复杂的是，服务器还需要能够处理用户提供的数据，并在出现任何错误时，重新显示页面。 下面显示了 Django 如何处理表单请求的流            <a href="https://www.cnblogs.com/bigyoung/p/12722922.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 22:25 Bigyoungs 阅读 (36) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12722922" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/bigyoung/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Bigyoungs
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

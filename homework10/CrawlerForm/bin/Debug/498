@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="1.面向对象和面向过程的本质是什么？ 面向对象与面向过程本质来说都是代码结构的设计或者思想，而编程则是通过编程语言将事物的逻辑根据需求描述出来，所以我觉得并不能说Java就是一种面向对象的语言，而c就" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>如何理解面向对象与面向过程的区别 - 苹果大大个 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=QOYYSTCMV24crecFWClKz9msINKIFz9bTbzK1xaWbEw" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=0pGk3D9Ik_jI4q1TALBT2ybOjIePHS_80_0J4DDOQiY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xiguadadage/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xiguadadage/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xiguadadage/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 467139;
+        var currentBlogApp = 'xiguadadage';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'darkgreentrip';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/xiguadadage/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xiguadadage/">苹果大大个</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xiguadadage/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%8B%B9%E6%9E%9C%E5%A4%A7%E5%A4%A7%E4%B8%AA">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/xiguadadage/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+20&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+2</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/12797115.html">如何理解面向对象与面向过程的区别</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';"><strong>1.面向对象和面向过程的本质是什么？</strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">面向对象与面向过程本质来说都是<strong>代码结构的设计或者思想</strong>，而编程则是通过编程语言将事物的逻辑根据需求描述出来，所以我觉得并不能说Java就是一种面向对象的语言，而c就是一种面向过程的语言，我的理解是Java内置的语法对面向对象的代码结构支持比较好。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';"><strong>2.为什么先出现面向过程后出现面向过程？</strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">现代社会中一个新事物或者新概念的出现往往是伴随着需求而产生的。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">比如我想要去一个很远的地方，但步行的时间太长，人们无法接受，所以慢慢的自行车，摩托车，汽车，飞机等交通工具就被发明和创造出来。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">而以编程的发展史为例，一开始的软件都比较简单，常常只是执行单一的功能，例如计算加减，所以面向过程的代码结构已经足以满足需求。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">但随着人类社会的不断发展，对计算机的功能要求也不断提高，需要计算机为我们的生活提供更大的便利，例如帮我们管理一个大公司的运营，从而出现数之不尽的管理系统。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';"><strong>3.应该如何理解</strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">以面向对象的三大特性，继承，封装，多态为引子。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">假设一个公司有ABCD四个部门，每个部门都有自己的工作内容，例如开会，汇报，总结数据，那么各个的部门的工作内容都可以定义为</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000; font-family: 'Microsoft YaHei';">function A_开会　　function A_汇报　　function A_总结数据　　function A_自己的工作
+
+function B_开会　　function B_汇报　　function B_总结数据　　function B_自己的工作
+
+function C_开会　　function C_汇报　　function C_总结数据　　function C_自己的工作
+
+function D_开会　　function D_汇报　　function D_总结数据　　function D_自己的工作</span></pre>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">如果把它们每个部门归类，那就变成以下形式</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000; font-family: 'Microsoft YaHei';">A {
+　　function 开会
+   　function 汇报
+　　function 总结数据
+　　function 做自己的工作
+}
+
+B {
+　　function 开会
+　　function 汇报
+　　function 总结数据
+　　function 做自己的工作
+}
+
+C {
+　　function 开会
+　　function 汇报
+　　function 总结数据
+　　function 做自己的工作
+}
+
+D {
+　　function 开会
+　　function 汇报
+　　function 总结数据
+　　function 做自己的工作
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">这个时候类的概念就呼之欲出了，也是一种抽象的体现，然后我们进一步发现不同部门里做的很多工作性质都是一样的，都是开会，只是讨论的问题不同，这个时候我们又可以抽象出一个部门类出来</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000; font-family: 'Microsoft YaHei';">Department {
+　　function 开会
+　　function 汇报
+　　function 总结数据
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">而各个部门就去继承部门类，实现各自具体的工作细节，继承的概念就体现了，而每一个部门所做的事都封装在各自类中的方法里，封装的概念也体现了。</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">至于多态往往体现在继承体系中方法的重载，如下代码所示</span></p>
+<div class="cnblogs_code">
+<pre><span style="font-family: 'Microsoft YaHei';"><span style="color: #0000ff;">class</span><span style="color: #000000;"> Father {
+    </span><span style="color: #0000ff;">void</span><span style="color: #000000;"> sleep() {
+        System.out.println(</span>"father is sleeping"<span style="color: #000000;">);
+    }
+}
+</span><span style="color: #0000ff;">class</span> Son <span style="color: #0000ff;">extends</span><span style="color: #000000;"> Father {
+    @Override
+    </span><span style="color: #0000ff;">void</span><span style="color: #000000;"> sleep() {
+        System.out.println(</span>"son is sleeping"<span style="color: #000000;">);
+    }
+}
+
+</span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> Test{
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> main(String[] args){
+        Father son </span>= <span style="color: #0000ff;">new</span><span style="color: #000000;"> Son();
+        son.sleep();
+    }
+}
+控制台打印
+son is sleeping</span></span></pre>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">父类引用指向子类对象，调用方法时会调用子类的实现，而不是父类的实现，也就是说我们可以在代码运行中根据具体角色去动态的执行相应的方法，</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">例如订单模块中根据选择的优惠去生成不同的优惠对象进而执行不同的优惠实现</span></p>
+<p><span style="font-family: 'Microsoft YaHei';"><strong><span style="font-size: 14pt;">4.总结</span></strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">面向过程可以理解为根据事物发展的顺序串行的执行相应的代码，正如编年史的制作，将各个事物的发展按照时间的年限逐步讲述</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">面向对象则将将事物抽象化，总结归类并根据抽象后的规律运行，正如纪传史，根据一个起点描述出一个宏伟的故事</span></p>
+<p><span style="font-size: 14pt; font-family: 'Microsoft YaHei';">当然面向对象思想的出现也是因为有了复杂而宏大的系统需求应运而生</span></p>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 20:46</span>&nbsp;
+<a href="https://www.cnblogs.com/xiguadadage/">苹果大大个</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797115" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12797115);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 467139, cb_blogApp = 'xiguadadage', cb_blogUserGuid = '71fc9248-9580-4ec4-7ba0-08d601e758f6';
+    var cb_entryId = 12797115, cb_entryCreatedDate = '2020-04-28 20:46', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 苹果大大个
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="Ansible playbook Vault 加密详解与使用案例 主机规划 添加用户账号 说明： 1、 运维人员使用的登录账号； 2、 所有的业务都放在 /app/ 下「yun用户的家目录」，避免业务" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ansible playbook Vault 加密 - 踏歌行666 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=vmUk-3Bh8LDsKXwjNHs2GDiFna-ZMTUgOJzjUaXTlPA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=cJiDsI1JAuHHd-OAUWJeyE5JMXXsG4mmuUi2rVmEK1c" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zhanglianghhh/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zhanglianghhh/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zhanglianghhh/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 430741;
+        var currentBlogApp = 'zhanglianghhh';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'AnotherEon001';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="wrapper">
+<div id="header">
+
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/zhanglianghhh/">踏歌行的专栏</a>
+</h1>
+<div id="subtitle">
+一个爱学习爱分享的技术人员，微信公众号「OpenInfo」。
+本文原创发布于公众号 OpenInfo，转载请务必注明出处！
+</div>
+</div>
+<div id="sub"><div class="BlogStats">随笔 - 
+113, 文章 - 
+0, 评论 - 
+7, 引用 - 
+0</div>
+
+</div>
+
+
+
+
+</div>
+<div id="main_container">
+<div id="main_content">
+<div id="content">
+	<div id="post_detail">
+    <div class="post">
+        <h2>
+            
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12797562.html">Ansible playbook Vault 加密</a>
+
+        </h2>
+        <div class="postbody">
+            
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>&nbsp;</p>
+<blockquote>
+<p>Ansible playbook Vault 加密详解与使用案例</p>
+</blockquote>
+<p>&nbsp;</p>
+<h1 id="主机规划">主机规划</h1>
+<p><img src="https://img2020.cnblogs.com/blog/1395193/202004/1395193-20200428214909200-1251790901.png" alt=""></p>
+<p>&nbsp;</p>
+<h2 id="添加用户账号">添加用户账号</h2>
+<p><strong>说明：</strong></p>
+<p>1、 运维人员使用的登录账号；</p>
+<p>2、 所有的业务都放在 /app/ 下「yun用户的家目录」，避免业务数据乱放；</p>
+<p>3、 该用户也被 ansible 使用，因为几乎所有的生产环境都是禁止 root 远程登录的（因此该 yun 用户也进行了 sudo 提权）。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> <span style="color: #000000;"># 使用一个专门的用户，避免直接使用root用户
+</span><span style="color: #008080;">2</span> <span style="color: #000000;"># 添加用户、指定家目录并指定用户密码
+</span><span style="color: #008080;">3</span> <span style="color: #000000;"># sudo提权
+</span><span style="color: #008080;">4</span> <span style="color: #000000;"># 让其它普通用户可以进入该目录查看信息
+</span><span style="color: #008080;">5</span> useradd -u <span style="color: #800080;">1050</span> -d /app yun &amp;&amp; <span style="color: #0000ff;">echo</span> <span style="color: #800000;">'</span><span style="color: #800000;">123456</span><span style="color: #800000;">'</span> | /usr/bin/<span style="color: #0000ff;">passwd</span> --<span style="color: #000000;">stdin yun
+</span><span style="color: #008080;">6</span> <span style="color: #0000ff;">echo</span> <span style="color: #800000;">"</span><span style="color: #800000;">yun  ALL=(ALL)       NOPASSWD: ALL</span><span style="color: #800000;">"</span> &gt;&gt;  /etc/<span style="color: #000000;">sudoers
+</span><span style="color: #008080;">7</span> <span style="color: #0000ff;">chmod</span> <span style="color: #800080;">755</span> /app/</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="Ansible-配置清单Inventory">Ansible 配置清单Inventory</h2>
+<p>之后文章都是如下主机配置清单</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager ansible_info]$ <span style="color: #0000ff;">pwd</span>
+<span style="color: #008080;"> 2</span> /app/<span style="color: #000000;">ansible_info
+</span><span style="color: #008080;"> 3</span> [yun@ansi-manager ansible_info]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> hosts_key 
+</span><span style="color: #008080;"> 4</span> # 方式1、主机 + 端口 +<span style="color: #000000;"> 密钥
+</span><span style="color: #008080;"> 5</span> <span style="color: #000000;">[manageservers]
+</span><span style="color: #008080;"> 6</span> <span style="color: #800080;">172.16</span>.<span style="color: #800080;">1.180</span>:<span style="color: #800080;">22</span>
+<span style="color: #008080;"> 7</span> 
+<span style="color: #008080;"> 8</span> <span style="color: #000000;">[proxyservers]
+</span><span style="color: #008080;"> 9</span> <span style="color: #800080;">172.16</span>.<span style="color: #800080;">1.18</span>[<span style="color: #800080;">1</span>:<span style="color: #800080;">2</span>]:<span style="color: #800080;">22</span>
+<span style="color: #008080;">10</span> 
+<span style="color: #008080;">11</span> # 方式2：别名 + 主机 + 端口 +<span style="color: #000000;"> 密码
+</span><span style="color: #008080;">12</span> <span style="color: #000000;">[webservers]
+</span><span style="color: #008080;">13</span> web01 ansible_ssh_host=<span style="color: #800080;">172.16</span>.<span style="color: #800080;">1.183</span> ansible_ssh_port=<span style="color: #800080;">22</span>
+<span style="color: #008080;">14</span> web02 ansible_ssh_host=<span style="color: #800080;">172.16</span>.<span style="color: #800080;">1.184</span> ansible_ssh_port=<span style="color: #800080;">22</span>
+<span style="color: #008080;">15</span> web03 ansible_ssh_host=<span style="color: #800080;">172.16</span>.<span style="color: #800080;">1.185</span> ansible_ssh_port=<span style="color: #800080;">22</span></pre>
+</div>
+<p>&nbsp;</p>
+<h1 id="Ansible-Vault-概述">Ansible Vault 概述</h1>
+<p>当我们写的 playbook 中涉及敏感信息，如：数据库账号密码；MQ账号密码；主机账号密码。这时为了防止这些敏感信息泄露，就可以使用 vault 进行加密。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager ~]$ ansible-vault -<span style="color: #000000;">h
+</span><span style="color: #008080;"> 2</span> Usage: ansible-vault [create|decrypt|edit|encrypt|encrypt_string|rekey|<span style="color: #000000;">view] [options] [vaultfile.yml]
+</span><span style="color: #008080;"> 3</span> 
+<span style="color: #008080;"> 4</span> <span style="color: #000000;">Options:
+</span><span style="color: #008080;"> 5</span>   --ask-vault-pass      ask <span style="color: #0000ff;">for</span><span style="color: #000000;"> vault password
+</span><span style="color: #008080;"> 6</span>   -h, --<span style="color: #000000;">help            show this help message and exit
+</span><span style="color: #008080;"> 7</span>   --new-vault-<span style="color: #0000ff;">id</span>=<span style="color: #000000;">NEW_VAULT_ID
+</span><span style="color: #008080;"> 8</span>                         the new vault identity to use <span style="color: #0000ff;">for</span><span style="color: #000000;"> rekey
+</span><span style="color: #008080;"> 9</span>   --new-vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">NEW_VAULT_PASSWORD_FILE
+</span><span style="color: #008080;">10</span>                         new vault password <span style="color: #0000ff;">file</span> <span style="color: #0000ff;">for</span><span style="color: #000000;"> rekey
+</span><span style="color: #008080;">11</span>   --vault-<span style="color: #0000ff;">id</span>=<span style="color: #000000;">VAULT_IDS  the vault identity to use
+</span><span style="color: #008080;">12</span>   --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">VAULT_PASSWORD_FILES
+</span><span style="color: #008080;">13</span>                         vault password <span style="color: #0000ff;">file</span>
+<span style="color: #008080;">14</span>   -v, --verbose         verbose mode (-vvv <span style="color: #0000ff;">for</span> <span style="color: #0000ff;">more</span>, -<span style="color: #000000;">vvvv to enable
+</span><span style="color: #008080;">15</span> <span style="color: #000000;">                        connection debugging)
+</span><span style="color: #008080;">16</span>   --version             show program<span style="color: #800000;">'</span><span style="color: #800000;">s version number, config file location,</span>
+<span style="color: #008080;">17</span> <span style="color: #000000;">                        configured module search path, module location,
+</span><span style="color: #008080;">18</span> <span style="color: #000000;">                        executable location and exit
+</span><span style="color: #008080;">19</span> 
+<span style="color: #008080;">20</span>  See <span style="color: #800000;">'</span><span style="color: #800000;">ansible-vault &lt;command&gt; --help</span><span style="color: #800000;">'</span> <span style="color: #0000ff;">for</span> <span style="color: #0000ff;">more</span><span style="color: #000000;"> information on a specific
+</span><span style="color: #008080;">21</span> command.</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>参数说明</strong></p>
+<p>create：创建一个加密文件，在创建时会首先要求输入 Vault 密码，之后才能进入文件中编辑。</p>
+<p>decrypt：对 vault 加密的文件进行解密。</p>
+<p>edit：对 vault 加密文件进行编辑。</p>
+<p>encrypt：对提供的文件，进行 vault 加密。</p>
+<p>encrypt_string：对提供的字符串进行 vault 加密。</p>
+<p>rekey：对已 vault 加密的文件进行免密更改，需要提供之前的密码。</p>
+<p>view：查看已加密的文件，需要提供密码。</p>
+<h1 id="Ansible-Vault-交互式">Ansible Vault 交互式</h1>
+<h2 id="创建加密文件">创建加密文件</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">pwd</span>
+<span style="color: #008080;"> 2</span> /app/ansible_info/<span style="color: #000000;">object06
+</span><span style="color: #008080;"> 3</span> [yun@ansi-manager object06]$ ansible-<span style="color: #000000;">vault create test_vault.yml
+</span><span style="color: #008080;"> 4</span> <span style="color: #000000;">New Vault password: # 输入密码
+</span><span style="color: #008080;"> 5</span> <span style="color: #000000;">Confirm New Vault password: # 确认密码
+</span><span style="color: #008080;"> 6</span> ---
+<span style="color: #008080;"> 7</span> <span style="color: #000000;"># vault test
+</span><span style="color: #008080;"> 8</span> -<span style="color: #000000;"> hosts: proxyservers
+</span><span style="color: #008080;"> 9</span> 
+<span style="color: #008080;">10</span> <span style="color: #000000;">  tasks:
+</span><span style="color: #008080;">11</span>     - name: <span style="color: #800000;">"</span><span style="color: #800000;">touch file</span><span style="color: #800000;">"</span>
+<span style="color: #008080;">12</span>       <span style="color: #0000ff;">file</span><span style="color: #000000;">:
+</span><span style="color: #008080;">13</span>         path: /tmp/<span style="color: #000000;">with_itemstestfile
+</span><span style="color: #008080;">14</span>         state: <span style="color: #0000ff;">touch</span>
+<span style="color: #008080;">15</span> 
+<span style="color: #008080;">16</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> test_vault.yml   # 加密后查看
+</span><span style="color: #008080;">17</span> $ANSIBLE_VAULT;<span style="color: #800080;">1.1</span><span style="color: #000000;">;AES256
+</span><span style="color: #008080;">18</span> <span style="color: #800080;">33663239636530353564393731363161623462386266613165326235353762343465653235396639</span>
+<span style="color: #008080;">19</span> <span style="color: #000000;">6138353833366637383066366662666236666338333237610a303263336234303866623834663361
+</span><span style="color: #008080;">20</span> <span style="color: #800080;">39343633646434353334396162643063613964333337343336373232653266613264626564346566</span>
+<span style="color: #008080;">21</span> <span style="color: #000000;">6262633334353036620a633136313364383536323531373164346436663739663631353166663434
+</span><span style="color: #008080;">22</span> <span style="color: #800080;">38663962363032643163333266633662376538383134333862373961313166656536353734363537</span>
+<span style="color: #008080;">23</span> <span style="color: #800080;">30626261366138383864653834336637393230363466336662306138323032373361656566663231</span>
+<span style="color: #008080;">24</span> <span style="color: #800080;">65363039393736326266316261383065363739633861646464373733643966333233343436303731</span>
+<span style="color: #008080;">25</span> <span style="color: #800080;">37366130363064366337393837396664356335363738663130333436656238666233396466393137</span>
+<span style="color: #008080;">26</span> <span style="color: #800080;">33306434343262313961393661313536386338383233303230613962663732323630663638313531</span>
+<span style="color: #008080;">27</span> <span style="color: #800080;">3236636438646166643937613761396564373033623637636166</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密的文件进行解密">对已加密的文件进行解密</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-<span style="color: #000000;">vault decrypt test_vault.yml
+</span><span style="color: #008080;"> 2</span> <span style="color: #000000;">Vault password: 
+</span><span style="color: #008080;"> 3</span> <span style="color: #000000;">Decryption successful
+</span><span style="color: #008080;"> 4</span> [yun@ansi-<span style="color: #000000;">manager object06]$ 
+</span><span style="color: #008080;"> 5</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> test_vault.yml  # 解密后查看
+</span><span style="color: #008080;"> 6</span> ---
+<span style="color: #008080;"> 7</span> <span style="color: #000000;"># vault test
+</span><span style="color: #008080;"> 8</span> -<span style="color: #000000;"> hosts: proxyservers
+</span><span style="color: #008080;"> 9</span> 
+<span style="color: #008080;">10</span> <span style="color: #000000;">  tasks:
+</span><span style="color: #008080;">11</span>     - name: <span style="color: #800000;">"</span><span style="color: #800000;">touch file</span><span style="color: #800000;">"</span>
+<span style="color: #008080;">12</span>       <span style="color: #0000ff;">file</span><span style="color: #000000;">:
+</span><span style="color: #008080;">13</span>         path: /tmp/<span style="color: #000000;">with_itemstestfile
+</span><span style="color: #008080;">14</span>         state: <span style="color: #0000ff;">touch</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已存在文件进行加密">对已存在文件进行加密</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-<span style="color: #000000;">vault encrypt test_vault.yml
+</span><span style="color: #008080;"> 2</span> <span style="color: #000000;">New Vault password: 
+</span><span style="color: #008080;"> 3</span> <span style="color: #000000;">Confirm New Vault password: 
+</span><span style="color: #008080;"> 4</span> <span style="color: #000000;">Encryption successful
+</span><span style="color: #008080;"> 5</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> test_vault.yml 
+</span><span style="color: #008080;"> 6</span> $ANSIBLE_VAULT;<span style="color: #800080;">1.1</span><span style="color: #000000;">;AES256
+</span><span style="color: #008080;"> 7</span> <span style="color: #800080;">37313964663164613434656666323265376465303433633438613032303733363136316235623066</span>
+<span style="color: #008080;"> 8</span> <span style="color: #000000;">3930343836396537343333336432363732343936323937370a363239356233333634303464633539
+</span><span style="color: #008080;"> 9</span> <span style="color: #800080;">61613264363037313833363738623866643762666662646165646561343631646434383864373338</span>
+<span style="color: #008080;">10</span> <span style="color: #000000;">6334333162616332320a353033323538643566666562646334623630343938646264663561316566
+</span><span style="color: #008080;">11</span> <span style="color: #800080;">35633939653166326631303635363533613338326561666663623238396464383363613738323464</span>
+<span style="color: #008080;">12</span> <span style="color: #800080;">37306163663933323836316165666532336664353038303036383564346436633235373166663834</span>
+<span style="color: #008080;">13</span> <span style="color: #800080;">62383464373632373839323562306163666366313738663234656139346130373031626265613830</span>
+<span style="color: #008080;">14</span> <span style="color: #800080;">38373135616261616137326337633566306633343338306264646139396230613665356264353134</span>
+<span style="color: #008080;">15</span> <span style="color: #800080;">37376636646266626236323663376230313964323034623133333539393131333065323964303030</span>
+<span style="color: #008080;">16</span> <span style="color: #800080;">3139366661353732333961323764613332316535323334343939</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密的文件进行编辑">对已加密的文件进行编辑</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-<span style="color: #000000;">vault edit test_vault.yml
+</span><span style="color: #008080;"> 2</span> <span style="color: #000000;">Vault password: 
+</span><span style="color: #008080;"> 3</span> ---
+<span style="color: #008080;"> 4</span> # vault test  ==
+<span style="color: #008080;"> 5</span> -<span style="color: #000000;"> hosts: proxyservers
+</span><span style="color: #008080;"> 6</span> 
+<span style="color: #008080;"> 7</span> <span style="color: #000000;">  tasks:
+</span><span style="color: #008080;"> 8</span>     - name: <span style="color: #800000;">"</span><span style="color: #800000;">touch file</span><span style="color: #800000;">"</span>
+<span style="color: #008080;"> 9</span>       <span style="color: #0000ff;">file</span><span style="color: #000000;">:
+</span><span style="color: #008080;">10</span>         path: /tmp/<span style="color: #000000;">with_itemstestfile
+</span><span style="color: #008080;">11</span>         state: <span style="color: #0000ff;">touch</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密文件更改密码">对已加密文件更改密码</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ ansible-<span style="color: #000000;">vault rekey test_vault.yml
+</span><span style="color: #008080;">2</span> <span style="color: #000000;">Vault password: 
+</span><span style="color: #008080;">3</span> <span style="color: #000000;">New Vault password: 
+</span><span style="color: #008080;">4</span> <span style="color: #000000;">Confirm New Vault password: 
+</span><span style="color: #008080;">5</span> Rekey successful</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密文件进行查看">对已加密文件进行查看</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-<span style="color: #000000;">vault view test_vault.yml
+</span><span style="color: #008080;"> 2</span> <span style="color: #000000;">Vault password: 
+</span><span style="color: #008080;"> 3</span> ---
+<span style="color: #008080;"> 4</span> # vault test  ==
+<span style="color: #008080;"> 5</span> -<span style="color: #000000;"> hosts: proxyservers
+</span><span style="color: #008080;"> 6</span> 
+<span style="color: #008080;"> 7</span> <span style="color: #000000;">  tasks:
+</span><span style="color: #008080;"> 8</span>     - name: <span style="color: #800000;">"</span><span style="color: #800000;">touch file</span><span style="color: #800000;">"</span>
+<span style="color: #008080;"> 9</span>       <span style="color: #0000ff;">file</span><span style="color: #000000;">:
+</span><span style="color: #008080;">10</span>         path: /tmp/<span style="color: #000000;">with_itemstestfile
+</span><span style="color: #008080;">11</span>         state: <span style="color: #0000ff;">touch</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对提供的字符串进行加密">对提供的字符串进行加密</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-vault encrypt_string <span style="color: #800000;">"</span><span style="color: #800000;">111 222 333</span><span style="color: #800000;">"</span>
+<span style="color: #008080;"> 2</span> <span style="color: #000000;">New Vault password: 
+</span><span style="color: #008080;"> 3</span> <span style="color: #000000;">Confirm New Vault password: 
+</span><span style="color: #008080;"> 4</span> !vault |
+<span style="color: #008080;"> 5</span>           $ANSIBLE_VAULT;<span style="color: #800080;">1.1</span><span style="color: #000000;">;AES256
+</span><span style="color: #008080;"> 6</span>           <span style="color: #800080;">61343332386237363437623939633334626231613539353566313336306562373538633937363566</span>
+<span style="color: #008080;"> 7</span> <span style="color: #000000;">          6537336166356466666431663037623835643964366137340a336439313066356265666636383430
+</span><span style="color: #008080;"> 8</span>           <span style="color: #800080;">36613661393232613134333961643936646164396130613663656237393837366566356631353061</span>
+<span style="color: #008080;"> 9</span> <span style="color: #000000;">          3034326337303932610a303232643464633239383563393836306565353835666431363132303835
+</span><span style="color: #008080;">10</span>           <span style="color: #800080;">3635</span>
+<span style="color: #008080;">11</span> Encryption successful</pre>
+</div>
+<p>&nbsp;</p>
+<h1 id="Ansible-Vault-非交互式">Ansible Vault 非交互式</h1>
+<h2 id="创建密码文件">创建密码文件</h2>
+<p>安全使用，记得使用 400 或 600 权限。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">echo</span> <span style="color: #800000;">"</span><span style="color: #800000;">111111</span><span style="color: #800000;">"</span> &gt;<span style="color: #000000;"> vault_pwd
+</span><span style="color: #008080;">2</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">echo</span> <span style="color: #800000;">"</span><span style="color: #800000;">123456</span><span style="color: #800000;">"</span> &gt;<span style="color: #000000;"> vault_pwd2
+</span><span style="color: #008080;">3</span> [yun@ansi-manager object06]$ ll vault_pwd*  # 权限 <span style="color: #800080;">400</span>
+<span style="color: #008080;">4</span> -r-------- <span style="color: #800080;">1</span> yun yun <span style="color: #800080;">7</span> Aug <span style="color: #800080;">30</span> <span style="color: #800080;">10</span>:<span style="color: #800080;">35</span><span style="color: #000000;"> vault_pwd
+</span><span style="color: #008080;">5</span> -r-------- <span style="color: #800080;">1</span> yun yun <span style="color: #800080;">7</span> Aug <span style="color: #800080;">30</span> <span style="color: #800080;">10</span>:<span style="color: #800080;">39</span> vault_pwd2</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="创建加密文件-1">创建加密文件</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-vault create test_vault02.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd
+</span><span style="color: #008080;"> 2</span> ---
+<span style="color: #008080;"> 3</span> # vault test <span style="color: #800080;">2</span>
+<span style="color: #008080;"> 4</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> test_vault02.yml 
+</span><span style="color: #008080;"> 5</span> $ANSIBLE_VAULT;<span style="color: #800080;">1.1</span><span style="color: #000000;">;AES256
+</span><span style="color: #008080;"> 6</span> <span style="color: #800080;">34356364613864656136616365383361386635316332363861656334643230366136313333376366</span>
+<span style="color: #008080;"> 7</span> <span style="color: #000000;">6638666536306162366263333037323231386365316238390a383139623435363738663832623533
+</span><span style="color: #008080;"> 8</span> <span style="color: #800080;">34666539393036383365333062333039643832616233623764613132303966396534616633326366</span>
+<span style="color: #008080;"> 9</span> <span style="color: #000000;">6131313833383761620a383534363564393836306238666135656137623036386531653931623362
+</span><span style="color: #008080;">10</span> <span style="color: #800080;">30613036333161613235393539633233663136653566366266353232386230383434</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密的文件进行解密-1">对已加密的文件进行解密</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ ansible-vault decrypt test_vault02.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd
+</span><span style="color: #008080;">2</span> <span style="color: #000000;">Decryption successful
+</span><span style="color: #008080;">3</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> test_vault02.yml 
+</span><span style="color: #008080;">4</span> ---
+<span style="color: #008080;">5</span> # vault test <span style="color: #800080;">2</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已存在文件进行加密-1">对已存在文件进行加密</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> [yun@ansi-manager object06]$ ansible-vault encrypt test_vault02.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd
+</span><span style="color: #008080;"> 2</span> <span style="color: #000000;">Encryption successful
+</span><span style="color: #008080;"> 3</span> [yun@ansi-<span style="color: #000000;">manager object06]$ 
+</span><span style="color: #008080;"> 4</span> [yun@ansi-manager object06]$ <span style="color: #0000ff;">cat</span><span style="color: #000000;"> test_vault02.yml 
+</span><span style="color: #008080;"> 5</span> $ANSIBLE_VAULT;<span style="color: #800080;">1.1</span><span style="color: #000000;">;AES256
+</span><span style="color: #008080;"> 6</span> <span style="color: #800080;">65653035393230366365363637343137636337663638346463303532623139353137366162396536</span>
+<span style="color: #008080;"> 7</span> <span style="color: #000000;">3533393766313339393665386463613831323366623962650a643365653833636663653938613966
+</span><span style="color: #008080;"> 8</span> <span style="color: #800080;">39323037396635333236663239316431343461346562393731363537313865623534396533653931</span>
+<span style="color: #008080;"> 9</span> <span style="color: #000000;">3638363937626635390a303962653366353138373139623237356637656230386565663364626438
+</span><span style="color: #008080;">10</span> <span style="color: #800080;">31613837383338323065346634323632396339323635323766386236623038616233</span></pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密的文件进行编辑-1">对已加密的文件进行编辑</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ ansible-vault edit test_vault02.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd
+</span><span style="color: #008080;">2</span> ---
+<span style="color: #008080;">3</span> # vault test <span style="color: #800080;">2</span>  ##</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密文件更改密码-1">对已加密文件更改密码</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ ansible-vault rekey test_vault02.yml --vault-password-<span style="color: #0000ff;">file</span>=vault_pwd --new-vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd2
+</span><span style="color: #008080;">2</span> Rekey successful</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对已加密文件进行查看-1">对已加密文件进行查看</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ ansible-vault view test_vault02.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd2
+</span><span style="color: #008080;">2</span> ---
+<span style="color: #008080;">3</span> # vault test <span style="color: #800080;">2</span>  ##</pre>
+</div>
+<p>&nbsp;</p>
+<h2 id="对提供的字符串进行加密-1">对提供的字符串进行加密</h2>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;">1</span> [yun@ansi-manager object06]$ ansible-vault encrypt_string <span style="color: #800000;">"</span><span style="color: #800000;">test info</span><span style="color: #800000;">"</span> --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd2
+</span><span style="color: #008080;">2</span> !vault |
+<span style="color: #008080;">3</span>           $ANSIBLE_VAULT;<span style="color: #800080;">1.1</span><span style="color: #000000;">;AES256
+</span><span style="color: #008080;">4</span>           <span style="color: #800080;">30313766613263363963316663623664353862623032323331356563626636646239636666343766</span>
+<span style="color: #008080;">5</span> <span style="color: #000000;">          6633363733303334373831303732326435396566313066630a373562633530333832613335393835
+</span><span style="color: #008080;">6</span>           <span style="color: #800080;">34396161313862656466353433313835643030633966383032656561343331616234373831623233</span>
+<span style="color: #008080;">7</span> <span style="color: #000000;">          6636396135306436640a313531373835663633383665396139343464613861313034386365393137
+</span><span style="color: #008080;">8</span>           <span style="color: #800080;">6133</span>
+<span style="color: #008080;">9</span> Encryption successful</pre>
+</div>
+<p>&nbsp;</p>
+<h1 id="Playbook-使用-vault-文件">Playbook 使用 vault 文件</h1>
+<div class="cnblogs_code">
+<pre><span style="color: #008080;"> 1</span> <span style="color: #000000;"># 其中 test_vault.yml 的 vault 密码为 vault_pwd 中的信息
+</span><span style="color: #008080;"> 2</span> [yun@ansi-manager object06]$ ansible-vault view test_vault.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd
+</span><span style="color: #008080;"> 3</span> ---
+<span style="color: #008080;"> 4</span> # vault test  ==
+<span style="color: #008080;"> 5</span> -<span style="color: #000000;"> hosts: proxyservers
+</span><span style="color: #008080;"> 6</span> 
+<span style="color: #008080;"> 7</span> <span style="color: #000000;">  tasks:
+</span><span style="color: #008080;"> 8</span>     - name: <span style="color: #800000;">"</span><span style="color: #800000;">touch file</span><span style="color: #800000;">"</span>
+<span style="color: #008080;"> 9</span>       <span style="color: #0000ff;">file</span><span style="color: #000000;">:
+</span><span style="color: #008080;">10</span>         path: /tmp/<span style="color: #000000;">with_itemstestfile
+</span><span style="color: #008080;">11</span>         state: <span style="color: #0000ff;">touch</span>
+<span style="color: #008080;">12</span> 
+<span style="color: #008080;">13</span> [yun@ansi-manager object06]$ ansible-playbook -b -i ../hosts_key --syntax-check test_vault.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd  # 语法检测
+</span><span style="color: #008080;">14</span> [yun@ansi-manager object06]$ ansible-playbook -b -i ../hosts_key -C test_vault.yml --vault-password-<span style="color: #0000ff;">file</span>=<span style="color: #000000;">vault_pwd  # 预执行，测试执行
+</span><span style="color: #008080;">15</span> [yun@ansi-manager object06]$ ansible-playbook -b -i ../hosts_key test_vault.yml --vault-password-<span style="color: #0000ff;">file</span>=vault_pwd  # 执行</pre>
+</div>
+<p>&nbsp;</p>
+<p>完毕！</p>
+<hr />
+<p style="text-align: center;">&mdash;&mdash;&mdash;END&mdash;&mdash;&mdash;<br />如果觉得不错就关注下呗 (-^O^-) ！</p>
+<p style="text-align: center;"><img src="https://img2020.cnblogs.com/blog/1395193/202004/1395193-20200428215454432-865304803.png" alt=""></p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+        </div>
+        <p class="postfoot">
+            posted on 
+<span id="post-date">2020-04-28 21:55</span>&nbsp;
+<a href="https://www.cnblogs.com/zhanglianghhh/">踏歌行666</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797562" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12797562);return false;">收藏</a>
+        </p>
+    </div>
+</div>
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 430741, cb_blogApp = 'zhanglianghhh', cb_blogUserGuid = '1e1d97dd-c689-408a-4524-08d5b2fd8341';
+    var cb_entryId = 12797562, cb_entryCreatedDate = '2020-04-28 21:55', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+</div>
+</div>
+<div id="leftmenu">
+
+
+<h3>导航</h3>
+<ul>
+    <li>
+        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zhanglianghhh/">
+首页</a>
+
+    </li>
+    <li>
+        
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%B8%8F%E6%AD%8C%E8%A1%8C666">
+联系</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zhanglianghhh/rss/">
+订阅</a>
+        
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/zhanglianghhh/rss/">
+    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
+</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+    </li>
+</ul>
+
+
+<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 踏歌行666
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+</div>
+</div>
+
+
+    
+</body>
+</html>

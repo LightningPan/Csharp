@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="最近在项目中遇到一个需要用线程池来处理任务的需求，于是我用 来实现，但是在实现过程中我发现提交大量任务时它的处理逻辑是这样的（提交任务还有一个 方法内部也调用了 方法）： java public vo" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>如何让ThreadPoolExecutor更早地创建非核心线程 - 卷卷子 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright.min.css?v=aar1eIg4zz9tL2uCrzOGDur190sJi2DazF273FikoL4" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright-mobile.min.css?v=FJjyQba01xzuYKRyPpSwE1bMq69pRjxrz5wp2oZZGLY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/jrjrzivvv/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/jrjrzivvv/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/jrjrzivvv/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 598036;
+        var currentBlogApp = 'jrjrzivvv';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'LessIsMoreRight';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/jrjrzivvv/">卷卷子</a>
+</div>
+<div class="subtitle">
+
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/jrjrzivvv/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%8D%B7%E5%8D%B7%E5%AD%90">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/jrjrzivvv/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+2&nbsp;</span>
+<span id="stats_article_count">文章 - 
+0&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+0</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                <div id="post_detail">
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/jrjrzivvv/p/12797310.html">如何让ThreadPoolExecutor更早地创建非核心线程</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <p>最近在项目中遇到一个需要用线程池来处理任务的需求，于是我用<code>ThreadPoolExecutor</code>来实现，但是在实现过程中我发现提交大量任务时它的处理逻辑是这样的（提交任务还有一个<code>submit</code>方法内部也调用了<code>execute</code>方法）：</p>
+<pre><code class="language-java">public void execute(Runnable command) {
+        if (command == null)
+            throw new NullPointerException();
+        /*
+         * Proceed in 3 steps:
+         *
+         * 1. If fewer than corePoolSize threads are running, try to
+         * start a new thread with the given command as its first
+         * task.  The call to addWorker atomically checks runState and
+         * workerCount, and so prevents false alarms that would add
+         * threads when it shouldn't, by returning false.
+         *
+         * 2. If a task can be successfully queued, then we still need
+         * to double-check whether we should have added a thread
+         * (because existing ones died since last checking) or that
+         * the pool shut down since entry into this method. So we
+         * recheck state and if necessary roll back the enqueuing if
+         * stopped, or start a new thread if there are none.
+         *
+         * 3. If we cannot queue task, then we try to add a new
+         * thread.  If it fails, we know we are shut down or saturated
+         * and so reject the task.
+         */
+        int c = ctl.get();
+        if (workerCountOf(c) &lt; corePoolSize) {
+            if (addWorker(command, true))
+                return;
+            c = ctl.get();
+        }
+        if (isRunning(c) &amp;&amp; workQueue.offer(command)) {
+            int recheck = ctl.get();
+            if (! isRunning(recheck) &amp;&amp; remove(command))
+                reject(command);
+            else if (workerCountOf(recheck) == 0)
+                addWorker(null, false);
+        }
+        else if (!addWorker(command, false))
+            reject(command);
+    }
+</code></pre>
+<p>注释中已经写的非常明白：</p>
+<ol>
+<li>如果线程数量小于<code>corePoolSize</code>，直接创建新线程处理任务</li>
+<li>如果线程数量等于<code>corePoolSize</code>，尝试将任务放到等待队列里</li>
+<li>如果等待队列已满，尝试创建非核心线程处理任务（如果<code>maximumPoolSIze &gt; corePoolSize</code>）</li>
+</ol>
+<p>但是在我的项目中一个线程启动需要10s左右的时间（需要启动一个浏览器对象），因此我希望实现一个更精细的逻辑提升资源的利用率:</p>
+<ol>
+<li>线程池保持<code>corePoolSize</code>个线程确保有新任务到来时可以立即得到执行</li>
+<li>当没有空闲线程时，先把任务放到等待队列中（因为开启一个线程需要10s，所以如果在等待队列比较小的时候，等待其他任务完成比等待新线程创建更快）</li>
+<li>当等待队列的大小大于设定的阈值<code>threshold</code>时，说明堆积的任务已经太多了，这个时候开始创建非核心线程直到线程数量已经等于<code>maximumPoolSize</code></li>
+<li>当线程数量已经等于<code>maximumPoolSize</code>，再将新来的任务放回到任务队列中等待（直到队列满后开始拒绝任务）</li>
+<li>长时间空闲后退出非核心线程回收浏览器占用的内存资源</li>
+</ol>
+<p>当我研究了常见的<code>CachedThreadPool</code>、<code>FixedThreadPool</code>以及尝试自己配置<code>ThreadPoolExecutor</code>的构造函数后，发现无论如何都不能实现上面提到的逻辑，因为默认的实现只有在<code>workQueue</code>达到容量上限后才会开始创建非核心线程，因此需要通过继承的方法实现一个新的类来完成需求。</p>
+<p>怎么实现在<code>workQueue</code>到达容量上限前就创建非核心线程？还要回顾下<code>execute</code>函数的代码</p>
+<pre><code class="language-java">					//尝试将任务插入等待队列，如果返回false
+					//说明队列已经到达容量上限，进入else if逻辑
+if (isRunning(c) &amp;&amp; workQueue.offer(command)) {
+    int recheck = ctl.get();
+    if (! isRunning(recheck) &amp;&amp; remove(command))
+        reject(command);
+    else if (workerCountOf(recheck) == 0)
+        addWorker(null, false);
+}
+//尝试创建非核心线程
+else if (!addWorker(command, false))
+    reject(command);
+</code></pre>
+<p>那么只要改变<code>workQueue.offer()</code>的逻辑，在线程数量还小于<code>maximumPoolSize</code>的时候就返回false拒绝插入，让线程池调用<code>addWoker</code>，等不能再创建更多线程时再允许添加到队列即可。</p>
+<p>可以通过子类重写<code>offer</code>方法来实现添加逻辑的改变</p>
+<pre><code class="language-java">@Override
+public boolean offer(E e) {
+    if (threadPoolExecutor == null) {
+        throw new NullPointerException();
+    }
+    //当调用该方法时，已经确定了workerCountOf(c) &gt; corePoolSize
+    //当数量小于threshold，在队列里等待
+    if (size() &lt; threshold) {
+        return super.offer(e);
+	//当数量大于等于threshold，说明堆积的任务太多，返回false
+	//让线程池来创建新线程处理
+    } else {
+        //此处可能会因为多线程导致错误的拒绝
+        if (threadPoolExecutor.getPoolSize() &lt; threadPoolExecutor.getMaximumPoolSize()) {
+            return false;
+        //线程池中的线程数量已经到达上限，只能添加到任务队列中
+        } else {
+            return super.offer(e);
+        }
+    }
+}
+</code></pre>
+<p>这样就实现了基本实现了我需要的功能，但是在写代码的过程中我找到了一个可能出错的地方：<code>ThreadPoolExecutor</code>是<a href="https://www.zhihu.com/question/305433618">线程安全</a>的，那么重写的<code>offer</code>方法也可能遇到多线程调用的情况</p>
+<pre><code class="language-java">//设想当poolSize = maximumPoolSize-1时，两个任务到达此处同时返回false
+if (threadPoolExecutor.getPoolSize() &lt; threadPoolExecutor.getMaximumPoolSize()) {
+	return false;
+}
+</code></pre>
+<p>由于添加到队列返回<code>false</code>，<code>execute</code>方法进入到<code>else if (!addWorker(command, false))</code></p>
+<pre><code class="language-java">if (isRunning(c) &amp;&amp; workQueue.offer(command)) {
+	int recheck = ctl.get();
+	if (! isRunning(recheck) &amp;&amp; remove(command))
+		reject(command);
+	else if (workerCountOf(recheck) == 0)
+		addWorker(null, false);
+}
+//添加到队列失败后进入addWorker方法中
+else if (!addWorker(command, false))
+	reject(command);
+}
+</code></pre>
+<p>再来看一下<code>addWorker</code>方法的代码，这里只截取需要的一部分</p>
+<pre><code class="language-java">for (;;) {
+    int wc = workerCountOf(c);
+    if (wc &gt;= CAPACITY ||
+    	//两个线程都认为还可以创建再创建一个新线程
+        wc &gt;= (core ? corePoolSize : maximumPoolSize))
+        return false;
+        //两个线程同时调用cas方法只有一个能够成功
+        //成功的线程break retry;进入后面的创建线程的逻辑
+        //失败的线程重新回到上面的检查并返回false
+    if (compareAndIncrementWorkerCount(c))
+        break retry;
+    c = ctl.get();  // Re-read ctl
+    if (runStateOf(c) != rs)
+        continue retry;
+    // else CAS failed due to workerCount change; retry inner loop
+}
+</code></pre>
+<p>最终，在竞争中失败的线程由于<code>addWorker</code>方法返回了<code>false</code>最终调用了<code>reject(command)</code>。在前面写的要实现的逻辑里提到了，只有在等待队列容量达到上限无法再插入时才拒绝任务，但是由于多线程的原因，这里只是超过了<code>threshold</code>但没有超过<code>capacity</code>的时候就拒绝任务了，所以要对拒绝策略的触发做出修改:<strong>第一次触发<code>Reject</code>时，尝试重新添加到任务队列中（不进行<code>poolSize</code>的检测），如果仍然不能添加，再拒绝任务</strong>。<br>
+这里通过对<code>execute</code>方法进行重写来实现重试</p>
+<pre><code class="language-java">@Override
+public void execute(Runnable command) {
+    try {
+        super.execute(command);
+    } catch (RejectedExecutionException e) {
+    	/*
+    	这里参考源码中将任务添加到任务队列的实现
+    	但是其中通过(workerCountOf(recheck) == 0)
+    	检查当任务添加到队列后是否还有线程存活的部分
+    	由于是private权限的，无法实现类似的逻辑，因此需要做一定的特殊处理
+		if (isRunning(c) &amp;&amp; workQueue.offer(command)) {
+		     int recheck = ctl.get();
+		     if (! isRunning(recheck) &amp;&amp; remove(command))
+		         reject(command);
+		     else if (workerCountOf(recheck) == 0)
+		         addWorker(null, false);
+		 }
+		*/
+        if (!this.isShutdown() &amp;&amp; ((MyLinkedBlockingQueue)this.getQueue()).offerWithoutCheck(command)) {
+            if (this.isShutdown() &amp;&amp; remove(command))
+                //二次检查
+                realRejectedExecutionHandler.rejectedExecution(command, this);
+            } else {
+                //插入失败，队列已经满了
+                realRejectedExecutionHandler.rejectedExecution(command, this);
+            }
+        }
+    }
+}
+</code></pre>
+<p>这里有两个小问题：</p>
+<ol>
+<li>初始化线程池传入的<code>RejectedExecutionHandler</code>不一定会抛出异常（事实上，<code>ThreadPoolExecutor</code>自己实现的4中拒绝策略中只有<code>AbortPolicy</code>能够抛出异常并被捕捉到）,因此需要在初始化父类时传入<code>AbortPolicy</code>拒绝策略并将构造函数中传入的自定义拒绝策略保存下来，在重试失败后才调用自己的<code>rejectedExecution</code>。</li>
+<li>在<code>corePoolSize = 0 </code>的极端情况下，可能出现一个任务刚被插入队列的同时，所有的线程都结束任务然后被销毁了，此使这个被加入的任务就无法被执行，在<code>ThreadPoolExecutor</code>中是通过<pre><code class="language-java">else if (workerCountOf(recheck) == 0)
+	addWorker(null, false);
+</code></pre>
+在添加后再检查工作线程是否为0来确保任务可以被执行，但是其中使用的方法是私有的，无法在子类中实现类似的逻辑，因此在初始化时只能强制<code>corePoolSize</code>至少为1来解决这个问题。</li>
+</ol>
+<p>全部代码如下</p>
+<pre><code class="language-java">public class MyThreadPool extends ThreadPoolExecutor {
+
+    private RejectedExecutionHandler realRejectedExecutionHandler;
+
+    public MyThreadPool(int corePoolSize,
+                        int maximumPoolSize,
+                        long keepAliveTime,
+                        TimeUnit unit,
+                        int queueCapacity) {
+        this(corePoolSize,
+                maximumPoolSize,
+                keepAliveTime,
+                unit,
+                queueCapacity,
+                new AbortPolicy());
+    }
+
+    public MyThreadPool(int corePoolSize,
+                        int maximumPoolSize,
+                        long keepAliveTime,
+                        TimeUnit unit,
+                        int queueCapacity,
+                        RejectedExecutionHandler handler) {
+        super(corePoolSize == 0 ? 1 : corePoolSize,
+                maximumPoolSize,
+                keepAliveTime,
+                unit,
+                new MyLinkedBlockingQueue&lt;&gt;(queueCapacity),
+                new AbortPolicy());
+        ((MyLinkedBlockingQueue)this.getQueue()).setThreadPoolExecutor(this);
+        realRejectedExecutionHandler = handler;
+    }
+
+    @Override
+    public void execute(Runnable command) {
+        try {
+            super.execute(command);
+        } catch (RejectedExecutionException e) {
+            if (!this.isShutdown() &amp;&amp; ((MyLinkedBlockingQueue)this.getQueue()).offerWithoutCheck(command)) {
+                if (this.isShutdown() &amp;&amp; remove(command))
+                    //二次检查
+                    realRejectedExecutionHandler.rejectedExecution(command, this);
+            } else {
+                //插入失败，队列已经满了
+                realRejectedExecutionHandler.rejectedExecution(command, this);
+            }
+        }
+    }
+}
+
+
+public class MyLinkedBlockingQueue&lt;E&gt; extends LinkedBlockingQueue&lt;E&gt; {
+
+    private int threshold = 20;
+
+    private ThreadPoolExecutor threadPoolExecutor = null;
+
+    public MyLinkedBlockingQueue(int queueCapacity) {
+        super(queueCapacity);
+    }
+
+    public void setThreadPoolExecutor(ThreadPoolExecutor threadPoolExecutor) {
+        this.threadPoolExecutor = threadPoolExecutor;
+    }
+
+    @Override
+	public boolean offer(E e) {
+	    if (threadPoolExecutor == null) {
+	        throw new NullPointerException();
+	    }
+	    //当调用该方法时，已经确定了workerCountOf(c) &gt; corePoolSize
+	    //当数量小于threshold，在队列里等待
+	    if (size() &lt; threshold) {
+	        return super.offer(e);
+		//当数量大于等于threshold，说明堆积的任务太多，返回false
+		//让线程池来创建新线程处理
+	    } else {
+	        //此处可能会因为多线程导致错误的拒绝
+	        if (threadPoolExecutor.getPoolSize() &lt; threadPoolExecutor.getMaximumPoolSize()) {
+	            return false;
+	        //线程池中的线程数量已经到达上限，只能添加到任务队列中
+	        } else {
+	            return super.offer(e);
+	        }
+	    }
+	}
+
+    public boolean offerWithoutCheck(E e) {
+        return super.offer(e);
+    }
+}
+
+</code></pre>
+<p>最后进行简单的测试</p>
+<pre><code>corePoolSize:2
+maximumPoolSize:5
+queueCapacity:10
+threshold:7
+任务2
+线程数量:2
+等待队列大小:0
+等待队列大小小于阈值，继续等待。
+任务3
+线程数量:2
+等待队列大小:1
+等待队列大小小于阈值，继续等待。
+任务4
+线程数量:2
+等待队列大小:2
+等待队列大小小于阈值，继续等待。
+任务5
+线程数量:2
+等待队列大小:3
+等待队列大小小于阈值，继续等待。
+任务6
+线程数量:2
+等待队列大小:4
+等待队列大小小于阈值，继续等待。
+任务7
+线程数量:2
+等待队列大小:5
+等待队列大小小于阈值，继续等待。
+任务8
+线程数量:2
+等待队列大小:6
+等待队列大小小于阈值，继续等待。
+任务9
+线程数量:2
+等待队列大小:7
+等待队列大小大于等于阈值，线程数量小于MaximumPoolSize,创建新线程处理。
+任务10
+线程数量:3
+等待队列大小:7
+等待队列大小大于等于阈值，线程数量小于MaximumPoolSize,创建新线程处理。
+任务11
+线程数量:4
+等待队列大小:7
+等待队列大小大于等于阈值，线程数量小于MaximumPoolSize,创建新线程处理。
+任务12
+线程数量:5
+等待队列大小:7
+等待队列大小大于等于阈值，但线程数量大于等于MaximumPoolSize,只能添加到队列中。
+任务13
+线程数量:5
+等待队列大小:8
+等待队列大小大于等于阈值，但线程数量大于等于MaximumPoolSize,只能添加到队列中。
+任务14
+线程数量:5
+等待队列大小:9
+等待队列大小大于等于阈值，但线程数量大于等于MaximumPoolSize,只能添加到队列中。
+任务15
+线程数量:5
+等待队列大小:10
+等待队列大小大于等于阈值，但线程数量大于等于MaximumPoolSize,只能添加到队列中。
+队列已满
+任务16
+线程数量:5
+等待队列大小:10
+等待队列大小大于等于阈值，但线程数量大于等于MaximumPoolSize,只能添加到队列中。
+队列已满
+</code></pre>
+<p>再重新复习一遍要实现的功能：</p>
+<ol>
+<li>线程池保持<code>corePoolSize</code>个线程确保有新任务到来时可以立即得到执行</li>
+<li>当没有空闲线程时，先把任务放到等待队列中（因为开启一个线程需要10s，所以如果在等待队列比较小的时候，等待其他任务完成比等待新线程创建更快）</li>
+<li>当等待队列的大小大于设定的阈值<code>threshold</code>时，说明堆积的任务已经太多了，这个时候开始创建非核心线程直到线程数量已经等于<code>maximumPoolSize</code></li>
+<li>当线程数量已经等于<code>maximumPoolSize</code>，再将新来的任务放回到任务队列中等待（直到队列满后开始拒绝任务）</li>
+<li>长时间空闲后退出非核心线程回收浏览器占用的内存资源</li>
+</ol>
+<p>可以看出，线程池运行的逻辑和要实现的目标是相同的。</p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 21:17</span>&nbsp;
+<a href="https://www.cnblogs.com/jrjrzivvv/">卷卷子</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797310" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12797310);return false;">收藏</a></div>
+        </div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 598036, cb_blogApp = 'jrjrzivvv', cb_blogUserGuid = '31f357ea-ee4c-43a2-237e-08d7e0b363fc';
+    var cb_entryId = 12797310, cb_entryCreatedDate = '2020-04-28 21:17', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>    </div>
+</div>
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 卷卷子
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    
+</body>
+</html>

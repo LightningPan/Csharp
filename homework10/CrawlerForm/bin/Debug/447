@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="一个不能被有效执行的计划，做的再好，也是烂计划。 计划的三要素 我认为计划有三个要素，一是目标，二是时间，三是事务，计划就是在某个时间要达成某个目标所需要做的事务清单，同一个时间段，目标要简单明确，并" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>伤其十指，不如断其一指，谈谈我的学习计划 - Hanstrovsky - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/hanstrovsky/custom.css?v=3RqyK8d4XxcvMABDzJsv0mvfurQ=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/hanstrovsky/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/hanstrovsky/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/hanstrovsky/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 519488;
+        var currentBlogApp = 'hanstrovsky';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <canvasid="c_n9"width="1920"height="990"style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<script src="https://files.cnblogs.com/files/siwuxie095/canvas-nest.min.js" defer></script>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/hanstrovsky/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/hanstrovsky/">Hanstrovsky</a>
+</h1>
+<h2>
+种一棵树最好的时间是十年前，其次是现在。
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/hanstrovsky/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Hanstrovsky">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/hanstrovsky/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+16&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/hanstrovsky/p/12792253.html">伤其十指，不如断其一指，谈谈我的学习计划</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <p>一个不能被有效执行的计划，做的再好，也是烂计划。</p>
+<h2 id="计划的三要素">计划的三要素</h2>
+<p>我认为计划有三个要素，一是目标，二是时间，三是事务，计划就是在某个时间要达成某个目标所需要做的事务清单，同一个时间段，目标要简单明确，并且不宜过多，时间要清晰，事务要具体。像前段时间我做的计划就不合理，完全围绕着时间展开，把每天的时间排的满满当当的，却没有划分明确具体要完成什么事务，支撑什么目标的达成。而且人毕竟不是机器，把时间安排的这样严丝合缝，遇到计划之外的事情没有缓冲的余地，反而会使计划崩溃。</p>
+<h2 id="一次家庭矛盾">一次家庭矛盾</h2>
+<p>我上周的一次吵架行为就是一个很好的例子。我把下班的时间安排的死死的，每天拿出两个小时的时间用来学习考研知识，以达成年底考个在职研究生的目标，其他空余时间比如周末要学习开发知识，以达成9、10月份跳槽加薪的目标，还有金融投资的事情也不能放下，每天中午利用一个小时学习，另外还有一个我一直念念不忘的事情就是画漫画，只是因为时间精力有限，总是再给其他事项让路。在这样的多重目标夹持下，我产生了一些焦虑感，担心自己不能执行好每天的计划。</p>
+<p>某个6点半下班回到家的晚上，厨房桌上还剩下二十几个包好的馄饨，想着煮一下当晚饭，吃完学习两个多小时，美滋滋。谁知傻娟发来信息，说她晚上想吃鸡蛋灌饼，我一合计，这就意味着我要花一个多小时的时间用在做饭上，加上吃饭的时间，如果再学习两小时，那就要12点多再睡了，如果不学，那今天的学习计划就泡汤了，这才第二天就这样，那以后会如何呢？那一刻，我内心的焦虑感被放大，对未来充满了怀疑。</p>
+<p>于是我将矛盾点转移到了傻娟身上，刚说好的减肥，晚上吃清淡一点，大晚上的，吃什么烙饼嘛！由此，矛盾的小火苗开始燃起。</p>
+<h2 id="事情过后的反思">事情过后的反思</h2>
+<p>这次矛盾持续到了半夜才有所平复，直到第二天才渐渐消退。结合这件事我反思了一下，有两点收获：</p>
+<p>1、普通人（马云乔布斯那种另算）的精力有限，对资源的管理能力有限，在一个时间段，要把有限的精力和时间投入到不多于一个主要目标上去。比如考研与跳槽，在同一时间段，只能二选一，贪多只会让自己手忙脚乱，结果什么都干不成。</p>
+<p>2、生活也是人生的一部分，在个人成长方面，要围绕着事务去建立计划，而不要围绕着时间。什么意思呢，就是比如我这两个月要学习设计模式，那就在每天的空余时间学习，8点有空就8点学，10点有空就10点学，不要把时间限制死，比如几点吃饭，几点运动，几点学习，那样就像代码里的硬编码，很死板，稍有变动便溃不成军。</p>
+<h2 id="思考之后的决定">思考之后的决定</h2>
+<p>对于我自己来说，经过考虑，决定还是先把考在职研的事情放一放，把精力集中在开发知识的学习上。因为我考研的初衷一个是名校情结，另一个是想通过考研来拓展一下自己的交际圈，因为我老觉得他们读过研的人似乎另有一个圈子，不和我们一起玩，所以也好奇那个圈子什么样；而工作关系到生计问题，养家糊口，迫在眉睫。这么一对比，我觉得还是先沉淀自己的技术，跳槽换个好点的工作比较务实，当然这个也是因人而异，我目前所在的公司薪酬低，成长空间小，如果公司还不错的话，频频跳槽不是明智的选择；研究生的话，将来有机会再考个MBA读读，最初的目的也能达到，还能对我金融投资方面的知识有所帮助。</p>
+<p>我也不知道这算不算是一定程度上对生活的妥协，如果是也没办法了，毕竟人还是要生活的嘛，把自己搞得很痛苦就不好了。人和人不一样，我的想法不一定是对的，如果你恰巧也和我一样，是一个想做的事情很多，又不会影分身之术的普通人，希望这篇文章能对你也有所帮助。</p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 21:01</span>&nbsp;
+<a href="https://www.cnblogs.com/hanstrovsky/">Hanstrovsky</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12792253" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12792253);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 519488, cb_blogApp = 'hanstrovsky', cb_blogUserGuid = 'bd0df448-dc7e-442b-47e1-08d6e658f5b8';
+    var cb_entryId = 12792253, cb_entryCreatedDate = '2020-04-28 21:01', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Hanstrovsky
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

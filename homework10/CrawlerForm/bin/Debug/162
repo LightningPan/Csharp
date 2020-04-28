@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="现在写文都是用markdown，但是博客园markdown的样式有些不合我意，经过一番折腾，顺带着把样式美化了下，感谢博客园允许自定义样式~ 所涉及到的若干文件上传在 &amp;quot;码云&amp;quot; ，" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>博客园样式美化 - 曾聪聪 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=_wtKGIz9sYqjm3oTTk7YRXg9g-RHiRw9EHTGXG3FSu8" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/zengcongcong/custom.css?v=it2TbG1odzlynosE3qmq35D7SZ8=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zengcongcong/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zengcongcong/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zengcongcong/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 491385;
+        var currentBlogApp = 'zengcongcong';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <script>loadPageBeginHtml();</script>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/zengcongcong/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/zengcongcong/">生命不息，折腾不止</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zengcongcong/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9B%BE%E8%81%AA%E8%81%AA">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zengcongcong/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+99&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+5</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12791326.html">博客园样式美化</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <p>现在写文都是用markdown，但是博客园markdown的样式有些不合我意，经过一番折腾，顺带着把样式美化了下，感谢博客园允许自定义样式~<br>
+所涉及到的若干文件上传在<a href="https://gitee.com/zengcongcong/Beautify-cnblogs">码云</a>，有需要的可以进行下载。</p>
+<h3 id="一：修改代码高亮的样式">一：修改代码高亮的样式</h3>
+<p>博客园默认使用的是highlight.min.js，咱们配合它进行修改markdown的代码高亮样式即可</p>
+<p><img src="https://img2020.cnblogs.com/blog/1490755/202004/1490755-20200428000817072-461413653.png" alt=""></p>
+<p><strong>方式一：</strong>自己去<a href="https://highlightjs.org/static/demo/">highlight样式预览地址</a>去寻找自己中意的样式，在去<a href="https://github.com/RealAndMe/blogs-style">GitHub样式地址</a>复制其CSS样式，到记事本，注意直接复制到博客园会有坑，会出现样式冲突的情况，需要进行解决，解决方式可参考我给的示例CSS代码(可直接加 ! improtant)</p>
+<p>我选用的样式为Atom One Dark</p>
+<p><img src="https://img2020.cnblogs.com/blog/1490755/202004/1490755-20200428000918878-1021862327.png" alt=""></p>
+<p>在github上选择atom-one-dark.css,复制其CSS样式并进行适当修改，防止冲突</p>
+<p><img src="https://img2020.cnblogs.com/blog/1490755/202004/1490755-20200428001032076-1206414133.png" alt=""></p>
+<p>修改后的CSS样式代码如下：喜欢这款样式的朋友可以直接复制我的样式。</p>
+<pre><code class="language-css">pre {
+    /*控制代码不换行*/
+    white-space: pre;
+    word-wrap: normal;
+}
+
+.cnblogs-markdown .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34 !important;
+  font-size:12px !important;
+  max-height: 700px;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+/*makedown行间代码样式 */
+.cnblogs-markdown code {
+    color: #c7254e;
+    border: none !important;
+    font-size: 1em !important;
+    background-color: #f9f2f4 !important;
+    font-family: sans-serif !important;
+}
+</code></pre>
+<p><strong>方式二：</strong>我这里分享了三款代码高亮的样式，黑色主题的，可以直接前往<a href="https://gitee.com/zengcongcong/Beautify-cnblogs">码云</a>进行下载</p>
+<h3 id="二：给代码块增加一键复制">二：给代码块增加一键复制</h3>
+<p>在CSS样式添加</p>
+<pre><code class="language-java">/*添加按钮*/
+.cnblogs-markdown pre {
+  position: relative;
+}
+.cnblogs-markdown pre &gt; span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 2px;
+  padding: 0 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+}
+.cnblogs-markdown pre &gt; .copyed {
+  background: #67c23a;
+}
+</code></pre>
+<p>在页脚引入js文件,建议将js文件保存到自己的博客园文件去，防止原作者那里删除了</p>
+<pre><code class="language-html">&lt;script src=&quot;https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://blog-static.cnblogs.com/files/wuliytTaotao/cp.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>上传方式如下，上传完毕后将js引用的地址替换成自己的，这样就不用担心了。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1490755/202004/1490755-20200428002102551-989804704.png" alt=""></p>
+<h3 id="三：增加目录导航">三：增加目录导航</h3>
+<p>需要注意的是：目录导航只支持二级目录，即标题二，标题三支持生成(对应markdown里的##,###)，其他标题生成不了。在平时写作的时候需要注意</p>
+<p>添加css样式</p>
+<pre><code class="language-css">/* 定制生成博客目录的CSS样式 */
+#uprightsideBar{
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+    position:fixed;
+    /*
+    将div的位置固定到距离top:150px，right:0px的位置，
+    这样div就会处在最右边的位置，距离顶部150px，
+    当然这两个值你可以自己改。
+    */
+    top:150px;
+    right:0px;
+    width: auto;
+    height: auto; 
+}
+#sideBarTab{
+    float:left;
+    width:25px; 
+    box-shadow: 0 0 8px #877788;
+    border:1px solid #00DDC00;
+    border-right:none;
+    text-align:center;
+    background:#33FF66;
+}
+#sideBarContents{
+    float:left;
+    overflow:auto; 
+    overflow-x:hidden;!important;
+    width:auto;
+    min-height:101px;
+    max-height:460px;
+    border:1px solid #e5e5e5;
+    border-right:none; 
+    background:#FFFFCC;
+    font-size:16px;
+}
+#sideBarContents dl{
+    margin:0;
+    padding:0;
+}
+#sideBarContents dt{
+    margin-top:5px;
+    margin-left:5px;
+}
+#sideBarContents dd, dt {
+    cursor: pointer;
+}
+#sideBarContents dd:hover, dt:hover {
+    color:#A7995A;
+}
+#sideBarContents dd{
+    margin-left:20px;
+}
+</code></pre>
+<p>在页脚引入js样式，js代码较多，我就将其以文件形式保存并上传了。</p>
+<pre><code class="language-css">&lt;!--目录导航js--&gt;
+&lt;script src=&quot;https://blog-static.cnblogs.com/files/zengcongcong/daohang.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p><img src="https://img2020.cnblogs.com/blog/1490755/202004/1490755-20200428003059152-444808945.png" alt=""></p>
+<h3 id="四：屏蔽底部广告">四：屏蔽底部广告</h3>
+<p>博客园底部栏默认是有广告的，咱们可以设置隐藏，在css样式中添加</p>
+<pre><code class="language-css">/*屏蔽底层广告*/
+#ad_t2,#cnblogs_c1,#under_post_news,#cnblogs_c2,#under_post_kb {
+    display:none; !important
+}
+</code></pre>
+<h3 id="五：图片点击放大">五：图片点击放大</h3>
+<p>正文中的图片有时候看不清楚，可以设置为点击放大，在页脚处添加如下代码</p>
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;https://blog-static.cnblogs.com/files/zengcongcong/img.enlarge.js&quot;&gt;&lt;/script&gt;
+&lt;div id=&quot;outerdiv&quot; style=&quot;text-align: center;position: fixed;z-index: 1000;top: 0;left: 0;
+    width: 100%;height: 100%;background-color: rgba(255,255,255,.9);&quot;&gt;
+    &lt;img id=&quot;bigimg&quot; style=&quot;height: auto;width: 65%;border: 5px solid #7e8c8d; 
+        margin: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;&quot; src=&quot;&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="六：快速返回至顶部">六：快速返回至顶部</h3>
+<p>追加css样式,使用css绘制返回顶部的样式</p>
+<pre><code class="language-css">.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+</code></pre>
+<p>在页首添加一个div和js</p>
+<pre><code class="language-html">&lt;!--返回至顶部--&gt;
+&lt;div id=&quot;box&quot; class=&quot;box&quot;&gt;
+    &lt;div class=&quot;box-in&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    timer = requestAnimationFrame(function fn(){
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(oTop &gt; 0){
+            scrollTo(0,oTop-50);
+            timer = requestAnimationFrame(fn);
+        }else{
+            cancelAnimationFrame(timer);
+        }    
+    });
+}
+&lt;/script&gt;
+</code></pre>
+<h3 id="七：小可爱看板娘">七：小可爱看板娘</h3>
+<p>只需要在【页首html代码】中引入L2Dwidget.js即可，但是会影响移动端的阅读，所以移动端设置为不显示。</p>
+<pre><code class="language-html">&lt;!-- 右下角live2d效果 --&gt;
+&lt;script src=&quot;https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    L2Dwidget.init({
+        &quot;model&quot;: {
+            jsonPath: &quot;https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json&quot;,
+            &quot;scale&quot;: 1
+        },
+        &quot;display&quot;: {
+            &quot;position&quot;: &quot;left&quot;,
+            &quot;width&quot;: 150,
+            &quot;height&quot;: 300,
+            &quot;hOffset&quot;: 0,
+            &quot;vOffset&quot;: -20
+        },
+        &quot;mobile&quot;: {
+            &quot;show&quot;: true,
+            &quot;scale&quot;: 0.5
+        },
+        &quot;react&quot;: {
+            &quot;opacityDefault&quot;: 0.7,
+            &quot;opacityOnHover&quot;: 0.2
+        }
+    });
+&lt;/script&gt;
+
+&lt;!--
+其他可选的模型：
+黑猫：https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json
+萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json
+白猫：https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json
+狗狗：https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+小可爱：https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json
+小可爱：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json
+--&gt;
+</code></pre>
+<h3 id="八：鼠标点击特效">八：鼠标点击特效</h3>
+<p>在页脚引入即可</p>
+<pre><code class="language-html">&lt;!--鼠标点击特效--&gt;
+&lt;!--烟花特效--&gt;
+&lt;!--&lt;script src=&quot;https://blog-static.cnblogs.com/files/zengcongcong/click2.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;https://blog-static.cnblogs.com/files/zengcongcong/click.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3 id="九：设置背景图片">九：设置背景图片</h3>
+<p>将图片上传至博客园的文件中，在css处进行引用设置背景图片。</p>
+<pre><code class="language-css">body{
+   background: url(https://files-cdn.cnblogs.com/files/zengcongcong/1.bmp
+) fixed;
+}
+</code></pre>
+<h3 id="参考链接">参考链接</h3>
+<blockquote>
+<p>生成目录导航：<a href="https://www.cnblogs.com/xdp-gacl/p/3718879.html#2937655">https://www.cnblogs.com/xdp-gacl/p/3718879.html#2937655</a></p>
+<p>五种回到顶部的写法：<a href="https://www.cnblogs.com/xiaohuochai/p/5836179.html#anchor1">https://www.cnblogs.com/xiaohuochai/p/5836179.html#anchor1</a></p>
+<p>鼠标点击特效：<a href="https://www.cnblogs.com/wkfvawl/p/9414180.html">https://www.cnblogs.com/wkfvawl/p/9414180.html</a></p>
+<p>前端小白也能快速学会的博客园博客美化全攻略：<a href="https://juejin.im/post/5c74d695f265da2d943f6fd4#heading-7">https://juejin.im/post/5c74d695f265da2d943f6fd4#heading-7</a></p>
+<p>博客园美化教程：<a href="https://www.cnblogs.com/shwee/p/9060226.html#dingzhi5">https://www.cnblogs.com/shwee/p/9060226.html#dingzhi5</a></p>
+</blockquote>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-28 15:52</span>&nbsp;
+<a href="https://www.cnblogs.com/zengcongcong/">曾聪聪</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12791326" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12791326);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 491385, cb_blogApp = 'zengcongcong', cb_blogUserGuid = '1131037e-13ee-4d45-cdfe-08d619917642';
+    var cb_entryId = 12791326, cb_entryCreatedDate = '2020-04-28 15:52', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 曾聪聪
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        
+<!--代码块复制-->
+<script src="https://blog-static.cnblogs.com/files/zengcongcong/clipboard.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/zengcongcong/cp.js"></script>
+
+<!--目录导航js-->
+<script src="https://blog-static.cnblogs.com/files/zengcongcong/daohang.js"></script>
+<!--鼠标点击特效-->
+<!--<script src="https://blog-static.cnblogs.com/files/zengcongcong/click2.js"></script>-->
+<script src="https://blog-static.cnblogs.com/files/zengcongcong/click.js"></script> 
+
+<!--图片放大查看-->
+<script type="text/javascript" src="https://blog-static.cnblogs.com/files/zengcongcong/img.enlarge.js"></script>
+<div id="outerdiv" style="text-align: center;position: fixed;z-index: 1000;top: 0;left: 0;
+    width: 100%;height: 100%;background-color: rgba(255,255,255,.9);">
+    <img id="bigimg" style="height: auto;width: 65%;border: 5px solid #7e8c8d; 
+        margin: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;" src="" />
+</div>
+
+    </div>
+</body>
+</html>

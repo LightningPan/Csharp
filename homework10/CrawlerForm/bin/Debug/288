@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>经典鸡翅 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/buildtowin/bundle-buildtowin.min.css?v=lp23bZd4RUCf9TGsihJRLSq5M_182P4N8YRMn1A2CWo" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/jichi/custom.css?v=6wtfTBGNfhWFL7iH6gCJo&#x2B;5x&#x2B;js=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/buildtowin/bundle-buildtowin-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/jichi/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/jichi/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/jichi/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 474324;
+        var currentBlogApp = 'jichi';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BuildtoWin';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/jichi/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/jichi/">经典鸡翅</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/jichi/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E7%BB%8F%E5%85%B8%E9%B8%A1%E7%BF%85">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/jichi/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+175&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+54</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12797557.html">
+    Eureka和zookeeper的区别
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近在面试的时候，被问到了这个问题，作答的不是很好，在此进行整理和学习，希望能够帮助大家。 CAP理论 在了解eureka和zookeeper区别之前，我们先来了解一下这个知识，cap理论。 1998年的加州大学的计算机科学家 Eric Brewer 提出，分布式有三个指标。Consisten            <a href="https://www.cnblogs.com/jichi/p/12797557.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 21:54 经典鸡翅 阅读 (6) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797557" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/27.html">2020年4月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12790478.html">
+    为什么redis是单线程的以及为什么这么快？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：官网的说法 我们先来认真看一下官网的说法。翻译过来大意如下： CPU并不是您使用Redis的瓶颈，因为通常Redis要么受内存限制，要么受网络限制。例如，使用在一般Linux系统上运行的流水线Redis每秒可以发送一百万个请求，因此，如果您的应用程序主要使用O（N）或O（log（N））命令，则几乎不            <a href="https://www.cnblogs.com/jichi/p/12790478.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-27 22:07 经典鸡翅 阅读 (253) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12790478" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12784349.html">
+    freemarker中js里面取字符串，换行导致报错的解决办法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：问题原因 原因在于直接在js中取的变量并复制给var变量。 于是就变成这样。 解决办法 var data = &#39;${content?js_string}&#39;;            <a href="https://www.cnblogs.com/jichi/p/12784349.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-27 08:54 经典鸡翅 阅读 (15) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12784349" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/26.html">2020年4月26日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12779014.html">
+    PowerDesigner显示mysql数据表注释
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：通过Navicat或其他工具将表转为sql文件 例如下方这样 将sql表文件导入powerdesigner 下一步 下一步 确定后，产生如下模型 执行脚本 在对话框中执行如下脚本 最后 效果图如下            <a href="https://www.cnblogs.com/jichi/p/12779014.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-26 13:44 经典鸡翅 阅读 (12) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12779014" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/13.html">2020年4月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12694260.html">
+    java中wait和notify的虚假唤醒问题
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 本篇博客来自&#160;https://www.cnblogs.com/clover-forever/p/12616869.html 自己在此记录一下，方便日后复习。 虚假唤醒的概念 jdk官方文档解释： 所以说在wait和notify一块使用时，如果使用if作为条件时，会有虚假唤醒的情况发生，所以必须            <a href="https://www.cnblogs.com/jichi/p/12694260.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-13 21:58 经典鸡翅 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12694260" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12694173.html">
+    为什么wait和notify只能在synchronized中？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 wait和notify必须在synchronized块中，否则会抛出IllegalMonitorStateException。 原因 代码示例 代码示例的问题所在 一个消费者调用take，发现buffer.isEmpty。 在消费者调用wait之前，由于cpu的调度，消费者线程被挂起，生产者调            <a href="https://www.cnblogs.com/jichi/p/12694173.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-13 21:46 经典鸡翅 阅读 (40) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12694173" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/12.html">2020年4月12日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12686586.html">
+    一篇blog带你了解java中的锁
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近在复习锁这一块，对java中的锁进行整理，本文介绍各种锁，希望给大家带来帮助。 Java的锁 乐观锁 乐观锁是一种乐观思想，即认为读多写少，遇到并发写的可能性低，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，采取在写时先读出            <a href="https://www.cnblogs.com/jichi/p/12686586.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-12 17:55 经典鸡翅 阅读 (31) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12686586" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/09.html">2020年4月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12664395.html">
+    jvm类加载机制总结
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：类的加载机制分为如下三个阶段：加载，连接，初始化。其中连接又分为三个小阶段：验证，准备，解析。 加载阶段 将类的.class文件中的二进制数据读入到内存中，将其放在运行时数据区的方法区内，然后再堆内创建一个class对象，用来封装类在方法区内的数据结构。 加载class文件的方式： 从本地系统中直接            <a href="https://www.cnblogs.com/jichi/p/12664395.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-09 08:29 经典鸡翅 阅读 (19) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12664395" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/06.html">2020年4月6日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12642175.html">
+    Java的浅拷贝与深拷贝总结
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Java中的对象拷贝(Object Copy)指的是将一个对象的所有属性（成员变量）拷贝到另一个有着相同类类型的对象中去。举例说明：比如，对象A和对象B都属于类S，具有属性a和b。那么对对象A进行拷贝操作赋值给对象B就是：B.a=A.a; B.b=A.b; 在程序中拷贝对象是很常见的，主要是为了在新            <a href="https://www.cnblogs.com/jichi/p/12642175.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-06 15:05 经典鸡翅 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12642175" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/04/04.html">2020年4月4日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12630405.html">
+    政府网站公祭日，如何使网站整体变灰
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 政府网站会遇到公祭日的时候，网站整体颜色变灰的情况。今天正好调了一下。在此把解决方案分享给大家。方案简单实用，笔者已在生产环境使用过。通过整体的html使用filter来进行过滤。如下，只要引入即可。 解决方案 IE11 和 IE10的解决方案 经过测试发现，以上代码的方式对于谷歌，火狐，IE            <a href="https://www.cnblogs.com/jichi/p/12630405.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-04 09:40 经典鸡翅 阅读 (143) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12630405" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/29.html">2020年3月29日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12593981.html">
+    Java中Comparable和Comparator的区别
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近复习遇到了这个问题，在此进行一个详细的记录，分享给大家。 两个接口的区别 包区别 Comparable接口是在java.lang下。 Comparator接口是在java.util下。 使用区别 如果在定义类时，就实现了Comparable接口，直接在里面重写compareTo()方法，如            <a href="https://www.cnblogs.com/jichi/p/12593981.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-29 18:45 经典鸡翅 阅读 (39) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12593981" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12593866.html">
+    java 为什么重写equals一定要重写hashcode？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近复习，又看到了这个问题，在此记录和整理，通过例子来说明这种情况的原因，使大家可以清晰明白这个问题。 初步探索 首先我们要了解equals方法是什么，hashcode方法是什么。 equals方法 equals 是java的obejct类的一个方法，equals的源码如下： 由此我们可以看到            <a href="https://www.cnblogs.com/jichi/p/12593866.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-29 18:21 经典鸡翅 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12593866" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/28.html">2020年3月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12588087.html">
+    java触发full gc的几种情况概述
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 近期被问及这个问题，在此记录整理一下。 System.gc()方法的调用 此方法的调用是建议JVM进行Full GC,虽然只是建议而非一定,但很多情况下它会触发 Full GC,从而增加Full GC的频率,也即增加了间歇性停顿的次数。强烈影响系建议能不使用此方法就别使用，让虚拟机自己去管理它            <a href="https://www.cnblogs.com/jichi/p/12588087.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-28 16:46 经典鸡翅 阅读 (187) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12588087" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12587547.html">
+    常见的java内存溢出情况
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：堆溢出 java.lang.OutOfMemoryError: Java heap space — JVM Heap（堆）溢出 JVM 在启动的时候会自动设置 JVM Heap 的值，其初始空间（即 Xms）是物理内存的1/64，最大空间（ Xmx）不可超过物理内存。可以利用 JVM提供的 Xmn             <a href="https://www.cnblogs.com/jichi/p/12587547.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-28 15:17 经典鸡翅 阅读 (13) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12587547" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/27.html">2020年3月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12580906.html">
+    JVM年轻代，老年代，永久代详解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近被问到了这个问题，解释的不是很清晰，有一些概念略微模糊，在此进行整理和记录，分享给大家。本篇文章主要讲解内存区域的年轻代，老年代和永久代，略微提及一些垃圾回收算法，下面是正文。 堆整体 堆主要用于存放各种类的实例对象和数组。在java中被分为两个区域：年轻代和老年代。在java中还有一个永            <a href="https://www.cnblogs.com/jichi/p/12580906.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-27 17:16 经典鸡翅 阅读 (235) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12580906" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/24.html">2020年3月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12560235.html">
+    Java线程池详解及常用方法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近被问到了线程池的相关问题。于是准备开始写一些多线程相关的文章。这篇将介绍一下线程池的基本使用。 Executors Executors是concurrent包下的一个类，为我们提供了创建线程池的简便方法。 Executors可以创建我们常用的四种线程池： （1）newCachedThrea            <a href="https://www.cnblogs.com/jichi/p/12560235.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-24 17:21 经典鸡翅 阅读 (156) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12560235" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/15.html">2020年3月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12500695.html">
+    使用synchronized修饰静态方法和非静态方法有什么区别
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 最近被问到了这个问题，第一次回答的也是很不好，在此参考网上答案进行整理记录。供大家学习参考。 Synchronized修饰非静态方法 Synchronized修饰非静态方法，实际上是对调用该方法的对象加锁，俗称“对象锁”。 Java中每个对象都有一个锁，并且是唯一的。假设分配的一个对象空间，里            <a href="https://www.cnblogs.com/jichi/p/12500695.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-15 22:29 经典鸡翅 阅读 (238) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12500695" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/11.html">2020年3月11日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12464028.html">
+    使用easyConnnetVpn后，java项目链接不上数据库
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：背景 使用vpn后，桌面可以直接访问数据库等。程序直接连接不上了 解决办法 eclipse的配置方法。 idea的配置方法            <a href="https://www.cnblogs.com/jichi/p/12464028.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-11 17:59 经典鸡翅 阅读 (100) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12464028" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/10.html">2020年3月10日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12458935.html">
+    阿里云短信发送触发天级流量及解决办法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 今天小项目里引入了阿里云短信。调试过程中，突然不发短信了。发现接口返回信息，触发天级流量限制。以下是原因和解决办法。 原因 短信发送有默认的频率限制 限制如下： 短信验证码 ：使用同一个签名，对同一个手机号码发送短信验证码，支持1条/分钟，5条/小时 ，累计10条/天。 短信通知： 使用同一个            <a href="https://www.cnblogs.com/jichi/p/12458935.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-10 21:44 经典鸡翅 阅读 (68) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12458935" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/jichi/archive/2020/03/09.html">2020年3月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/jichi/p/12450036.html">
+    elasticsearch扩展ik分词器词库
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：操作步骤 1、进入elasticsearch的plugin，进入ik。进入config。 2、在config下面建立以.dic为后缀的字典。在建立的时候一定要注意文本的报错格式，请保存为utf 8格式的，其他格式不能使用。文件如果在linux中通过vi生成，则不用管格式。可以直接使用。 3、建立好后            <a href="https://www.cnblogs.com/jichi/p/12450036.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-09 17:49 经典鸡翅 阅读 (63) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12450036" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/jichi/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 经典鸡翅
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

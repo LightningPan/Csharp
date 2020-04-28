@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>苹果大大个 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=QOYYSTCMV24crecFWClKz9msINKIFz9bTbzK1xaWbEw" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=0pGk3D9Ik_jI4q1TALBT2ybOjIePHS_80_0J4DDOQiY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xiguadadage/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xiguadadage/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xiguadadage/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 467139;
+        var currentBlogApp = 'xiguadadage';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'darkgreentrip';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/xiguadadage/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xiguadadage/">苹果大大个</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xiguadadage/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%8B%B9%E6%9E%9C%E5%A4%A7%E5%A4%A7%E4%B8%AA">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/xiguadadage/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+20&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+2</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/12797115.html">
+    如何理解面向对象与面向过程的区别
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1.面向对象和面向过程的本质是什么？ 面向对象与面向过程本质来说都是代码结构的设计或者思想，而编程则是通过编程语言将事物的逻辑根据需求描述出来，所以我觉得并不能说Java就是一种面向对象的语言，而c就是一种面向过程的语言，我的理解是Java内置的语法对面向对象的代码结构支持比较好。 2.为什么先出现            <a href="https://www.cnblogs.com/xiguadadage/p/12797115.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-28 20:46 苹果大大个 阅读 (38) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797115" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2020/04/14.html">2020年4月14日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/12696725.html">
+    初识docker与理解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：因最近公司的一个新项目，有一个业务场景是需要给多个甲方的服务器配置运行环境与部署，所以考虑使用docker来实现环境配置的统一 1.docker是什么 docker是一种容器虚拟化技术的实现，相当于在一台服务器上可以虚拟化成多个服务器，各自运行各自的服务，例如tomcat,，mysql，nginx等            <a href="https://www.cnblogs.com/xiguadadage/p/12696725.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-14 11:19 苹果大大个 阅读 (12) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12696725" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/12/05.html">2019年12月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/11989978.html">
+    @NotEmpty、@NotNull、@NotBlank注解解析
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：源码解析 @NotEmpty根据JDK源码注释说明，该注解只能应用于char可读序列(可简单理解为String对象),colleaction,map,array上，因为该注解要求的是对象不为null且size 0，所以只有上述对象是拥有size属性的，而Integer,Long等基础对象包装类没有该            <a href="https://www.cnblogs.com/xiguadadage/p/11989978.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-12-05 16:07 苹果大大个 阅读 (344) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11989978" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/11/14.html">2019年11月14日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/11857630.html">
+    Java基本数据类型
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1.整形 | 类型 | 占用空间 | 取值范围 | | | | | | int | 4字节 | 2147483648 2147483647 | | short | 2字节 | 32768 32767 | | long | 8字节 | 9223372036854775B08 9223372036854            <a href="https://www.cnblogs.com/xiguadadage/p/11857630.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-14 15:19 苹果大大个 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11857630" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/11/08.html">2019年11月8日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/11818704.html">
+    Java创建线程的四种方式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Java创建线程的四种方式 1.继承Thread类创建线程 定义Thread类的子类，并重写该类的run方法，run()方法的内容就是该线程执行的内容 创建Thread子类的实例，即创建了线程对象。 调用线程对象的start()方法来启动该线程。 代码演示 2.通过Runnable接口创建线程类 定            <a href="https://www.cnblogs.com/xiguadadage/p/11818704.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-08 10:44 苹果大大个 阅读 (150) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11818704" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/07/25.html">2019年7月25日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/10306926.html">
+    浅谈HTTP与其工作流程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、什么是HTTP协议 HTTP协议（Hyper Text Transfer Protocol）翻译过来是超文本传输协议，也是一种restful风格的协议，在web开发和APP接口开发都很常用。 HTTP协议是应用层协议，同样是应用层协议的还有FTP，MQTT，SMAP等，但总结来说都是基于TCP/            <a href="https://www.cnblogs.com/xiguadadage/p/10306926.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-07-25 17:15 苹果大大个 阅读 (72) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10306926" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/07/20.html">2019年7月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/11217604.html">
+    浅谈ActiveMQ与使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、什么是消息中间件 消息中间件顾名思义实现的就是在两个系统或两个客户端之间进行消息传送 二、什么是ActiveMQ ActiveMQ是一种开源的基于JMS（Java Message Servie）规范的一种消息中间件的实现，ActiveMQ的设计目标是提供标准的，面向消息的，能够跨越多语言和多系统            <a href="https://www.cnblogs.com/xiguadadage/p/11217604.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-07-20 15:06 苹果大大个 阅读 (19918) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11217604" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/11216463.html">
+    浅谈MQTT
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、什么是MQTT MQTT的全称是“&#160;Message Queuing Telemetry Transport”，即消息队列遥测传输，是一种基于订阅/发布模式的应用层协议，而http是一种基于restful风格的一种应用层协议。 MQTT协议是一种轻量级协议，作为一种低开销、低带宽占用的即时通讯协议            <a href="https://www.cnblogs.com/xiguadadage/p/11216463.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-07-20 12:48 苹果大大个 阅读 (1327) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11216463" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/06/28.html">2019年6月28日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/11100555.html">
+    深入理解Java的浅克隆与深克隆
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 克隆，即复制一个对象，该对象的属性与被复制的对象一致，如果不使用Object类中的clone方法实现克隆，可以自己new出一个对象，并对相应的属性进行数据，这样也能实现克隆的目的。 但当对象属性较多时，这样的克隆方式会比较麻烦，所以Object类中实现了clone方法，用于克隆对象。 Java            <a href="https://www.cnblogs.com/xiguadadage/p/11100555.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-06-28 10:37 苹果大大个 阅读 (817) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11100555" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/xiguadadage/archive/2019/04/23.html">2019年4月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/xiguadadage/p/10756424.html">
+    openssl实现自签名证书
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 证书的作用 加密通信数据，验证对象身份，保证数据完整性 什么是自签名证书 公认的证书往往都需要收费，如果客户端与服务端都是由我们自己来操控，那便可以使用自签名证书（说白了就是只是自己认可的证书） ca签名证书 ca签名证书，也就是我们自己当是认证的机构去认证一个证书，那么客户端新人该ca证书也            <a href="https://www.cnblogs.com/xiguadadage/p/10756424.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-04-23 14:52 苹果大大个 阅读 (1038) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10756424" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/xiguadadage/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 苹果大大个
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

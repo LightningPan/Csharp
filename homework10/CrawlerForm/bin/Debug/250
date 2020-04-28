@@ -1,0 +1,820 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>踏歌行666 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=vmUk-3Bh8LDsKXwjNHs2GDiFna-ZMTUgOJzjUaXTlPA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=cJiDsI1JAuHHd-OAUWJeyE5JMXXsG4mmuUi2rVmEK1c" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zhanglianghhh/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zhanglianghhh/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zhanglianghhh/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 430741;
+        var currentBlogApp = 'zhanglianghhh';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'AnotherEon001';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="wrapper">
+<div id="header">
+
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/zhanglianghhh/">踏歌行的专栏</a>
+</h1>
+<div id="subtitle">
+一个爱学习爱分享的技术人员，微信公众号「OpenInfo」。
+本文原创发布于公众号 OpenInfo，转载请务必注明出处！
+</div>
+</div>
+<div id="sub"><div class="BlogStats">随笔 - 
+113, 文章 - 
+0, 评论 - 
+7, 引用 - 
+0</div>
+
+</div>
+
+
+
+
+</div>
+<div id="main_container">
+<div id="main_content">
+<div id="content">
+	
+
+
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/04/28.html">2020年4月28日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12797562.html">
+    Ansible playbook Vault 加密
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Ansible playbook Vault 加密详解与使用案例 主机规划 添加用户账号 说明： 1、 运维人员使用的登录账号； 2、 所有的业务都放在 /app/ 下「yun用户的家目录」，避免业务数据乱放； 3、 该用户也被 ansible 使用，因为几乎所有的生产环境都是禁止 root 远程登            <a href="https://www.cnblogs.com/zhanglianghhh/p/12797562.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-04-28 21:55 踏歌行666 阅读 (7) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797562" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/04/26.html">2020年4月26日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12782655.html">
+    Ansible playbook 编程
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Ansible playbook 编程详解与各种小案例            <a href="https://www.cnblogs.com/zhanglianghhh/p/12782655.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-04-26 22:03 踏歌行666 阅读 (30) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12782655" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/04/25.html">2020年4月25日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12776236.html">
+    Ansible Facts 变量详解
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Ansible Facts 变量详解与使用案例            <a href="https://www.cnblogs.com/zhanglianghhh/p/12776236.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-04-25 23:31 踏歌行666 阅读 (37) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12776236" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/04/12.html">2020年4月12日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12686706.html">
+    Ansible Playbook 变量与 register 详解
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：ansible 定义变量方式与[多层]变量引用，以及 register 详解            <a href="https://www.cnblogs.com/zhanglianghhh/p/12686706.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-04-12 18:11 踏歌行666 阅读 (53) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12686706" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/03/29.html">2020年3月29日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12596034.html">
+    Ansible Playbook 初识
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Ansible Playbook 基本概述与使用案例            <a href="https://www.cnblogs.com/zhanglianghhh/p/12596034.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-03-29 23:54 踏歌行666 阅读 (92) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12596034" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/03/19.html">2020年3月19日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12525566.html">
+    Ansible Ad-Hoc与常用模块
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：ansible 执行结果信息–各颜色说明；ansible Ad-Hoc 说明；ansible 如何查看帮助文档与常用模块详解            <a href="https://www.cnblogs.com/zhanglianghhh/p/12525566.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-03-19 17:12 踏歌行666 阅读 (95) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12525566" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/03/15.html">2020年3月15日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12501193.html">
+    Ansible-免密登录与主机清单Inventory
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Ansible的指定用户与密码登录、免密登录、指定ssh端口以及主机清单Inventory配置            <a href="https://www.cnblogs.com/zhanglianghhh/p/12501193.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-03-15 23:44 踏歌行666 阅读 (65) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12501193" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/03/08.html">2020年3月8日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12445677.html">
+    Ansible-安装配置
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：主机规划 主机名称操作系统版本内网IP外网IP(模拟)安装软件 ansi-manager CentOS7.5 172.16.1.180 10.0.0.180 ansible ansi-haproxy01 CentOS7.5 172.16.1.181 10.0.0.181 ansi-haproxy02            <a href="https://www.cnblogs.com/zhanglianghhh/p/12445677.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-03-08 22:53 踏歌行666 阅读 (56) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12445677" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/03/05.html">2020年3月5日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12423683.html">
+    Ansible-基本概述
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：ansible 介绍、特点、原理与架构、具体执行流程，以及自动化运维使用场景            <a href="https://www.cnblogs.com/zhanglianghhh/p/12423683.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-03-05 23:09 踏歌行666 阅读 (67) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12423683" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/02/20.html">2020年2月20日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12339731.html">
+    Linux tcpdump 命令详解与示例
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Linux tcpdump 命令详解，常用命令选项与常见示例            <a href="https://www.cnblogs.com/zhanglianghhh/p/12339731.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-02-20 23:24 踏歌行666 阅读 (188) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12339731" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2020/02/04.html">2020年2月4日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/12262009.html">
+    Linux 查看磁盘IO并找出占用IO读写很高的进程
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：根据磁盘IO告警，找到占用磁盘IO (util)读写很高的进程。            <a href="https://www.cnblogs.com/zhanglianghhh/p/12262009.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2020-02-04 23:26 踏歌行666 阅读 (1142) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12262009" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2019/09/26.html">2019年9月26日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11590244.html">
+    Rsync 服务部署与参数详解
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：Rsync 简介 rsync 是一款开源的、快速的、多功能的、可实现全量及增量的本地或远程数据同步备份的优秀工具。Rsync软件适用于unix/linux/windows等多种操作系统平台。 传统的 scp 和 cp 工具拷贝每次均为完整拷贝，而rsync除了可以完整拷贝外，还具备增量拷贝功能。因此            <a href="https://www.cnblogs.com/zhanglianghhh/p/11590244.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-09-26 13:07 踏歌行666 阅读 (482) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11590244" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2019/08/11.html">2019年8月11日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11331211.html">
+    Linux curl 表单登录或提交与cookie使用
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：本文主要讲解通过curl 实现表单提交登录。单独的表单提交与表单登录都差不多，因此就不单独说了。 说明：针对curl表单提交实现登录，不是所有网站都适用，原因是有些网站后台做了限制或有其他校验。我们不知道这些网站后台的限制或校验机制具体是什么，因此直接curl表单登录可能是不行的。 当然，如下案例是            <a href="https://www.cnblogs.com/zhanglianghhh/p/11331211.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-08-11 10:43 踏歌行666 阅读 (806) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11331211" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2019/08/10.html">2019年8月10日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11330682.html">
+    Linux curl 常用示例
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：本篇文章包含了curl的常用案例使用。 如果想了解curl选项的详细说明，请参考前一篇文章「Linux curl 命令详解」。 常见网页访问示例 基本用法 访问一个网页 执行后，相关的网页信息会打印出来 进度条展示 有时候我们不需要进度表展示，而需要进度条展示。比如：下载文件时。 可以通过 -#,             <a href="https://www.cnblogs.com/zhanglianghhh/p/11330682.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-08-10 10:18 踏歌行666 阅读 (1177) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11330682" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2019/08/09.html">2019年8月9日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11326428.html">
+    Linux curl 命令详解
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：命令概要 该命令设计用于在没有用户交互的情况下工作。 curl 是一个工具，用于传输来自服务器或者到服务器的数据。「向服务器传输数据或者获取来自服务器的数据」 可支持的协议有（DICT、FILE、FTP、FTPS、GOPHER、HTTP、HTTPS、IMAP、IMAPS、LDAP、LDAPS、POP            <a href="https://www.cnblogs.com/zhanglianghhh/p/11326428.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-08-09 13:06 踏歌行666 阅读 (2094) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11326428" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2019/07/31.html">2019年7月31日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11275606.html">
+    Linux下使用 github+hexo 搭建个人博客07-next主题接入搜索和站点管理
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：这是搭建个人博客系统系列文章的最后一篇，如果你是从第一篇一路跟下来的，那么恭喜你，即将完成整个博客网站的搭建。OK，话不多说，开始我们的收官之战。 不知你想过没有，如果我们的文章少，一眼看完整个目录，那么还好。但是如果日积月累几年下来，我们的文章增加到 100+ 以上，那么不管是你博主，还是访问用户            <a href="https://www.cnblogs.com/zhanglianghhh/p/11275606.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-07-31 12:45 踏歌行666 阅读 (122) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11275606" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11275220.html">
+    Linux下使用 github+hexo 搭建个人博客06-next主题接入数据统计
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：之前说了 next 主题的优化和接入评论系统。让我们完成了自己所需的页面风格和排版，也可让访问用户在每篇博文评论，完成博主和访问用户的交互。 本章我们继续讲解其他重要功能。 既然是一个网站，那么我们就需要收集网站访问数据，提供流量趋势、来源分析、转化跟踪、页面热力图、访问流等多种统计分析服务；这时我            <a href="https://www.cnblogs.com/zhanglianghhh/p/11275220.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-07-31 11:34 踏歌行666 阅读 (184) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11275220" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11275148.html">
+    Linux下使用 github+hexo 搭建个人博客05-next主题接入评论系统
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：静态站点拥有一定的局限性，因此我们需要借助于第三方服务来扩展我们站点的功能。 而评论系统是最常用于和网站用户交流的，因此本章讲解在 next 主题，如何接入评论系统。 参考网站：Next 使用文档，第三方服务集成 http://theme-next.iissnan.com/third-party-s            <a href="https://www.cnblogs.com/zhanglianghhh/p/11275148.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-07-31 11:25 踏歌行666 阅读 (174) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11275148" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+		
+<p class="date">
+	<span>		  
+	<a href="https://www.cnblogs.com/zhanglianghhh/archive/2019/07/30.html">2019年7月30日</a>
+	</span>
+</p>
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11268694.html">
+    Linux下使用 github+hexo 搭建个人博客04-next主题优化
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：上篇我们说了 hexo 的优化，针对的站点的优化。 本篇讲解 next 主题的优化，包括：使用语言、前端页面显示宽度、菜单、侧栏、头像、添加或取消动画效果、打赏功能等等。 让页面排版更符合我们所要的功能和所想的风格。 可参考网站 主题设定 选择 Scheme 修改 next&#160;主题配置文件。 可以自行            <a href="https://www.cnblogs.com/zhanglianghhh/p/11268694.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-07-30 11:44 踏歌行666 阅读 (160) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11268694" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhanglianghhh/p/11268368.html">
+    Linux下使用 github+hexo 搭建个人博客03-hexo配置优化
+</a>
+</h2>
+			<div class="postbody">
+			
+
+    <div class="c_b_p_desc">
+摘要：上两张文章，我们说了 hexo 部署、主题的切换、博文的创建、MarkDown 简单使用和 hexo 部署到 GitHub Pages。 也说了我们会使用 next 主题做为我们后期博客的使用和维护。但是该主题的原生态，可能或多或少不满足我们当前的需求，因此需要我们对其进行优化，达到我们想要的效果。            <a href="https://www.cnblogs.com/zhanglianghhh/p/11268368.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			</div>
+			<p class="postfoot">		
+			
+
+posted @ 2019-07-30 11:43 踏歌行666 阅读 (55) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11268368" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/zhanglianghhh/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+<div id="leftmenu">
+
+
+<h3>导航</h3>
+<ul>
+    <li>
+        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zhanglianghhh/">
+首页</a>
+
+    </li>
+    <li>
+        
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%B8%8F%E6%AD%8C%E8%A1%8C666">
+联系</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zhanglianghhh/rss/">
+订阅</a>
+        
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/zhanglianghhh/rss/">
+    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
+</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+    </li>
+</ul>
+
+
+<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 踏歌行666
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+</div>
+</div>
+
+
+    
+</body>
+</html>

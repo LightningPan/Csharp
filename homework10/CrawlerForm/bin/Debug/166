@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HueiFeng - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=Z9Vw4btcgJmrpUEjY_SgebmTmDXJ_hPFoST7ad2aJp4" />
+    <link id="MainCss" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright.min.css?v=aar1eIg4zz9tL2uCrzOGDur190sJi2DazF273FikoL4" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright-mobile.min.css?v=FJjyQba01xzuYKRyPpSwE1bMq69pRjxrz5wp2oZZGLY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/yyfh/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/yyfh/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/yyfh/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=98Fvfd6UZH20B_MF08daNaODjSu879MVR9RHmyvWAlg"></script>
+    <script>
+        var currentBlogId = 329108;
+        var currentBlogApp = 'yyfh';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'LessIsMoreRight';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/yyfh/">冯辉</a>
+</div>
+<div class="subtitle">
+
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/yyfh/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/HueiFeng">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/yyfh/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+62&nbsp;</span>
+<span id="stats_article_count">文章 - 
+0&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+281</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                
+
+
+
+
+
+
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/04/28.html">2020年4月28日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12797600.html">
+    .NET Core 使用MediatR CQRS模式
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 CQRS ( Command Query Responsibility Segregation )命令查询职责分离模式，它主要从我们业务系统中进行分离出我们(Command 增、删、改)和（Query 查）, 同时他可以明确的区分我们每一个动作向我们的请求模型和响应模型.从而降低了我们系统的复            <a href="https://www.cnblogs.com/yyfh/p/12797600.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-28 22:02 HueiFeng 阅读 (0) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12797600" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/04/13.html">2020年4月13日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12689422.html">
+    HttpClient来自官方的JSON扩展方法
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：System.Net.Http.Json Json的序列化和反序列化是我们日常常见的操作，通过 System.Net.Http.Json 我们可以用少量的代码实现上述操作.正如在github设计文档中所描述 Serializing and deserializing JSON payloads fr            <a href="https://www.cnblogs.com/yyfh/p/12689422.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-13 09:32 HueiFeng 阅读 (906) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12689422" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/04/12.html">2020年4月12日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12684209.html">
+    TypeScript联合类型 接口
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：TypeScript联合类型 联合类型表示取值可以为多种类型中的一种 如下所示 这一块我们必须使用string或者number都支持的类型，那么下面我们可以进行调用扩展方法toString() TypeScript中对象类型 接口 接口可以描述一种抽象的行为，也可以描述对象的结构形状,当然我们也需要            <a href="https://www.cnblogs.com/yyfh/p/12684209.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-12 11:09 HueiFeng 阅读 (68) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12684209" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/04/05.html">2020年4月5日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12636976.html">
+    ASP.NET Core MVC通过IViewLocationExpander扩展视图搜索路径
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：IViewLocationExpander API ExpandViewLocations Razor视图路径，视图引擎会搜索该路径. PopulateValues 每次调用都会填充路由 项目目录如下所示 创建区域扩展器，其实我并不需要多区域，我目前只需要达到一个区域中有多个文件夹进行存放我的视图.            <a href="https://www.cnblogs.com/yyfh/p/12636976.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-05 13:47 HueiFeng 阅读 (182) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12636976" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/04/04.html">2020年4月4日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12631578.html">
+    【翻译】.NET 5 Preview2发布
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：在4月2日，发布了.NET 5.0 Preview2，这次发布对一些功能和性能做了相关的改进，同时后面也会实施5.0版本更多的功能，其中一些功能设计目前也在 &quot;dotnet/designs&quot; 中显示，在 &quot;.NET 5 Preview1&quot; 中可以看到.NET 5里程碑中已经完成的建设任务，当然可以查            <a href="https://www.cnblogs.com/yyfh/p/12631578.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-04 13:58 HueiFeng 阅读 (1159) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12631578" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/03/30.html">2020年3月30日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12602087.html">
+    ASP.NET Core AutoWrapper 自定义响应输出
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 AutoWrapper是一个简单可自定义全局异常处理程序和ASP.NET Core API响应的包装。他使用ASP.NET Core middleware拦截传入的HTTP请求，并将最后的结果使用统一的格式来自动包装起来.目的主要是让我们更多的关注业务特定的代码要求，并让包装器自动处理HTTP            <a href="https://www.cnblogs.com/yyfh/p/12602087.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-03-30 23:08 HueiFeng 阅读 (1125) 评论 (7)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12602087" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12601439.html">
+    TypeScript数据类型
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：TypeScript的原始数据类型 String Number boolean null undefined enum symbol // Number var num:number=1; // 整数 num = 2.5; // 小数 num = 0xf00d; // 十六进制 num = 0b01            <a href="https://www.cnblogs.com/yyfh/p/12601439.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-03-30 21:37 HueiFeng 阅读 (99) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12601439" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/03/29.html">2020年3月29日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12593638.html">
+    TypeScript环境搭建
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 TypeScript是微软开发的一门自由和开源的编程语言,TypeScript是JavaScript的一个超集，他保留JavaScript语言本身的特性,同时他向我们提供了一些语法糖帮助我们方便更好的实践面向对象编程。 同时利用他我们可以使JavaScript开发变得更简单，同时他更符合前端模            <a href="https://www.cnblogs.com/yyfh/p/12593638.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-03-29 17:40 HueiFeng 阅读 (50) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12593638" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/03/18.html">2020年3月18日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12515229.html">
+    ASP.NET 开源导入导出库Magicodes.IE 完成Excel图片导入导出
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：Magicodes.IE Excel图片导入导出 为了更好的根据实际功能来迭代，从2.2的里程碑规划开始，我们将结合社区的建议和意见来进行迭代，您可以点此链接来提交您的意见和建议： https://github.com/dotnetcore/Magicodes.IE/issues/46 说明 本章教            <a href="https://www.cnblogs.com/yyfh/p/12515229.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-03-18 08:14 HueiFeng 阅读 (1696) 评论 (20)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12515229" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/yyfh/archive/2020/03/17.html">2020年3月17日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/yyfh/p/12508844.html">
+    【翻译】.NET 5 Preview 1 发布
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：.NET 5 Preview 1 发布 去年年底,我们发布了.NET Core 3.0和3.1.这些版本添加了桌面应用程序模型Windows Forms(WinForms)和WPF,ASP.NET Blazor用于构建SPA应用程序和用于构建分布式应用和服务的gRPC模板、用于与gRPC对话丰富的客            <a href="https://www.cnblogs.com/yyfh/p/12508844.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-03-17 10:01 HueiFeng 阅读 (4736) 评论 (34)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12508844" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/yyfh/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 HueiFeng
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    <div id="page_end_html">
+        <script>
+  $("#page_end_html,#ad_t2,#cnblogs_c1,#under_post_news,#under_post_kb,#cnblogs_c2").css('display','none')
+
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278154726'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278154726' type='text/javascript'%3E%3C/script%3E"));</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155252267-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155252267-2');
+</script>
+    </div>
+</body>
+</html>
