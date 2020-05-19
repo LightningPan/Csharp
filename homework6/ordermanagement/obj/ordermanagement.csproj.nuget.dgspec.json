@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\Csharp\\homework5\\ordermanagement\\ordermanagement.csproj": {}
+    "C:\\Users\\tp103\\github\\Csharp\\homework6\\ordermanagement\\ordermanagement.csproj": {}
   },
   "projects": {
-    "D:\\github\\Csharp\\homework5\\ordermanagement\\ordermanagement.csproj": {
+    "C:\\Users\\tp103\\github\\Csharp\\homework6\\ordermanagement\\ordermanagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\Csharp\\homework5\\ordermanagement\\ordermanagement.csproj",
+        "projectUniqueName": "C:\\Users\\tp103\\github\\Csharp\\homework6\\ordermanagement\\ordermanagement.csproj",
         "projectName": "ordermanagement",
-        "projectPath": "D:\\github\\Csharp\\homework5\\ordermanagement\\ordermanagement.csproj",
+        "projectPath": "C:\\Users\\tp103\\github\\Csharp\\homework6\\ordermanagement\\ordermanagement.csproj",
         "packagesPath": "C:\\Users\\tp103\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\Csharp\\homework5\\ordermanagement\\obj\\",
+        "outputPath": "C:\\Users\\tp103\\github\\Csharp\\homework6\\ordermanagement\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\tp103\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
