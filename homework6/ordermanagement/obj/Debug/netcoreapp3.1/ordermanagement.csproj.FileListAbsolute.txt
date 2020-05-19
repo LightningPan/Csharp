@@ -23,3 +23,16 @@ D:\github\Csharp\homework5\ordermanagement\obj\Debug\netcoreapp3.1\ordermanageme
 D:\github\Csharp\homework5\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfo.cs
 D:\github\Csharp\homework5\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.dll
 D:\github\Csharp\homework5\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.pdb
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.exe
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.deps.json
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.runtimeconfig.json
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.runtimeconfig.dev.json
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.dll
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\bin\Debug\netcoreapp3.1\ordermanagement.pdb
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.csprojAssemblyReference.cache
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.csproj.CoreCompileInputs.cache
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfoInputs.cache
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.AssemblyInfo.cs
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.dll
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.pdb
+C:\Users\tp103\github\Csharp\homework6\ordermanagement\obj\Debug\netcoreapp3.1\ordermanagement.genruntimeconfig.cache
